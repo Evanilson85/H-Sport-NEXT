@@ -1,0 +1,133 @@
+
+.formulario{
+    text-align: center;
+}
+.formulario h2{
+    color: #f15000;
+}
+#name,
+#email{
+    width: 90%;
+    height: 40px;
+}
+#date{
+    width: 50%;
+    height: 40px;
+}
+#password{
+    height: 40px;
+    width: 90%;
+}
+#btn{
+    color: white;
+}
+#btn{
+    width: 78%;
+    margin: 20px;
+    height: 40px;
+    background: #f15000;
+    border-radius: 5px;
+    border: none;
+}
+.cadastro{
+    display: none;
+}
+.main1{
+  display: flex;
+}
+.main1 h2{
+    color:#f15000;
+}
+.cadastro-mobile{
+position: relative;
+width:20% ;
+}
+.cadastro-mobile img{
+    max-width: 283%;
+    position: relative;
+    left: -140%;
+}
+.cadastro-basquete {
+    width: 20%;
+}
+.cadastro-basquete img{
+    max-width: 20%;
+    position: absolute;
+    top: 25%;
+    right: 6%;
+}
+.for-cadastro{
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+.cadastro-desktop img{
+    display: none;
+}
+@media(min-width: 768px){
+
+    .for-cadastro{
+        position: relative;
+        width: 70%;
+        margin: auto;
+        
+    }
+    .for-cadastro h2{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .cadastro-mobile,
+    .cadastro-basquete {
+        display: none;
+    }
+    #name,
+    #email,
+    #password,
+    #date{
+        width: 90%;
+        height: 40px;
+     
+        margin: auto 10px;
+    }
+    #btn{
+        width: 45%;
+    }
+    .contato img{
+        max-width: 50%;
+    }
+    .cadastro-desktop{
+        width: 50%;
+    }
+    .cadastro-desktop img{
+        max-width: 100%;
+        display: block;
+    }
+}
+@media(min-width: 1024px){
+  
+    #name,
+    #email,
+    #date,
+    #password{
+        width: 90%;
+    }
+    .main1{
+        display: flex;
+        margin: 0px auto 35px;
+    }
+
+    .for-cadastro{
+        width: 50%;
+        margin: 115px auto 0 0;
+    }
+    .cadastro-desktop {
+        width: 33%;
+    }
+    .cadastro{
+        width: 50%;
+    }
+    .cadastro img{
+        max-width: 100%;
+    }
+
+}

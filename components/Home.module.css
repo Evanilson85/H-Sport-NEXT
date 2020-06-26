@@ -1,0 +1,408 @@
+.body{
+    padding: 0%;
+    margin: 0%;
+    height: 3009px;
+}
+.top{
+    background-image: url(../public/imagens/Compactado-mobile/header-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.info{
+    position: relative;
+    top: -33px;
+    height: 190px;
+}
+.title{
+    height: 190px;
+    background-color: black;
+  /*  background-image: linear-gradient(red, yellow); */
+  margin-bottom: 0;
+
+}
+.title h1{
+    color: #fff;  
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30pt;
+    text-align: center;
+    position: relative;
+    top: -42px;  
+}
+.title hr{
+    height: 1px;
+    background-color: #f15000;
+    border: 1px;
+    margin: 0 auto;
+    border: 1px;
+    width: 90%;
+}
+.title b{
+    color: #f15000;
+    font-size: 50pt;
+}
+.club{
+    background-image: url(../public/imagens/Compactado-mobile/chute.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+}
+.welcome{
+    background-color: #10101087;
+    height: 468px;
+}
+.club h2{    
+    color: #f15000;
+    margin: 20px 0 0 141px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 322px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24pt;
+}
+.meio{
+    position: relative;
+    top: -53px;
+    height: 1975px;
+}
+.sport {
+    background-image: url(../public/imagens/Compactado-mobile/tema3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+    position: relative;
+    top: -21px;
+}
+.text{
+    background-color:#10101087;
+    height: 470px;
+}
+.text p{
+    width: 50%;
+    position: relative;
+    top: 270px;
+    left: 25px;
+    color: rgba(255, 255, 255, 0.98);
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+.new {
+    background-image: url(../public/imagens/Compactado-mobile/pasta/temas5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    position: relative;
+    top: -36px;
+}
+.new .text-2{
+    height: 540px;
+    background: #000000a6;
+}
+.new .text-2 p{
+    color: rgba(255, 255, 255, 0.98);
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    width: 90%;
+    margin: 15px auto;
+    position: relative;
+    top: 300px;
+    text-align: end;
+}
+.new h2{
+    text-align: center;
+}
+.novidades{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -36px;
+    height: 570px;
+}
+.novidades h3{
+    margin: 0px auto 50px;
+    color:  #f15000;
+    font-size: 35px;
+    position: relative;
+    top: 25px;
+    width: 90%;
+}
+.imagem{
+    background-image: url(../public/imagens/Compactado-mobile/pasta/natação.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    margin: 30px auto;
+}
+.imagem2{
+    background-image: url(../public/imagens/Compactado-mobile/pasta/quadra-basquente.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    margin: 30px auto;
+    background-position: top;
+}    
+.imagem3{
+    background-image: url(../public/imagens/Compactado-mobile/pasta/tenis.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    margin: 30px auto;
+    background-position: bottom;
+}
+.texto,
+.imagem2 .texto,
+.imagem3 .texto{
+    padding:40px;
+    font-family:Arial;
+    text-align:center;
+    color:white;
+    opacity:0;
+    transition: .2s linear;
+    background-color:rgba(255, 60, 0, 0.521);
+    height: 111px;
+}
+.imagem:hover .texto,
+.imagem2:hover .texto,
+.imagem3:hover .texto{
+    opacity:1;
+}
+.btn{
+    margin: auto;
+    width: 90%;
+}
+.btn button{
+    width: 100%;
+    height: 50px;
+    background: #f15000;
+    border-radius: 5px;
+    border: none;
+}
+.btn button a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 5px 25%;
+    
+}
+.btn button:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+@media(min-width: 643px){
+    
+    .body {
+        padding: 0%;
+        margin: 0%;
+        height: 2943px;
+    }
+    .top{
+        background-image: url(../public/imagens/compactados/header-home-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+    .info{
+       height: 231px;
+    }
+    .title {
+        height: 210px;
+        background-color: black;
+        margin-bottom: 0;
+    }
+
+   
+    .title h1 {
+        top: -4px;
+        width: 46%;
+        margin: 0 50%;
+    }
+
+    .title b {
+        color: #ff6002;
+    }
+    .title hr{
+        height: 1px;
+        background-color: #f15000;
+        border: 1px;
+        margin: 0 auto;
+        border: 1px;
+        width: 61%;
+    }
+    .club {
+        background-image: url(../public/imagens/Compactado-mobile/chute.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 470px;
+        background-position: center;
+    }
+    .club h2 {
+        color: #f15000;
+        position: relative;
+        top: 322px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24pt;
+        width: 50%;
+        margin: 0 0;
+    }
+    
+    .sport {
+            background-image: url(../public/imagens/compactados/home.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 570px;
+            position: relative;
+            top: -21px;
+            background-position: center;
+    }
+    
+    .text {
+        background-color: #10101087;
+        height: 572px;
+    }
+    .text p {
+        width: 50%;
+        position: relative;
+        top: 388px;
+        left: 47%;
+        color: rgba(255, 255, 255, 0.98);
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    .new {
+        background-image: url(../public/imagens/Compactado-mobile/pasta/temas5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 540px;
+        position: relative;
+        top: -36px;
+        background-position: center;
+    }
+    .imagem{
+        background-image: url(../public/imagens/Compactado-mobile/pasta/natação.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 112px;
+        width: 24%;
+        /* margin: 30px auto; */
+       
+    }
+    
+    .imagem2{
+        background-image: url(../public/imagens/Compactado-mobile/pasta/quadra-basquente.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 112px;
+        width: 24%;
+        /* margin: 30px auto; */
+    }
+    .imagem3{
+        background-image: url(../public/imagens/Compactado-mobile/pasta/tenis.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 112px;
+        width: 24%;
+        /* margin: 30px auto; */
+    }
+    .flex {
+        display: flex;
+    }
+    .novidades {
+        height: 355px;
+    }
+    .meio {
+        position: relative;
+        top: -53px;
+        height: 1861px;
+    }
+    .btn {
+        margin: auto;
+        width: 40%;
+    }
+}
+
+@media(min-width: 1024px){
+
+    .body {
+        padding: 0%;
+        margin: 0%;
+        height: 3124px;
+    }
+    .top{
+        height: 665px;
+    }
+    .info{
+        position: absolute;
+        width: 100%;
+        bottom: -1px;
+        height: 459px;
+        margin-top: 73px;
+    }
+    .title{
+        background-color:rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: -61px;
+        height: 623px;
+        
+    
+    }
+    .title h1 {
+        top: 294px;
+        width: 46%;
+    }
+
+    .club h2 {
+        color: #ff6002;
+        margin: 20px 0 0 50px;
+        /* align-items: center; */
+        text-align: center;
+        position: relative;
+        top: 439px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 52pt;
+        width: 55%;
+    }
+
+    .club {
+        background-image: url(../public/imagens/Compactado-mobile/chute.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 695px;
+        background-position: center;
+    }
+
+    .welcome {
+    background-color: #10101087;
+    height: 694px;
+    }
+
+    .meio {
+        position: relative;
+        top: -53px;
+        height: 2084px;
+    }
+    .btn button a {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+        padding: 10px 20%;
+    }
+
+}

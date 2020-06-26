@@ -1,0 +1,89 @@
+
+.top{
+    background-image: url(../public/imagens/Compactado-mobile/Contato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.formulario{
+    text-align: center;
+    margin: 30px 0;
+}
+.formulario h2{
+    color: #f15000;
+    margin: 10px ;
+}
+#name,
+#email,
+#Telefone,
+#Mensagem{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+#btn{
+    color: white;
+}
+#btn{
+    width: 50%;
+    margin: 20px;
+    height: 40px;
+    background: #f15000;
+    border-radius: 5px;
+    border: none;
+}
+#btn:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.contato{
+    display: none;
+}
+@media(min-width: 768px){
+
+    .top{
+        background-image: url(../public/imagens/Compactado-mobile/Contato.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+    }
+
+    #name,
+    #email,
+    #Telefone,
+    #Mensagem{
+        width: 50%;
+        height: 40px;
+        text-align: center;
+    }
+
+}
+@media(min-width: 1024px){
+    .top{
+        background-image: url(../public/imagens/compactados/Contato-desktop1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        background-position: bottom;
+    }
+    .formulario{
+        margin-top: 30px;
+        
+    }
+    #name,
+    #email,
+    #Telefone,
+    #Mensagem{
+        width: 50%;
+        height: 50px;
+        text-align: center;
+    }
+
+    #Mensagem{
+        height: 90px;
+    }
+    #btn{
+        height: 50px;
+        width: 30%;
+    }
+}

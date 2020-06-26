@@ -1,0 +1,165 @@
+.rodape{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    text-align: center;
+    position: relative;
+
+}
+.row{
+    height: 2px;
+    border: none;
+    width: 90%;
+    margin: auto;
+    background-color: #fa3a00;
+}
+.row2{
+    height: 2px;
+    border: none;
+    width: 90%;
+    margin: auto;
+    background-color: #fa3a00;
+    position: relative;
+    top: 27px;
+}
+.net {
+    display: flex;
+    text-align: center;
+}
+
+.net img {
+    width: 50%;
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    margin: 0 10px;
+}
+.rodape h6{
+    font-size: 2em;
+    margin: 0px 0 30px;
+    color:  #fa3a00;
+}
+.rodape p {
+    margin: 30px 0;
+    color: #fa3a00;
+}
+
+.rodape .banner {
+    height: 45px;
+    background-color: rgb(255, 255, 255) ;
+    margin: 53px 0 0;
+}
+.banner h5 {
+    margin: 0;
+}
+.banner h5,
+.banner a{
+    color: #000000;
+}
+.Endereco{
+    display: none;
+}
+.contato{
+    text-align: center;
+    margin-top: 17px;
+}
+.contato h6{
+    font-size: 1.6em;
+    margin: 0 0 10px;
+}
+.contato p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+.email{
+    display: none;
+}
+.redes{
+    margin: 10px auto;
+    width: 38%;
+
+}
+.direitos{
+    position: relative;
+    top: 40px;
+}
+.Footer-logo img{
+    max-width: 37%;
+    position: relative;
+    
+}
+.Footer-logo {
+    display: block;
+}
+@media(min-width: 643px){
+
+    .rodape {
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        text-align: center;
+        position: relative;
+       
+    }
+    .Footer-logo img {
+        max-width: 20%;
+        position: relative;
+        top: 0px;
+        margin-right: 58px;
+    }
+    .Footer-logo {
+        display: flex;
+        margin: 40px 40px 0;
+        width: 90%;
+    }
+    .Endereco{
+        display: block;
+        width: 30%;
+        margin-right: 58px;
+        position: relative;
+        left: 40px;
+    }
+    .contato{
+        text-align: left;
+        margin: 0;
+        position: relative;
+        left: 30px;
+    }
+    .contato h6{
+        font-size: 2em;
+    margin: 0px 0 30px;
+    }
+    .redes {
+        margin-left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    .net{
+        display: block;
+    }
+}
+@media(min-width: 1024px){
+
+
+    .rodape{
+      
+        height: 342px;
+    }
+    .Footer-logo {
+        width: 90%;
+        margin: 40px 40px 0;
+    }
+    .Footer-logo img{
+        margin-right: 14%;
+    }
+    .Endereco {
+        display: block;
+        width: 30%;
+        /* margin: 0 75px; */
+        position: relative;
+        left: 40px;
+        margin-right: 14%;
+    }
+    .redes{
+        width: 35%;
+        margin: auto;
+    }
+}

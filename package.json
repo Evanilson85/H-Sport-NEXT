@@ -1,0 +1,22 @@
+{
+  "name": "next.js-sport",
+  "version": "1.0.0",
+  "description": "Projeto H-sport",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 3200",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Evanilson",
+  "license": "MIT",
+  "devDependencies": {
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react-cookie": "^4.0.3"
+  }
+}
