@@ -13,7 +13,7 @@ export default function Index(){
 
         <>
             <Head>
-                    <title>H-Sport</title>
+                    <title>H_Sport</title>
                    {/* <link rel="icon" href="/favicon-16x16.png" />*/  } 
             </Head>
             <header className={Styles.top}>
