@@ -28,10 +28,11 @@
 
 .net img {
     width: 50%;
-    background-color: black;
+    background-color: rgb(255, 254, 254);
     height: 35px;
     width: 35px;
     margin: 0 10px;
+    border-radius: 6px;
 }
 .rodape h6{
     font-size: 2em;

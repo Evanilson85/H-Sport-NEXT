@@ -38,6 +38,7 @@ export default function Index(){
                 <div className={Styles.meio}>
                     <div className={Styles.club}>
                         <div className={Styles.welcome}>
+                            
                             <h2>Bem-Vindo <br/>ao  Club H-SPORT</h2>
 
                         </div>
