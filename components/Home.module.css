@@ -52,6 +52,10 @@
 .welcome{
     background-color: #10101087;
     height: 468px;
+    margin-top: -21px;
+}
+.welcome img{
+    display: none;
 }
 .club h2{    
     color: #f15000;
@@ -69,7 +73,9 @@
 .meio{
     position: relative;
     top: -53px;
-    height: 1975px;
+    height: auto;
+    margin-top: 135%;
+
 }
 .sport {
     background-image: url(../public/imagens/Compactado-mobile/tema3.jpg);
@@ -80,7 +86,7 @@
     top: -21px;
 }
 .text{
-    background-color:#10101087;
+    
     height: 470px;
 }
 .text p{
@@ -105,7 +111,7 @@
 }
 .new .text-2{
     height: 540px;
-    background: #000000a6;
+
 }
 .new .text-2 p{
     color: rgba(255, 255, 255, 0.98);
@@ -124,7 +130,7 @@
     text-align: center;
 }
 .novidades{
-    background-color: rgb(255, 255, 255);
+   
     position: relative;
     top: -36px;
     height: 570px;
@@ -268,10 +274,7 @@
             background-position: center;
     }
     
-    .text {
-        background-color: #10101087;
-        height: 572px;
-    }
+    
     .text p {
         width: 50%;
         position: relative;
@@ -328,7 +331,8 @@
     .meio {
         position: relative;
         top: -53px;
-        height: 1861px;
+        height: auto;
+        margin-top: 61%;
     }
     .btn {
         margin: auto;
@@ -354,10 +358,10 @@
         margin-top: 73px;
     }
     .title{
-        background-color:rgba(0, 0, 0, 0.5);
+        background-color:rgba(0, 0, 0, 0.2);
         position: relative;
         bottom: -61px;
-        height: 623px;
+        height: 565px;
         
     
     }
@@ -371,32 +375,44 @@
         margin: 20px 0 0 50px;
         /* align-items: center; */
         text-align: center;
-        position: relative;
-        top: 439px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 800;
         font-size: 52pt;
         width: 55%;
+        height: 215px;
+        top: 210px;
     }
 
     .club {
-        background-image: url(../public/imagens/Compactado-mobile/chute.jpg);
+        background-image: url(../public/imagens/wave\ .svg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 695px;
+        height: 200px;
         background-position: center;
+        position: relative;
+        top: 40px;
     }
 
     .welcome {
-    background-color: #10101087;
+    background-color: #10101000;
     height: 694px;
+    display: flex;
     }
 
+    .text{
+        background-color: rgba(0, 0, 0, 0.2);
+    height: 569px;
+    }
+    .welcome img{
+        max-width: 50%;
+        display: block;
+    }
     .meio {
         position: relative;
-        top: -53px;
-        height: 2084px;
+        /* top: 650px; */
+        height: auto;
+        margin-top: 55%;
     }
     .btn button a {
         color: white;

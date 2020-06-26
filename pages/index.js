@@ -32,17 +32,20 @@ export default function Index(){
                             Você está a um Gol da <b> Diversão </b>
                         </h1>
                     </div>
-                    </section>
-                    <main>
 
-                <div className={Styles.meio}>
                     <div className={Styles.club}>
                         <div className={Styles.welcome}>
                             
                             <h2>Bem-Vindo <br/>ao  Club H-SPORT</h2>
 
+                            <img src="imagens/chute.png"/>
                         </div>
                     </div>
+                    </section>
+                    <main>
+
+                <div className={Styles.meio}>
+                   
                     <div className={Styles.sport}>
                         <div className={Styles.text}>
                             <p>Já imaginou estar em um lugar onde você e os seus amigos possam se divertir por tempo ilimitado...
