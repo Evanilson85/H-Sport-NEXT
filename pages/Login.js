@@ -27,7 +27,7 @@ export default function Login(){
         e.preventDefault()
         console.log("enviou o login")
 
-        axios.post('http://localhost:3333/auths', valor).then(
+        axios.post('https://hcodelab-adonis.herokuapp.com/auths', valor).then(
             (res)=>{
                 const tokenData = res.data.tokenData
                 cookies.set('token', tokenData) // onde vou gravar o cookies  get eu pego o cookie set eu gravo o token que vem do banco de dados
