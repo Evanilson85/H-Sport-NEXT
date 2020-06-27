@@ -26,6 +26,7 @@ export default function Cadastro(){
         axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/users`, valor).then(res => {
                    
             alert(`Olá ${res.data.name} seus dados foi cadastrado`)
+            window.location.href=("/admin")
         }).catch(err => alert("deu ruim", err)
         )
 
