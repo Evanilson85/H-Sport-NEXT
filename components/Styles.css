@@ -13,12 +13,11 @@ body{
 
 ul{
     display: block;
-    position: fixed;
+    
     top: 0;
     left: 0vw;
     width: 55vw;
     height: 100vh;
-    
     z-index: 2;
     margin: 0;
     transition: left .1s ;

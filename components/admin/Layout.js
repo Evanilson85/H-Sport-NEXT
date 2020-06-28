@@ -1,4 +1,4 @@
-import styles from './Layout.module.css'
+import styles from "./Layout.module.css"
 import Header from "./Header"
 import Footer from "./Footer"
 import { useState } from 'react'
@@ -13,7 +13,7 @@ export default function Layout({ children }) {
             <Header onMenuToggle={menuState => setMenuOpened(menuState)} />
 
             <main className={styles.main}>
-
+                
                 {children}
 
             </main>

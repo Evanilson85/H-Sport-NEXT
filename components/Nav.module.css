@@ -15,8 +15,10 @@
     color: #fff;
 }*/
 .abrir-menu{
-    padding: 5px 12px;
+    width: 12%;
     margin: 15px;
+    border:none;
+    border-radius: 22px;
 }
 #fechar{
     position: fixed;
@@ -27,6 +29,7 @@
 }
 .ul{
     background-color: rgb(255, 255, 255);
+    position: fixed;
 }
 
 .ul a {

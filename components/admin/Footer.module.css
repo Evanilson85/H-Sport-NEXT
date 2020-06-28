@@ -9,12 +9,12 @@
         position: fixed;
         bottom: 0;
         background: none;
-        color:  var(--grayC);
+        color:  gray;
         z-index: 2;
         font-size: 12px;
         transform: rotate(-90deg);
         position: absolute;
-        left: -65px;
+        left: -113px;
         bottom: 90px;
         transition: all .2s ease-in-out;
     }

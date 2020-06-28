@@ -1,5 +1,5 @@
 import styles from './Header.module.css'
-import IconFerrariMobile from './IconFerrariMobile'
+
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
@@ -26,7 +26,7 @@ export default function Header({ onMenuToggle }) {
 
             <div className={styles.logo}>
 
-                <IconFerrariMobile />
+
 
                 <button type="button" id={styles['btn-open']} onClick={toggleMenu}>
                     <svg id="menu-black-18dp" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -54,7 +54,7 @@ export default function Header({ onMenuToggle }) {
 
                     <div className={styles['user-info']}>
 
-                        <img src="/images/user-profile-photo.png" className={styles['user-photo']} />
+                        <img src="../../assets/images/user-profile-photo.png" className={styles['user-photo']} />
 
                         <h2>João Rangel</h2>
 
@@ -67,15 +67,19 @@ export default function Header({ onMenuToggle }) {
                     <ul className={styles.links}>
 
                         <li className={styles.link}>
-                            <Link href="/admin/users"><a><img src="/images/icon-users.svg" />Usuários</a></Link>
+                            <Link href="/admin/users"><a><img src="../../assets/images/icon-users.svg" />Usuários</a></Link>
                         </li>
 
                         <li className={styles.link}>
-                            <Link href="/admin/contacts"><a><img src="/images/icon-contacts.svg" />Contatos</a></Link>
+                            <Link href="/admin/contact"><a><img src="../../assets/images/icon-contacts.svg" />Contatos</a></Link>
                         </li>
 
                         <li className={styles.link}>
-                            <Link href="#"><a><img src="/images/icon-logout.svg" />Sair</a></Link>
+                            <Link href="/admin/cardapio"><a><img src="../../assets/images/icon-contacts.svg" />Cardapio</a></Link> 
+                        </li>
+
+                        <li className={styles.link}>
+                            <Link href="/"><a><img src="../../assets/images/icon-logout.svg" />Sair</a></Link>
                         </li>
 
                     </ul>

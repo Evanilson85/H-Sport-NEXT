@@ -7,15 +7,15 @@ export default function Contacts() {
     return (
         <Layout>
 
-            <HeaderTitle text="Contatos" />
+            <HeaderTitle text="Bem Vindo" />
 
         </Layout>
     )
 
 }
 
+
 Contacts.getInitialProps = async (ctx) => {
     await handleAuthSSR(ctx)
-
     return {}
 }
