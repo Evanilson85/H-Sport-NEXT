@@ -65,22 +65,13 @@
   background-repeat: no-repeat;
   height: 400px;
 }
-.login {
-  width: 100%;
-  display: flex;
-}
+
 .login-form {
   width: 100%;
 }
 .login-form h2 {
   color: red;
   margin-left: 10px;
-}
-#email,
-#password {
-  width: 90%;
-  height: 40px;
-  margin: 10px;
 }
 
 #btn {
@@ -92,7 +83,7 @@
   border: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .top {
     background-image: url(/imagens/Compactado-mobile/pasta/Login.jpg);
     background-size: cover;

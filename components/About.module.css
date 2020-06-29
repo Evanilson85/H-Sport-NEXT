@@ -12,6 +12,14 @@
   font-style: normal;
   font-weight: 800;
 }
+.row{
+  height: 4px;
+    background-color: #ff6002;
+    border: none;
+    width: 96%;
+    margin: auto;
+    border-radius: 5px;
+}
 .info p {
   width: 95%;
   margin: 10px auto;
@@ -38,7 +46,7 @@
 }
 .Sport > div{
   flex: 100px;
-  margin: 10px;
+  margin: 7px;
 }
 
 .container img,

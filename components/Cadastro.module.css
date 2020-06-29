@@ -1,4 +1,9 @@
-
+.top {
+    background-image: url(/imagens/Compactado-mobile/pasta/Login-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
 .formulario{
     text-align: center;
 }
@@ -37,6 +42,7 @@
 }
 .main1 h2{
     color:#f15000;
+    margin: 10px 0;
 }
 .cadastro-mobile{
 position: relative;
@@ -45,7 +51,7 @@ width:20% ;
 .cadastro-mobile img{
     max-width: 283%;
     position: relative;
-    left: -140%;
+    left: -198%;
 }
 .cadastro-basquete {
     width: 20%;
@@ -53,7 +59,7 @@ width:20% ;
 .cadastro-basquete img{
     max-width: 20%;
     position: absolute;
-    top: 25%;
+    top: 75%;
     right: 6%;
 }
 .for-cadastro{
@@ -66,6 +72,13 @@ width:20% ;
 }
 @media(min-width: 768px){
 
+    .top {
+        background-image: url(/imagens/Compactado-mobile/pasta/Login.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 600px;
+      }
     .for-cadastro{
         position: relative;
         width: 70%;

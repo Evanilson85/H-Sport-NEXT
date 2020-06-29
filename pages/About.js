@@ -1,6 +1,9 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from "../components/About.module.css"
+import Link from "next/link"
+
+
 export default function About(){
 
 
@@ -17,6 +20,7 @@ export default function About(){
                                 <h1>
                                     H-Sport
                                 </h1>
+                                <hr className={styles.row}/>
                                 <p>
                                      
                                     Para amantes do esportes, que também gostam de reunir com amigos para se divertir, em um ambiente agradável e familiar, você está no lugar certo.<br/>
@@ -27,15 +31,15 @@ export default function About(){
 
                                     <img src="imagens/compactados/Campo de Futebol .jpg" alt="Campo de Futebol" className={styles.image}/>
                                     <div className={styles.overlay}>
-                                        <div className={styles.text}>Hello World</div>
+                                        <div className={styles.text}>Futebol</div>
                                     </div>
                                 </div>
 
                                 <div className={styles.container1}>
                                     
-                                        <img src="imagens/compactados/quadra-basquente.jpg" alt="Quadra-basquente" className={styles.image}/>
+                                        <img src="imagens/compactados/quadra-basquente.jpg" alt="Quadra-basquete" className={styles.image}/>
                                         <div className={styles.overlay}>
-                                            <div className={styles.text}>Hello World</div>
+                                            <div className={styles.text}>Basquete</div>
                                         </div>
                                     
                                 </div>
@@ -44,7 +48,7 @@ export default function About(){
                                 
                                         <img src="imagens/compactados/swimmers-79592_1920.jpg" alt="Natação" className={styles.image}/>
                                         <div className={styles.overlay}>
-                                            <div className={styles.text}>Hello World</div>
+                                            <div className={styles.text}>Natação</div>
                                         </div>
                                 </div>
 
@@ -53,7 +57,7 @@ export default function About(){
                                         <img src="imagens/compactados/tenis.jpg" alt="Tenis" className={styles.image}/>
                                     
                                     <div className={styles.overlay}>
-                                        <div className={styles.text}>Hello World</div>
+                                        <div className={styles.text}>Tenis</div>
                                     </div>
                                 </div>
 
@@ -62,7 +66,7 @@ export default function About(){
                                         <img src="imagens/compactados/volei de praia.jpg" alt="Volei de praia" className={styles.image}/>
                                     
                                         <div className={styles.overlay}>
-                                            <div className={styles.text}>Hello World</div>
+                                            <div className={styles.text}>Volei</div>
                                         </div>
                                 </div>
                                 <div className={styles.container5}>
@@ -85,7 +89,11 @@ export default function About(){
                             
 
                                 <div className={styles.b}>
-                                    <button  className={styles["btn-aluguel"]}><a href="">Alugar</a></button>
+                                    <button  className={styles["btn-aluguel"]}>
+                                    <Link href="Cadastro">
+                                             <a>Alugar</a>
+                                      </Link>
+                                    </button>
                                 </div>
                             </div>
                             
@@ -101,7 +109,11 @@ export default function About(){
                             
                                 
                                 <div className={styles.c} >
-                                    <button  className={styles["btn-compra"]}><a href="">Comprar</a></button>
+                                    <button  className={styles["btn-compra"]}>
+                                    <Link href="Cadastro">
+                                             <a>Comprar</a>
+                                      </Link>
+                                     </button>
                                 </div>
                             </div>
                             </div>

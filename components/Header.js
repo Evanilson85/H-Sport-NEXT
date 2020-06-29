@@ -20,10 +20,17 @@ return(
         <style jsx>
             {`.img-menu{
                 max-width:100%;
-            }`}
+            }
+            img-menu-fechar{
+                width:100%;
+            }
+           `}
             </style></button>
 
-        <button type="button" id={styles.fechar}  onClick={handleClick} className={styles[open]}>X</button>
+        <button type="button" id={styles.fechar}  onClick={handleClick} className={styles[open]}>
+         X
+
+        </button>
                 
        
     <Nav isOpen={open} />

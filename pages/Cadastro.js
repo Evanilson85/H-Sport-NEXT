@@ -27,7 +27,7 @@ export default function Cadastro(){
                    
             alert(`Olá ${res.data.name} seus dados foi cadastrado`)
             window.location.href=("/admin")
-        }).catch(err => alert("deu ruim", err)
+        }).catch(err => alert("Infelizmente algo deu errado", err)
         )
 
       //   console.log("enviou")
@@ -36,7 +36,11 @@ export default function Cadastro(){
 
     return(
         <>
-            <Header/>
+               <section className={styles.top}>
+
+                <Header/>
+
+              </section>
 
                    
             <main className={styles.main1}>
