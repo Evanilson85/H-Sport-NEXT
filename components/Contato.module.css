@@ -20,6 +20,7 @@
     width: 90%;
     height: 40px;
     text-align: center;
+    border: 1px solid #f15000;
 }
 #btn{
     color: white;

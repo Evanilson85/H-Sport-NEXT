@@ -14,14 +14,17 @@
 #email{
     width: 90%;
     height: 40px;
+    border: 1px solid #f15000;
 }
 #date{
     width: 50%;
     height: 40px;
+    border: 1px solid #f15000;
 }
 #password{
     height: 40px;
     width: 90%;
+    border: 1px solid #f15000;
 }
 #btn{
     color: white;

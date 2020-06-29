@@ -1,5 +1,5 @@
 .top {
-  background-image: url(/imagens/Compactado-mobile/pasta/Login-mobile.jpg);
+ background-image: url(/imagens/Compactado-mobile/pasta/Login-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 .login-form h2 {
-  color: red;
+  color: #f15000;
   margin-left: 10px;
 }
 #email,
@@ -20,6 +20,7 @@
   width: 90%;
   height: 40px;
   margin: 10px;
+  border: 1px solid #f15000;
 }
 
 #btn {
@@ -29,6 +30,11 @@
   background: #f15000;
   border-radius: 5px;
   border: none;
+  color: white;
+}
+.btn1{
+  width: 60%;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -49,34 +55,35 @@
   }
   #email,
   #password {
-    width: 90%;
+    width: 50%;
     height: 40px;
     margin: 10px;
+    border: 1px solid #f15000;
   }
   #btn {
     width: 50%;
     margin: 10px;
     height: 40px;
   }
+  .btn1{
+    width: 30%;
+    margin: auto;
+  }
 }
-.top {
-  background-image: url(/imagens/Compactado-mobile/pasta/Login-mobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-}
+
 
 .login-form {
   width: 100%;
 }
 .login-form h2 {
-  color: red;
+  color: #f15000;
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 #btn {
-  width: 78%;
-  margin: 20px;
+  width: 100%;
+  margin: 20px auto;
   height: 40px;
   background: #f15000;
   border-radius: 5px;

@@ -57,7 +57,7 @@ export default function Login(){
                             <h2>Senha</h2>
                             <input type="password" name="password" id={styles.password} placeholder="Senha"  onFocus={focarlogin} onChange={focarlogin} />
 
-                            <div>
+                            <div className={styles.btn1}>
                                 <input type="submit" value="Entrar" id={styles.btn} onFocus={focarlogin} onChange={focarlogin} />
                             </div>
                          </form>

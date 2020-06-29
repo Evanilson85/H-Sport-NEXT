@@ -180,8 +180,9 @@
   }
 
   .info h1 {
-    color: aqua;
-    width: 90%;
+    
+    font-size: 4em;
+    margin: 30px auto;
   }
 
   .Sport {
@@ -197,6 +198,15 @@
   .Sport img {
     max-width: 100%;
   }
+  .planos{
+    display: flex;
+    height: auto;
+  }
+  .plano1,
+.plano2{
+  width: 310px;
+  height: auto;
+}
 }
 @media (min-width: 1024px) {
   .headertop {
@@ -219,5 +229,10 @@
   }
   .Sport img {
     max-width: 100%;
+  }
+  .plano1,
+  .plano2{
+    width: 450px;
+    height: auto;
   }
 }
