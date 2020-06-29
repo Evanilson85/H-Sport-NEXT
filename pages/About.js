@@ -18,14 +18,9 @@ export default function About(){
                                     H-Sport
                                 </h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum voluptates aliquid quae fuga nostrum sequi
-                                    laudantium aperiam, velit consequatur iusto praesentium aspernatur ad neque doloribus at cumque quia quaerat
-                                    non.
-                                    <br />
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde odio nulla, vero deserunt molestiae corporis
-                                    alias a error vel consequuntur praesentium, enim quae officia exercitationem mollitia neque! Sint, ratione
-                                    aliquid.  <br />
-                                    container com os planos
+                                     
+                                    Para amantes do esportes, que também gostam de reunir com amigos para se divertir, em um ambiente agradável e familiar, você está no lugar certo.<br/>
+                                    A H-Sport é um dos principais clubes de esportes da região por ser conhecida pela seu diversificados esportes. Aqui temos Futebol, Natação, Basquete, Volei e Tenis e com os melhores preços.
                                 </p>
                                 <div className={styles.Sport}>
                                 <div className={styles.container}>
@@ -80,6 +75,36 @@ export default function About(){
                                 </div>
                                 </div>
 
+                                <div className={styles.planos}>
+
+                            <div className={styles.plano1}>
+                                <h2>Plano-mensal</h2>
+                                <p>Por Apenas <b>39,90</b> você e os seus amigos pode aproveitar o maximo da diversão com direito a
+                                    todos os esportes disponiveis aqui na H-Sport.</p>
+
+                            
+
+                                <div className={styles.b}>
+                                    <button  className={styles["btn-aluguel"]}><a href="">Alugar</a></button>
+                                </div>
+                            </div>
+                            
+
+
+                            <div className={styles.plano2}>
+                                <h2>Plano-Anual</h2>
+
+                                <p>O nosso plano Anual tem muitas vantagens, você tem os mesmo direitos do plano-mensal e alem disso
+                                    pode treinar com a nossa equipe de profissionais e qualificados para ajudar você a ficar
+                                    profissional no seu esporte preferido por apenas <b>299,00</b></p>
+
+                            
+                                
+                                <div className={styles.c} >
+                                    <button  className={styles["btn-compra"]}><a href="">Comprar</a></button>
+                                </div>
+                            </div>
+                            </div>
 
                                 </main>
 
