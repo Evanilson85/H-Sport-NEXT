@@ -1,18 +1,17 @@
-
-.headertop{
-    background-image: url(../public/imagens/Compactado-mobile/sobre.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
+.headertop {
+  background-image: url(../public/imagens/Compactado-mobile/sobre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }
-.info h1{
-    color: aqua;
-    width: 90%;
-    margin: 10px;
+.info h1 {
+  color: aqua;
+  width: 90%;
+  margin: 10px;
 }
-.info p{
-    width: 95%;
-    margin: 10px auto;
+.info p {
+  width: 95%;
+  margin: 10px auto;
 }
 
 .container img,
@@ -20,12 +19,9 @@
 .container2 img,
 .container3 img,
 .container4 img,
-.container5 img{
-    max-width: 100%;
- 
-
+.container5 img {
+  max-width: 100%;
 }
-
 
 .container,
 .container1,
@@ -36,7 +32,6 @@
   position: relative;
   width: 90%;
   margin: 10px auto;
-  
 }
 .image {
   display: block;
@@ -52,8 +47,8 @@
   background-color: #ba44009d;
   overflow: hidden;
   width: 100%;
-  height:0;
-  transition: .5s ease;
+  height: 0;
+  transition: 0.5s ease;
 }
 
 .container:hover .overlay,
@@ -61,7 +56,7 @@
 .container2:hover .overlay,
 .container3:hover .overlay,
 .container4:hover .overlay,
-.container5:hover .overlay{
+.container5:hover .overlay {
   bottom: 0;
   height: 100%;
 }
@@ -78,59 +73,53 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .headertop {
+    background-image: url(/imagens/compactados/Sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
 
-@media(min-width:768px){
+  .info h1 {
+    color: aqua;
+    width: 90%;
+  }
 
-    .headertop{
-        background-image: url(/imagens/compactados/Sobre.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 450px;
-    }
-
-    .info h1{
-        color: aqua;
-        width: 90%;
-    }
-
-
-    .Sport {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 90%;
-        margin: 90px auto 0;
-      }
-      .Sport > div{
-        flex: 200px;
-        margin: 10px;
-      }
-      .Sport img{
-        max-width: 100%;
-      }
-
+  .Sport {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 90px auto 0;
+  }
+  .Sport > div {
+    flex: 200px;
+    margin: 10px;
+  }
+  .Sport img {
+    max-width: 100%;
+  }
 }
-@media (min-width:1024px){
+@media (min-width: 1024px) {
+  .headertop {
+    background-image: url(/imagens/compactados/Sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 665px;
+    background-position: center;
+  }
 
-    .headertop{
-        background-image: url(/imagens/compactados/Sobre.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 750px;
-        background-position: center;
-    }
-
-    .Sport {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 90%;
-        margin: 90px auto 0;
-      }
-      .Sport > div{
-        flex: 300px;
-        margin: 3px;
-      }
-      .Sport img{
-        max-width: 100%;
-      }
-
+  .Sport {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 90px auto 0;
+  }
+  .Sport > div {
+    flex: 300px;
+    margin: 3px;
+  }
+  .Sport img {
+    max-width: 100%;
+  }
 }

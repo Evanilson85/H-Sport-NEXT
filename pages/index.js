@@ -63,24 +63,35 @@ export default function Index(){
                         <div className={Styles.novidades}>
                             <h3>Novidades</h3>
                     <div className={Styles.flex}>
-                            <div className={Styles.imagem}>
-                                <div className={Styles.texto}>
-                                    <h2>Natação</h2>
-                                </div>
-                            </div>
-                            
-                        <div className={Styles.imagem2}>
-                            <div className={Styles.texto}>
-                                <h2>Basquete</h2>
-                            </div>
-                        </div>
-                        
-                        <div className={Styles.imagem3}>
-                            <div className={Styles.texto}>
-                                <h2>Tênis</h2>
-                            </div>
+
+
+
+
+                    <div className={Styles.Sport1}>
+                    <div className={Styles.container}>
+    
+                        <img src="imagens/compactados/tenis.jpg" alt="quadea de tenis" className={Styles.image}/>
+                        <div className={Styles.overlay}>
+                            <div className={Styles.text3}>Tenis</div>
                         </div>
                     </div>
+    
+                    <div className={Styles.container1}>
+    
+                        <img src="imagens/compactados/quadra-basquente.jpg" alt="Quadra-basquente" className={Styles.image}/>
+                        <div className={Styles.overlay}>
+                            <div className={Styles.text3}>Basquete</div>
+                        </div>
+    
+                    </div>
+    
+                    <div className={Styles.container2}>
+    
+                        <img src="imagens/compactados/swimmers-79592_1920.jpg" alt="Natação" className={Styles.image}/>
+                        <div className={Styles.overlay}>
+                            <div className={Styles.text3}>Natação</div>
+                        </div>
+                    </div>                
                     <div className={Styles.btn}>
                         <button>
                             <Link href="Cadastro">
@@ -89,8 +100,10 @@ export default function Index(){
                             </button>
                     </div>
                     </div>
-                   </div> 
-                    </main>
+                    </div>
+                    </div>
+                    </div>
+             </main>
 
         <Footer/>
 

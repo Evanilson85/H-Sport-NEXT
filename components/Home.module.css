@@ -136,59 +136,21 @@
     height: 570px;
 }
 .novidades h3{
-    margin: 0px auto 50px;
+    margin: 0px auto 18px;
     color:  #f15000;
     font-size: 35px;
     position: relative;
     top: 25px;
     width: 90%;
 }
-.imagem{
-    background-image: url(../public/imagens/Compactado-mobile/pasta/natação.jpg);  
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 95%;
-    margin: 30px auto;
-}
-.imagem2{
-    background-image: url(../public/imagens/Compactado-mobile/pasta/quadra-basquente.jpg);  
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 95%;
-    margin: 30px auto;
-    background-position: top;
-}    
-.imagem3{
-    background-image: url(../public/imagens/Compactado-mobile/pasta/tenis.jpg);  
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 95%;
-    margin: 30px auto;
-    background-position: bottom;
-}
-.texto,
-.imagem2 .texto,
-.imagem3 .texto{
-    padding:40px;
-    font-family:Arial;
-    text-align:center;
-    color:white;
-    opacity:0;
-    transition: .2s linear;
-    background-color:rgba(255, 60, 0, 0.521);
-    height: 111px;
-}
-.imagem:hover .texto,
-.imagem2:hover .texto,
-.imagem3:hover .texto{
-    opacity:1;
-}
 .btn{
     margin: auto;
-    width: 90%;
+    width: 62%;
 }
 .btn button{
     width: 100%;
+    margin: auto ;
+    
     height: 50px;
     background: #f15000;
     border-radius: 5px;
@@ -204,6 +166,64 @@
 .btn button:hover{
     background-color: rgba(0, 0, 0, 0.479);
 }
+
+
+
+
+.container img,
+.container1 img,
+.container2 img{
+    max-width: 100%;
+}
+.container,
+.container1,
+.container2 {
+  position: relative;
+  width: 60%;
+  margin: 10px auto;
+  
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ba44009d;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay,
+.container1:hover .overlay,
+.container2:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.text3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.flex{
+    margin-top: 40px;
+}
+
+
 
 @media(min-width: 643px){
     
@@ -296,32 +316,21 @@
         top: -36px;
         background-position: center;
     }
-    .imagem{
-        background-image: url(../public/imagens/Compactado-mobile/pasta/natação.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 112px;
-        width: 24%;
-        /* margin: 30px auto; */
-       
-    }
     
-    .imagem2{
-        background-image: url(../public/imagens/Compactado-mobile/pasta/quadra-basquente.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 112px;
-        width: 24%;
-        /* margin: 30px auto; */
-    }
-    .imagem3{
-        background-image: url(../public/imagens/Compactado-mobile/pasta/tenis.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 112px;
-        width: 24%;
-        /* margin: 30px auto; */
-    }
+    .Sport1 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90%;
+        margin: 43px auto 0;
+      }
+      .Sport1 > div{
+        flex: 200px;
+        margin: 10px;
+      }
+      .Sport1 img{
+        max-width: 100%;
+      }
+
     .flex {
         display: flex;
     }
@@ -337,7 +346,26 @@
     .btn {
         margin: auto;
         width: 40%;
-    }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 }
 
 @media(min-width: 1024px){
@@ -420,5 +448,17 @@
         font-size: 19px;
         padding: 10px 20%;
     }
-
+    .Sport1 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90%;
+        margin: 40px auto 0;
+      }
+      .Sport1 > div{
+        flex: 300px;
+        margin: 3px;
+      }
+      .Sport1 img{
+        max-width: 100%;
+      }
 }
