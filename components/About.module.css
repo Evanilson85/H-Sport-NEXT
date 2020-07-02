@@ -236,3 +236,23 @@
     height: auto;
   }
 }
+@media (min-width: 1440px) {
+  .Sport > div {
+    margin: 20px;
+  }
+
+}
+@media (min-width: 1680px) {
+
+  .info p {
+    font-size:1.5em ;
+  }
+  .Sport > div {
+    margin: 50px;
+  }
+}
+@media (min-width: 1920px){
+  .Sport > div {
+    margin: 67px;
+  }
+}

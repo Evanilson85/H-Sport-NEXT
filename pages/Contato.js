@@ -1,12 +1,18 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from '../components/Contato.module.css'
+import Head from "next/head"
 export default function Contato(){
 
 
     return(
 
-        <>
+             <>
+         <Head>
+             <title>Contato_H-Sport</title>
+             <link rel="icon" href="/basketball.png" />
+        </Head>
+
         <header className={styles.top}>
         <Header/>
         </header>

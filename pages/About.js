@@ -2,6 +2,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from "../components/About.module.css"
 import Link from "next/link"
+import Head from "next/head"
 
 
 export default function About(){
@@ -10,7 +11,10 @@ export default function About(){
     return(
 
         <>
-
+            <Head>
+                    <title>Sobre_H-Sport</title>
+                   <link rel="icon" href="/basketball.png" />
+            </Head>
             <header className={styles.headertop}>
                    <Header/>
               </header>

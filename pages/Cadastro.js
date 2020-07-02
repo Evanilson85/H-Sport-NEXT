@@ -5,6 +5,7 @@ import {Cookies} from "react-cookie"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from "../components/Cadastro.module.css"
+import Head from "next/head"
 export default function Cadastro(){
 
 
@@ -36,6 +37,13 @@ export default function Cadastro(){
 
     return(
         <>
+
+            <Head>
+                    <title>Cadastro_H-Sport</title>
+                   <link rel="icon" href="/basketball.png" />
+            </Head>
+
+
                <section className={styles.top}>
 
                 <Header/>
