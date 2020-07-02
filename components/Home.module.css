@@ -17,9 +17,7 @@
 .title{
     height: 190px;
     background-color: black;
-  /*  background-image: linear-gradient(red, yellow); */
-  margin-bottom: 0;
-
+    margin-bottom: 0;
 }
 .title h1{
     color: #fff;  
@@ -64,7 +62,6 @@
     text-align: center;
     position: relative;
     top: 322px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
@@ -75,7 +72,6 @@
     top: -53px;
     height: auto;
     margin-top: 135%;
-
 }
 .sport {
     background-image: url(../public/imagens/Compactado-mobile/tema3.jpg);
@@ -92,7 +88,7 @@
 .text p{
     width: 50%;
     position: relative;
-    top: 235px;
+    top: 211px;
     left: 25px;
     color: rgba(255, 255, 255, 0.98);
     line-height: 1.5;
@@ -111,7 +107,6 @@
 }
 .new .text-2{
     height: 540px;
-
 }
 .new .text-2 p{
     color: rgba(255, 255, 255, 0.98);
@@ -130,7 +125,6 @@
     text-align: center;
 }
 .novidades{
-   
     position: relative;
     top: -36px;
     height: 570px;
@@ -150,7 +144,6 @@
 .btn button{
     width: 100%;
     margin: auto ;
-    
     height: 50px;
     background: #f15000;
     border-radius: 5px;
@@ -161,15 +154,10 @@
     text-decoration: none;
     font-size: 19px;
     padding: 5px 25%;
-    
 }
 .btn button:hover{
     background-color: rgba(0, 0, 0, 0.479);
 }
-
-
-
-
 .container img,
 .container1 img,
 .container2 img{
@@ -180,15 +168,13 @@
 .container2 {
   position: relative;
   width: 60%;
-  margin: 10px auto;
-  
+  margin: 10px auto; 
 }
 .image {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .overlay {
   position: absolute;
   bottom: 100%;
@@ -200,14 +186,12 @@
   height:0;
   transition: .5s ease;
 }
-
 .container:hover .overlay,
 .container1:hover .overlay,
 .container2:hover .overlay{
   bottom: 0;
   height: 100%;
 }
-
 .text3 {
   color: white;
   font-size: 20px;
@@ -222,11 +206,7 @@
 .flex{
     margin-top: 40px;
 }
-
-
-
-@media(min-width: 643px){
-    
+@media(min-width: 643px){    
     .body {
         padding: 0%;
         margin: 0%;
@@ -246,14 +226,11 @@
         background-color: black;
         margin-bottom: 0;
     }
-
-   
     .title h1 {
         top: -4px;
         width: 46%;
         margin: 0 50%;
     }
-
     .title b {
         color: #ff6002;
     }
@@ -283,7 +260,6 @@
         width: 50%;
         margin: 0 0;
     }
-    
     .sport {
             background-image: url(../public/imagens/compactados/home.jpg);
             background-repeat: no-repeat;
@@ -293,8 +269,6 @@
             top: -21px;
             background-position: center;
     }
-    
-    
     .text p {
         width: 50%;
         position: relative;
@@ -316,21 +290,19 @@
         top: -36px;
         background-position: center;
     }
-    
     .Sport1 {
         display: flex;
         flex-wrap: wrap;
         max-width: 90%;
         margin: 43px auto 0;
-      }
-      .Sport1 > div{
+    }
+    .Sport1 > div{
         flex: 200px;
         margin: 10px;
-      }
-      .Sport1 img{
+    }
+    .Sport1 img{
         max-width: 100%;
-      }
-
+    }
     .flex {
         display: flex;
     }
@@ -344,32 +316,11 @@
         margin-top: 61%;
     }
     .btn {
-        margin: auto;
+        margin: 20px auto;
         width: 40%;
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 }
-
 @media(min-width: 1024px){
-
     .body {
         padding: 0%;
         margin: 0%;
@@ -390,14 +341,11 @@
         position: relative;
         bottom: -61px;
         height: 565px;
-        
-    
     }
     .title h1 {
         top: 294px;
         width: 46%;
     }
-
     .club h2 {
         color: #ff6002;
         margin: 20px 0 0 50px;
@@ -411,7 +359,6 @@
         height: 215px;
         top: 210px;
     }
-
     .club {
         background-image: url(../public/imagens/wave\ .svg);
         background-repeat: no-repeat;
@@ -421,16 +368,14 @@
         position: relative;
         top: 40px;
     }
-
     .welcome {
-    background-color: #10101000;
-    height: 694px;
-    display: flex;
+        background-color: #10101000;
+        height: 694px;
+        display: flex;
     }
-
     .text{
         background-color: rgba(0, 0, 0, 0.2);
-    height: 569px;
+        height: 569px;
     }
     .welcome img{
         max-width: 50%;
@@ -441,6 +386,11 @@
         /* top: 650px; */
         height: auto;
         margin-top: 55%;
+        margin-bottom: 40px;
+    }
+    .btn {
+        margin: 20px auto;
+        width: 40%;
     }
     .btn button a {
         color: white;
@@ -453,12 +403,108 @@
         flex-wrap: wrap;
         max-width: 90%;
         margin: 40px auto 0;
-      }
-      .Sport1 > div{
+    }
+    .Sport1 > div{
         flex: 300px;
         margin: 3px;
-      }
-      .Sport1 img{
+    }
+    .Sport1 img{
         max-width: 100%;
-      }
+    }
+}
+@media(min-width:1440px){
+    .novidades {
+        height: 408px;
+    }
+    .meio{
+        margin-top: 45%;
+    }
+    .club{
+        height: 240px;
+    }
+    .title h1 {
+        background-color: #242a31a6;
+    }
+}
+@media(min-width:1680px){
+    .top{
+        height: 800px;
+    }
+    .club{
+        top: 215px;
+    }
+    .title{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .new {
+        background-image: url(../public/imagens/compactados/menu.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 550px;
+        position: relative;
+        top: -36px;
+        background-position: inherit;
+    }
+    .new .text-2 p{
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.3em;
+        width: 27%;
+        margin: 15px 0 15px 58%;
+        position: relative;
+        top: 63px;
+        text-align: end;
+        color: #f15000;
+    }
+    .sport{
+        background-size: contain;
+        height: 570px;
+        position: relative;
+        top: -21px;
+        background-position: right;
+    }
+    .text{
+        background-color:rgba(0, 0, 0, 0) ;
+    }
+    .text p{
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.3em;
+        width: 27%;
+        left: 10%;
+        position: relative;
+        top: 63px;
+        text-align: end;
+        color: #f15000;
+    }
+    .welcome img{
+        max-width: 36%;
+    }
+}
+@media(min-width:1920px){
+    .top{
+        height: 915px;
+    }
+    .title h1 {
+        top: 500px;
+    }
+    .welcome{
+        margin-top: 94px;
+    }
+    .welcome h2{
+        margin: 139px 0 0 50px;
+    }
+    .club{
+        height: 288px;
+    }
+    .novidades{
+        height: 507px;
+    }
+    .novidades h3{
+        font-size: 4em;
+    }
 }

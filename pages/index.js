@@ -92,6 +92,8 @@ export default function Index(){
                             <div className={Styles.text3}>Natação</div>
                         </div>
                     </div>                
+                </div>
+            </div>
                     <div className={Styles.btn}>
                         <button>
                             <Link href="Cadastro">
@@ -99,10 +101,8 @@ export default function Index(){
                             </Link>
                             </button>
                     </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
+         </div>
+     </div>
              </main>
 
         <Footer/>
