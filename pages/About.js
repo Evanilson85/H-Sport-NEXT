@@ -25,11 +25,29 @@ export default function About(){
                                     H-Sport
                                 </h1>
                                 <hr className={styles.row}/>
+                                <div className={styles.planos}>
                                 <p>
                                      
                                     Para amantes do esportes, que também gostam de reunir com amigos para se divertir, em um ambiente agradável e familiar, você está no lugar certo.<br/>
                                     A H-Sport é um dos principais clubes de esportes da região por ser conhecida pela seu diversificados esportes. Aqui temos Futebol, Natação, Basquete, Volei e Tenis e com os melhores preços.
                                 </p>
+
+                                    <div className={styles.plano1}>
+                                        <h2>Plano-mensal</h2>
+                                        <p>Por Apenas <b>39,90</b> você e os seus amigos pode aproveitar o maximo da diversão com direito a
+                                            todos os esportes disponiveis aqui na H-Sport.</p>
+
+
+
+                                        <div className={styles.b}>
+                                            <button  className={styles["btn-aluguel"]}>
+                                            <Link href="Cadastro">
+                                                    <a>Alugar</a>
+                                            </Link>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    </div>
                                 <div className={styles.Sport}>
                                 <div className={styles.container}>
 
@@ -83,27 +101,8 @@ export default function About(){
                                 </div>
                                 </div>
 
-                                <div className={styles.planos}>
-
-                            <div className={styles.plano1}>
-                                <h2>Plano-mensal</h2>
-                                <p>Por Apenas <b>39,90</b> você e os seus amigos pode aproveitar o maximo da diversão com direito a
-                                    todos os esportes disponiveis aqui na H-Sport.</p>
-
                             
-
-                                <div className={styles.b}>
-                                    <button  className={styles["btn-aluguel"]}>
-                                    <Link href="Cadastro">
-                                             <a>Alugar</a>
-                                      </Link>
-                                    </button>
-                                </div>
-                            </div>
-                            
-
-
-                            <div className={styles.plano2}>
+{/*  <div className={styles.plano2}>
                                 <h2>Plano-Anual</h2>
 
                                 <p>O nosso plano Anual tem muitas vantagens, você tem os mesmo direitos do plano-mensal e alem disso
@@ -119,8 +118,11 @@ export default function About(){
                                       </Link>
                                      </button>
                                 </div>
-                            </div>
-                            </div>
+                                  </div>
+                            </div> */} 
+
+                          
+                            
 
                                 </main>
 

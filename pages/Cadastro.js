@@ -26,7 +26,7 @@ export default function Cadastro(){
 
         axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/users`, valor).then(res => {
                    
-            alert(`Olá ${res.data.name} seus dados foi cadastrado`)
+            alert(`Olá ${res.data.name} seus dados foram cadastrado, acesse seu email de cadastro`)
             window.location.href=("/admin")
         }).catch(err => alert("Infelizmente algo deu errado", err)
         )
@@ -66,7 +66,7 @@ export default function Cadastro(){
                     <form action="" onSubmit={formLogin} className={styles["for-cadastro"]}>
 
                         <h2>Nome</h2>  
-                        <input type="text" name="name" id={styles.name} placeholder="Nome Completo" onFocus={focarlogin} onChange={focarlogin}/>
+                        <input type="text" name="name" id={styles.name} placeholder="Nome" onFocus={focarlogin} onChange={focarlogin}/>
 
                         <h2>Email</h2>
                         <input type="email" name="email" id={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
