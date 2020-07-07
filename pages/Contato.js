@@ -16,7 +16,7 @@ export default function Contato(){
         <header className={styles.top}>
         <Header/>
         </header>
-        <main>
+        <main className={styles.meio1}>
 
             <form action="" className={styles.formulario}>
 
@@ -27,7 +27,7 @@ export default function Contato(){
                 <input type="email" name="email" id={styles.email} placeholder="Email"/>
 
                 <h2>Telefone</h2>
-                <input type="tel" name="Telefone" id={styles.Telefone} placeholder="Ligamos para qual Numero ?"/>
+                <input type="tel" name="Telefone" id={styles.Telefone} placeholder="Ligamos para qual Número ?"/>
 
                 
                 <label for="Mensagem"><h2>Mensagem</h2></label>
@@ -37,8 +37,20 @@ export default function Contato(){
                 <input type="submit" value="Enviar" id={styles.btn}/>
                 </div>
             </form>
+            <div className={styles.maps1}>
 
-           
+            <h2>Localização</h2>  
+            <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+            <style jsx>
+            {`.maps{
+               width:600;
+                height:"450"; frameborder:"0"; style:"border:0"; allowfullscreen=""; aria-hidden="false" tabindex="0"
+            }
+          
+            
+           `}
+            </style>
         </main>
 
         <Footer/>

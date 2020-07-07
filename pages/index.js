@@ -48,14 +48,14 @@ export default function Index(){
                    
                     <div className={Styles.sport}>
                         <div className={Styles.text}>
-                            <p>Já imaginou estar em um lugar onde você e os seus amigos possam se divertir por tempo ilimitado...
+                            <p>Já imaginou estar em um lugar onde você e a amigos possam divertir por tempo ilimitado ?
                             </p>
                         </div>
                     </div>
                     <div className={Styles.new}>
                         
                         <div className={Styles["text-2"]}>
-                            <p>... Ou melhor, treinar o seu Esporte favorito com a nossa equipe de profissionais e
+                            <p>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais
                                 qualificados.
                                 Temos os Melhores Campos para sua Diversão.</p>
                             </div>

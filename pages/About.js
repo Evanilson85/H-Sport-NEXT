@@ -28,14 +28,14 @@ export default function About(){
                                 <div className={styles.planos}>
                                 <p>
                                      
-                                    Para amantes do esportes, que também gostam de reunir com amigos para se divertir, em um ambiente agradável e familiar, você está no lugar certo.<br/>
-                                    A H-Sport é um dos principais clubes de esportes da região por ser conhecida pela seu diversificados esportes. Aqui temos Futebol, Natação, Basquete, Volei e Tenis e com os melhores preços.
+                                    Para amantes de esportes, e também gosta de reunir com amigos para se divertir, em um ambiente agradável e familiar, está no lugar certo.<br/>
+                                    H-Sport é um dos principais clubes da região por ser conhecida por seus diversificados esportes. Aqui temos Futebol, Natação, Basquete, Vôlei e Tênis, com os melhores preços.
                                 </p>
 
                                     <div className={styles.plano1}>
                                         <h2>Plano-mensal</h2>
-                                        <p>Por Apenas <b>39,90</b> você e os seus amigos pode aproveitar o maximo da diversão com direito a
-                                            todos os esportes disponiveis aqui na H-Sport.</p>
+                                        <p>Por Apenas <b>39,90</b> você e os seus amigos podem aproveitar o máximo da diversão com direito a
+                                            todos os esportes Disponíveis aqui na H-Sport.</p>
 
 
 
