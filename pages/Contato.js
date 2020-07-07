@@ -2,8 +2,34 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from '../components/Contato.module.css'
 import Head from "next/head"
+import axios from "axios"
+import React, {useState} from "react"
+
 export default function Contato(){
 
+    const[valor, setValor] = useState({name:"",email:'',message:""})
+
+    const focarlogin = e => {
+
+        const {name, value} = e.target
+
+        setValor({...valor,[name]:value})
+        console.log(name,value)
+    }
+
+    const msm = e =>{
+
+        e.preventDefault()
+        //e.preventDefault() 
+        axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/users/contact`, valor).then(res => {
+                   
+            alert(`Olá ${res.data.name} sua messagem foi enviada com sucesso`)
+           // window.location.href=("/Contato") ///admin/users vou deixar para ir para a pagina de contato
+        }).catch(err => alert("Infelizmente algo deu errado no envio", err)
+        )
+        
+
+    }
 
     return(
 
@@ -18,21 +44,21 @@ export default function Contato(){
         </header>
         <main className={styles.meio1}>
 
-            <form action="" className={styles.formulario}>
+            <form action="" className={styles.formulario} onSubmit={msm}>
 
                 <h2>O seu nome</h2>  
-                <input type="text" name="name" id={styles.name} placeholder="Nome"/>
+                <input type="text" name="name" id={styles.name} placeholder="Nome" onFocus={focarlogin} onChange={focarlogin}/>
 
                 <h2>O seu email</h2>
-                <input type="email" name="email" id={styles.email} placeholder="Email"/>
+                <input type="email" name="email" id={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
 
                 <h2>Telefone</h2>
-                <input type="tel" name="Telefone" id={styles.Telefone} placeholder="Ligamos para qual Número ?"/>
+                <input type="tel" name="telefone" id={styles.Telefone} placeholder="Ligamos para qual Número ?" onFocus={focarlogin} onChange={focarlogin}/>
 
                 
                 <label for="Mensagem"><h2>Mensagem</h2></label>
 
-                <textarea name="Mensagem" id={styles.Mensagem} cols="10" rows="10" placeholder="Sua Mensagem"></textarea>
+                <textarea name="message" id={styles.Mensagem} cols="10" rows="10" placeholder="Sua Mensagem" onFocus={focarlogin} onChange={focarlogin}></textarea>
             <div>
                 <input type="submit" value="Enviar" id={styles.btn}/>
                 </div>

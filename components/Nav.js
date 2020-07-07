@@ -2,9 +2,12 @@ import LinkItem from "./LinkItem"
 import Link from "next/link"
 import styles from "./Nav.module.css"
 import LinkIntem from "./LinkItem"
+import Modal from "./Modal"
+import React, { useState } from "react"
 
 export default function Nav(props){ // se eu quero usar uma informaçao de componente uso props
 
+    const [isModalVisible, setIsModalVisible] = useState(false)
     const LinkMenu = (itens) => (
 
             <li>
@@ -15,6 +18,7 @@ export default function Nav(props){ // se eu quero usar uma informaçao de compo
 
     )
 
+    
 return(
 
     
@@ -29,6 +33,7 @@ return(
               ))
               }
 
+            
             </ul>
         </nav>
        

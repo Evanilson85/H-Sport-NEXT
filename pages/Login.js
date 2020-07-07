@@ -25,7 +25,7 @@ export default function Login(){
     const enviar = e =>{
 
         e.preventDefault()
-        console.log("enviou o login")
+        //console.log("enviou o login")
 
         axios.post('https://hcode-lab-adonis-hsport.herokuapp.com/auths', valor).then(
             (res)=>{
