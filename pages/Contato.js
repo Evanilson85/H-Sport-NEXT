@@ -21,7 +21,7 @@ export default function Contato(){
 
         e.preventDefault()
         //e.preventDefault() 
-        axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/contact`, valor).then(res => {
+        axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/admin/contact`, valor).then(res => {
                    
             alert(`Olá ${res.data.name} sua messagem foi enviada com sucesso`)
            // window.location.href=("/Contato") ///admin/users vou deixar para ir para a pagina de contato
