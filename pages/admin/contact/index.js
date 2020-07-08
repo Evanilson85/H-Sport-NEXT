@@ -12,7 +12,7 @@ const config = {
     header: {Authorization: `Bearer ${token}`}
 }
 
-const serverURL = 'https://hcodelab-hamburgueria.herokuapp.com'
+const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Index(props) {
 

@@ -12,7 +12,7 @@ const config = {
     header: {Authorization: `Bearer ${token}`}
 }
 
-const serverURL = 'https://hcodelab-hamburgueria.herokuapp.com'
+const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Index(props) {
 
@@ -27,14 +27,17 @@ export default function Index(props) {
 
                 {users.map(user => (
 
-                    <Card  key={user.id}> {/* Poderemos fazer essa refatoração depois */}
+                    <Card  key={user.id}>
 
                         <div className={styles['user-info']}>
 
                             <div className={styles['user-data']}>
 
-                                <h2>{user.username}</h2>
+                                <h2>{user.name}</h2>
 
+                                <p>{user.email}</p>
+
+                                
                             </div>
 
                         </div>

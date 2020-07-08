@@ -5,10 +5,12 @@ import axios from 'axios'
 import { Cookies } from 'react-cookie'
 import { handleAuthSSR } from '../../utils/auth'
 
-export default function Index(props) {
 
+
+export default function Index(props) {
+    
     const cookies = new Cookies()
-    const serverUrl = 'https://hcodelab-hamburgueria.herokuapp.com'
+    const serverUrl = 'https://localhost:3333'
 
     return (
         <Layout>

@@ -2,7 +2,7 @@ import styles from './Button.module.css'
 import Router from 'next/router'
 import axios from 'axios'
 
-const serverURL = 'https://hcodelab-hamburgueria.herokuapp.com'
+const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Button(props) {
     
@@ -15,7 +15,7 @@ export default function Button(props) {
                 break;
             case 'save':
 
-                await  axios.put(`${serverURL}/admin/users/${props.id}`, props.values)
+               // await  axios.put(`${serverURL}/admin/users/${props.id}`, props.values)
 
                 console.log('Salvando Alterações')
                 break;
