@@ -10,7 +10,7 @@ import { handleAuthSSR } from '../../utils/auth'
 export default function Index(props) {
     
     const cookies = new Cookies()
-    const serverUrl = 'https://localhost:3333'
+    const serverUrl = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
     return (
         <Layout>

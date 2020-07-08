@@ -14,7 +14,8 @@ const config = {
 
 const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
-export default function Index(props) {
+
+export default function Contacts(props) {
 
     const users = props.users;
     
@@ -27,7 +28,7 @@ export default function Index(props) {
 
             <section className={styles.users}>
 
-                {users.map(user => (
+                {  users.map(user => (
                     
                     <Card  key={user.id}> {/* Poderemos fazer essa refatoração depois */}
 
@@ -37,11 +38,11 @@ export default function Index(props) {
 
                                 <h2>{user.name}</h2>
                                 <p>{user.email}</p>
-                                <p>{user.phone}</p>
+                              <p>{user.message}</p>
                             </div>
 
                         </div>
-                        <Button id={user.id} action="edit">Editar</Button>
+                     
                     </Card>
 
                 ))}
@@ -52,9 +53,9 @@ export default function Index(props) {
 
 }
 
-Index.getInitialProps = async (ctx) => {
+Contacts.getInitialProps = async (ctx) => {
     let users =[]
-    users = await axios.get(`${serverURL}/admin/contato`, config)
+    users = await axios.get(`${serverURL}/admin/contact`, config)
 
     return {
         "users": users.data

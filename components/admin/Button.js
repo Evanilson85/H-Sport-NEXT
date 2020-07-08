@@ -2,41 +2,41 @@ import styles from './Button.module.css'
 import Router from 'next/router'
 import axios from 'axios'
 
-const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
-
 export default function Button(props) {
-    
-    const handleClik = async (e) => {
 
-        switch (props.action) {
+    const handleClick = async (e) => {
 
-            case 'edit':
+        switch(props.action){
+
+            case "edit":
                 Router.push(`/admin/users/${props.id}`)
                 break;
-            case 'save':
+            case "save" :
 
-               // await  axios.put(`${serverURL}/admin/users/${props.id}`, props.values)
+           await axios.put(`http://hcode-lab-adonis-hsport.herokuapp.com/admin/users/${props.id}`, props.values) 
 
-                console.log('Salvando Alterações')
+                console.log('Salvando alterações')
                 break;
-            case 'savePass':
-                console.log('Alterando Senha')
-                break;
-            case 'changePhoto':
-                console.log('Alterando a foto')
-                break;
+            case "savePass":
 
+            await axios.put(`http://hcode-lab-adonis-hsport.herokuapp.com/admin/users/${props.id}`, props.values)                
+                
+                console.log('Salvando a senha')
+                break;
+            case "changePhoto":
+                console.log('alterando a foto')
+                break;
         }
+
     }
 
-    if (props.action != "changePhoto"){
+    if(props.action != "changePhoto"){
         return (
-            <button className={styles.button} onClick={handleClik}>{props.children}</button>
+            <button className={styles.button} onClick={ handleClick }>{props.children}</button>
         )
-    } else {
+    }else{
         return (
             <input type='file' name='file' className={styles.button} />
         )
     }
-    
 }

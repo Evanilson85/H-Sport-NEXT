@@ -19,10 +19,10 @@ const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Users(props) {
 
-    let date_at = new Date(props.user.birth_at).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
+    let date_at = new Date(props.user.data).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
 
     const [values, setValues] = useState({name: props.user.name, email: props.user.email, password: props.user.password, 
-                                          birth_at: date_at, level: props.user.level, photo: props.user.photo
+                                          data: date_at, level: props.user.level, photo: props.user.photo
                                         })
     
     let [nameInput, setNameInput] = useState('')                                        
@@ -110,7 +110,7 @@ export default function Users(props) {
 
                         <input type="email" placeholder="E-mail" defaultValue={values.email} name="email" onBlur={handleInputBlur}/>
 
-                        <input type="date" placeholder="Data de Nascimento" defaultValue={values.birth_at} name="birth_at" onBlur={handleInputBlur}/>
+                        <input type="date" placeholder="Data de Nascimento" defaultValue={values.data} name="data" onBlur={handleInputBlur}/>
 
                     </form>
 

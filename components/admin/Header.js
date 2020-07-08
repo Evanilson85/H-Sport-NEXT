@@ -56,11 +56,11 @@ export default function Header({ onMenuToggle }) {
 
                         <img src="../../assets/images/user-profile-photo.png" className={styles['user-photo']} />
 
-                        <h2>João Rangel</h2>
+                        <h2>HSort</h2>
 
-                        <p>joaohcrangel@gmail.com</p>
+                        <p>sporth823@gmail.com</p>
 
-                        <a href="#">Editar meus dados</a>
+                        {/*<a href="#">Editar meus dados</a>*/}
                     
                     </div>
 
@@ -74,10 +74,7 @@ export default function Header({ onMenuToggle }) {
                             <Link href="/admin/contact"><a><img src="../../assets/images/icon-contacts.svg" />Contatos</a></Link>
                         </li>
 
-                        <li className={styles.link}>
-                            <Link href="/admin/cardapio"><a><img src="../../assets/images/icon-contacts.svg" />Cardapio</a></Link> 
-                        </li>
-
+                
                         <li className={styles.link}>
                             <Link href="/"><a><img src="../../assets/images/icon-logout.svg" />Sair</a></Link>
                         </li>
