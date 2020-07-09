@@ -22,7 +22,7 @@ export default function Header({ onMenuToggle }) {
     return (
         <header id={styles.header} className={menuOpened ? styles.open : ''}>
 
-            <hr className={styles.italy} />
+           
 
             <div className={styles.logo}>
 
@@ -54,7 +54,7 @@ export default function Header({ onMenuToggle }) {
 
                     <div className={styles['user-info']}>
 
-                        <img src="../../assets/images/user-profile-photo.png" className={styles['user-photo']} />
+                        <img src="../../usuario.png" className={styles['user-photo']} />
 
                         <h2>HSort</h2>
 
@@ -67,16 +67,16 @@ export default function Header({ onMenuToggle }) {
                     <ul className={styles.links}>
 
                         <li className={styles.link}>
-                            <Link href="/admin/users"><a><img src="../../assets/images/icon-users.svg" />Usuários</a></Link>
+                            <Link href="/admin/users"><a><img src="../../icon-users.svg" />Usuários</a></Link>
                         </li>
 
                         <li className={styles.link}>
-                            <Link href="/admin/contact"><a><img src="../../assets/images/icon-contacts.svg" />Contatos</a></Link>
+                            <Link href="/admin/contact"><a><img src="../../icon-contacts.svg" />Contatos</a></Link>
                         </li>
 
                 
                         <li className={styles.link}>
-                            <Link href="/"><a><img src="../../assets/images/icon-logout.svg" />Sair</a></Link>
+                            <Link href="/admin"><a><img src="../../icon-logout.svg" />admin</a></Link>
                         </li>
 
                     </ul>

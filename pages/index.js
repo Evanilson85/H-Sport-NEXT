@@ -15,6 +15,7 @@ export default function Index(){
             <Head>
                     <title>H-Sport</title>
                    <link rel="icon" href="/basketball.png" />
+                   <meta name="description" content="Hsport é um club para a sua diversão"/>
             </Head>
             <header className={Styles.top}>
 

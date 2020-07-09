@@ -2,7 +2,10 @@
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
-    background-color: grey;
+  
+    background-color: #0000000f;
+    border: 2px solid #ff6002;
+    /* color: #ff6002; */
 }
 
 .card-content {

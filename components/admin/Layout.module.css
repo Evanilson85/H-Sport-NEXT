@@ -1,8 +1,11 @@
 .content {
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     display: block;
     overflow: auto;
+}
+.main h1{
+    color: #ff6002;
 }
 .main {
     padding-top: 20px;
