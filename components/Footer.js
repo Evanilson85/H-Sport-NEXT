@@ -7,7 +7,7 @@ export default function Footer(){
         <footer className={styles.rodape}>
             <hr className={styles.row}/>
                 <div className={styles["Footer-logo"]}>
-                    <img src="imagens/Logo/13034__2_-removebg-preview (2).png" alt="Logo"/>
+                    <img src="imagens/Logo/13034__2_-removebg-preview-_2_.ico" alt="Logo"/>
     
                     <div className={styles.Endereco}>
                         <h6>Endereço</h6>

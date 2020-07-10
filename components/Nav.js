@@ -26,7 +26,7 @@ return(
         <nav className={`${styles.menu} ${styles[props.isOpen]}`} >
             <ul className={styles.ul}>
           
-                 <img src="imagens/Logo/13034__2_-removebg-preview (2).png" alt="Logo"/>
+                 <img src="imagens/Logo/13034__2_-removebg-preview-_2_.ico" alt="Logo"/>
               
               {LinkIntem.map( item => (
                   <LinkMenu key={item.id} link={item.link} label={item.label}/>
