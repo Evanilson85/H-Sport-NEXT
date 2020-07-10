@@ -1,8 +1,8 @@
 import styles from './Button.module.css'
-import Router from 'next/router'
+import Route from 'next/router'
 import axios from 'axios'
 
-const serverURL = 'https://hcodelab-hamburgueria.herokuapp.com'
+const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Button(props) {
     
@@ -10,33 +10,23 @@ export default function Button(props) {
 
         switch (props.action) {
 
-            case 'edit':
-                Router.push(`/admin/contact/${props.id}`)
+            case 'delete':
+                await 
+                 axios.delete(`${serverURL}/admin/contact/${props.id}`, props.values)
+                alert("Mensagem Apagada com sucesso")
+                window.location.href=("/admin/contact")
                 break;
-            case 'save':
-
-                await  axios.put(`${serverURL}/admin/contato/${props.id}`, props.values)
-
-                console.log('Salvando Alterações')
-                break;
-            case 'savePass':
-                console.log('Alterando Senha')
-                break;
-            case 'changePhoto':
-                console.log('Alterando a foto')
-                break;
+               /* case 'delete':
+                Route.delete(`${serverURL}/admin/contact/${props.id}`)
+                break;*/
 
         }
     }
 
-    if (props.action != "changePhoto"){
+    if (props.action == "delete"){
         return (
-            <button className={styles.button} onClick={handleClik}>{props.children}</button>
+            <button className={styles.delete} onClick={handleClik}>{props.children}</button>
         )
-    } else {
-        return (
-            <input type='file' name='file' className={styles.button} />
-        )
-    }
+    } 
     
 }

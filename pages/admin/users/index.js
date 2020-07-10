@@ -3,6 +3,7 @@ import HeaderTitle from '../../../components/admin/HeaderTitle'
 import styles from '../../../components/admin/Home.module.css'
 import Card from '../../../components/admin/Card'
 import Button from '../../../components/admin/Button'
+import Delete from '../../../components/admin/ButtonContact'
 import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
@@ -45,6 +46,9 @@ export default function Index(props) {
             
                         </div>
                         <Button id={user.id} action="edit">Editar</Button>
+                      
+                        <Delete id={user.id} action="delete">Excluir</Delete>
+                        
                     </Card>
 
                 ))}

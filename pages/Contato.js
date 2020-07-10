@@ -23,7 +23,7 @@ export default function Contato(){
         //e.preventDefault() 
         axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/admin/contact`, valor).then(res => {
                    
-            alert(`Olá ${res.data.name} sua messagem foi enviada com sucesso`)
+            alert(`Olá ${res.data.name} sua messagem foi enviada com sucesso, em breve entramos em contato`)
            // window.location.href=("/Contato") ///admin/users vou deixar para ir para a pagina de contato
         }).catch(err => alert("Infelizmente algo deu errado no envio, verifique se preencheu todos os campos", err)
         )

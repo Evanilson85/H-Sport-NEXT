@@ -2,6 +2,8 @@ import styles from './Button.module.css'
 import Router from 'next/router'
 import axios from 'axios'
 
+const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
+
 export default function Button(props) {
 
     const handleClick = async (e) => {
@@ -13,13 +15,14 @@ export default function Button(props) {
                 break;
             case "save" :
 
-           await axios.put(`http://hcode-lab-adonis-hsport.herokuapp.com/admin/users/${props.id}`, props.values) 
-
+           await axios.put(`${serverURL}/admin/usuario/${props.id}`, props.values) 
+           alert("Alterado com sucesso")
+           
                 console.log('Salvando alterações')
                 break;
             case "savePass":
 
-            await axios.put(`http://hcode-lab-adonis-hsport.herokuapp.com/admin/users/${props.id}`, props.values)                
+            await axios.put(`${serverURL}/admin/users/${props.id}`, props.values)                
                 
                 console.log('Salvando a senha')
                 break;

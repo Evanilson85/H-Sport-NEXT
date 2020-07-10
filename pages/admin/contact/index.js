@@ -36,8 +36,7 @@ export default function Contacts(props) {
 
                 {  users.map (user => (
                     
-                    <Card  key={user.id}> {/* Poderemos fazer essa refatoração depois */}
-
+                    <Card  key={user.id}>
                         <div className={styles['user-info']}>
 
                             <div className={styles['user-data']}>
@@ -52,7 +51,7 @@ export default function Contacts(props) {
                             </div>
 
                         </div>
-                     
+                        <Button id={user.id} action="delete">Excluir</Button>
                     </Card>
 
                 ))}

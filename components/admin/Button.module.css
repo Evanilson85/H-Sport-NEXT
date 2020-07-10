@@ -6,4 +6,25 @@
     border: 1px solid green;
     border-radius: 4px;
     padding: 16px;
+    margin: 10px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(84, 160, 8);
+    color: white;
+}
+.delete {
+    border: none;
+    background: white;
+    text-transform: uppercase;
+    color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 10px;
+}
+.delete:hover{
+    cursor: pointer;
+    background-color: rgb(255, 30, 0);
+    color: white;
 }
