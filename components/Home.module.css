@@ -4,7 +4,7 @@
     height: 3009px;
 }
 .top{
-    background-image: url(../public/imagens/Compactado-mobile/header-home.jpg);
+    background-image: url(../public/imagens/Compactado-mobile/header-home.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -261,7 +261,7 @@
         margin: 0 0;
     }
     .sport {
-            background-image: url(../public/imagens/compactados/header-home.webp);
+            background-image: url(../public/imagens/compactados/home.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             height: 570px;
