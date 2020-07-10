@@ -6,7 +6,7 @@ import { Cookies } from 'react-cookie'
 import { handleAuthSSR } from '../../utils/auth'
 import styles from '../../components/admin/admin.module.css'
 import Link from 'next/link'
-
+import Head from "next/head"
 export default function Index(props) {
     
     const cookies = new Cookies()
@@ -14,6 +14,10 @@ export default function Index(props) {
 
     return (
         <>
+         <Head>
+             <title>Admin_H-Sport</title>
+             <link rel="icon" href="/basketball.png" />
+        </Head>
             <div className={header.header1}></div>
 
             <HeaderTitle text="Área administrativa da Hsport" />
@@ -36,7 +40,7 @@ export default function Index(props) {
                     <div className={styles.container}>
 
                         <div className={styles.img1}>
-                            <img src="msm.jpg" alt="mensagem"/>
+                            <img src="msm-.png" alt="mensagem"/>
                         </div>
                         <div className={styles.btn1}>
                         <Link href="/admin/contact"><a>
@@ -48,7 +52,7 @@ export default function Index(props) {
                     <div className={styles.container}>
 
                         <div className={styles.img1}>
-                            <img src="usuario.png" alt="sair"/>
+                            <img src="sair.png" alt="sair"/>
                         </div>
                         <div className={styles.btn1}>
                         <Link href="/"><a>

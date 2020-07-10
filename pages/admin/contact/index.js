@@ -5,6 +5,7 @@ import Button from '../../../components/admin/ButtonContact'
 import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
+import Head from "next/head"
 
 const cookies = new Cookies()
 const token = cookies.get('token')
@@ -24,6 +25,10 @@ export default function Contacts(props) {
     return (
         
         <Layout>
+        <Head>
+             <title>Contact_H-Sport</title>
+             <link rel="icon" href="/basketball.png" />
+        </Head>
 
             <HeaderTitle text="Contatos" />
 

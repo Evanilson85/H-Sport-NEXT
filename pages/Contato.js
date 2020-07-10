@@ -25,7 +25,7 @@ export default function Contato(){
                    
             alert(`Olá ${res.data.name} sua messagem foi enviada com sucesso`)
            // window.location.href=("/Contato") ///admin/users vou deixar para ir para a pagina de contato
-        }).catch(err => alert("Infelizmente algo deu errado no envio", err)
+        }).catch(err => alert("Infelizmente algo deu errado no envio, verifique se preencheu todos os campos", err)
         )
         
 

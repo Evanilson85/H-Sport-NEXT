@@ -34,11 +34,11 @@ export default function Index(props) {
 
                             <div className={styles['user-data']}>
 
-                                <h2>{user.name}</h2>
-                                
-                                <p>{user.email}</p>
-
-                                <p>{user.data}</p>
+                                <h2>Nome: <b>{user.name}</b></h2>
+                                <hr/>
+                                <p>Email: <b>{user.email}</b></p>
+                                <hr/>
+                                <p>Nascimento: <b>{user.data}</b></p>
 
                             </div>
 
