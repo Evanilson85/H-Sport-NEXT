@@ -44,7 +44,7 @@ export default function Footer(){
         <hr className={styles.row2} />
        
         <div className={styles.banner}>
-            <h5>Todos os Direitos reservados 2020 / <a href="/Direitos">POLITICA DE PRIVANCIDADE</a></h5>
+            <h5>Todos os Direitos reservados 2020 / <a href="/Direitos">POLITICA DE PRIVANCIDADE </a></h5>
         </div>
     </footer>
     
