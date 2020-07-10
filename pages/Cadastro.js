@@ -24,7 +24,7 @@ export default function Cadastro(){
 
         e.preventDefault() 
 
-        axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/users`, valor).then(res => {
+        axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/usuario`, valor).then(res => {
                    
             alert(`Olá ${res.data.name} seus dados foram cadastrado, acesse seu email de cadastro`)
             window.location.href=("/Contato") ///admin/users vou deixar para ir para a pagina de contato

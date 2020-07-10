@@ -12,7 +12,8 @@ const config = {
     header: {Authorization: `Bearer ${token}`}
 }
 
-const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
+
+const serverURL = "https://hcode-lab-adonis-hsport.herokuapp.com"
 
 
 export default function Contacts(props) {
@@ -28,7 +29,7 @@ export default function Contacts(props) {
 
             <section className={styles.users}>
 
-                {  users.map(user => (
+                {  users.map (user => (
                     
                     <Card  key={user.id}> {/* Poderemos fazer essa refatoração depois */}
 
@@ -36,9 +37,13 @@ export default function Contacts(props) {
 
                             <div className={styles['user-data']}>
 
-                                <h2>{user.name}</h2>
-                                <p>{user.email}</p>
-                              <p>{user.message}</p>
+                                <h2>Nome: <b>{user.name}</b></h2>
+                                <hr/>
+                                <p>Telefone: <b>{user.fone}</b></p>
+                                <hr/>
+                                <p>Email:<b> {user.email}</b></p>
+                                <hr/>
+                              <p>Mensagem: <b>{user.message}</b></p>
                             </div>
 
                         </div>
@@ -52,6 +57,7 @@ export default function Contacts(props) {
     )
 
 }
+
 
 Contacts.getInitialProps = async (ctx) => {
     let users =[]

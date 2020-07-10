@@ -22,7 +22,7 @@ export default function Users(props) {
     let date_at = new Date(props.user.data).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
 
     const [values, setValues] = useState({name: props.user.name, email: props.user.email, password: props.user.password, 
-                                          data: date_at, level: props.user.level, photo: props.user.photo
+                                          data: props.user.data, level: props.user.level, photo: props.user.photo
                                         })
     
     let [nameInput, setNameInput] = useState('')                                        
@@ -160,7 +160,7 @@ Users.getInitialProps = async ({query}) => {
 
     const {id} = query
     let user = []
-    user = await axios.get(`${serverURL}/admin/users/${id}`, config)
+    user = await axios.get(`${serverURL}/admin/usuario/${id}`, config)
     return {
         "user": user.data,
         "id": id

@@ -56,7 +56,7 @@ export default function Header({ onMenuToggle }) {
 
                         <img src="../../usuario.png" className={styles['user-photo']} />
 
-                        <h2>HSort</h2>
+                        <h2>HSport</h2>
 
                         <p>sporth823@gmail.com</p>
 

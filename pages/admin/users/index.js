@@ -20,8 +20,8 @@ export default function Index(props) {
    const users = props.users
 
     return (
+        
         <Layout>
-
             <HeaderTitle text={"Usuários"} />
 
             <section className={styles.users}>
@@ -38,7 +38,7 @@ export default function Index(props) {
                                 
                                 <p>{user.email}</p>
 
-                                <p>{user.birth_at}</p>
+                                <p>{user.data}</p>
 
                             </div>
 
@@ -57,7 +57,7 @@ export default function Index(props) {
 
 Index.getInitialProps = async (ctx) => {
     let users = []
-    users = await axios.get(`${serverURL}/admin/users`, config)
+    users = await axios.get(`${serverURL}/admin/usuario`, config)
 
     return {
         "users": users.data

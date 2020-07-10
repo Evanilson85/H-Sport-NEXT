@@ -7,7 +7,7 @@ import React, {useState} from "react"
 
 export default function Contato(){
 
-    const[valor, setValor] = useState({name:"",email:'',message:""})
+    const[valor, setValor] = useState({name:"",email:'',fone:"",message:""})
 
     const focarlogin = e => {
 
@@ -53,7 +53,7 @@ export default function Contato(){
                 <input type="email" name="email" id={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
 
                 <h2>Telefone</h2>
-                <input type="tel" name="telefone" id={styles.Telefone} placeholder="Ligamos para qual Número ?" onFocus={focarlogin} onChange={focarlogin}/>
+                <input type="tel" name="fone" id={styles.Telefone} placeholder="Ligamos para qual Número ?" onFocus={focarlogin} onChange={focarlogin}/>
 
                 
                 <label for="Mensagem"><h2>Mensagem</h2></label>
