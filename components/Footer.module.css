@@ -66,10 +66,12 @@
 .contato h6{
     font-size: 1.6em;
     margin: 0 0 10px;
+    color: #fa3a00;
 }
 .contato p {
     font-size: 22px;
     margin: 10px 0;
+    color: black;
 }
 .email{
     display: none;

@@ -39,7 +39,7 @@ export default function Index(){
                             
                             <h2>Bem-Vindo <br/>ao  Club H-SPORT</h2>
 
-                            <img src="imagens/chute.png"/>
+                            <img src="imagens/chute.png" alt="imagens-menu"/>
                         </div>
                     </div>
                     </section>
@@ -71,7 +71,7 @@ export default function Index(){
                     <div className={Styles.Sport1}>
                     <div className={Styles.container}>
     
-                        <img src="imagens/compactados/tenis.webp" alt="quadea de tenis" className={Styles.image}/>
+                        <img src="imagens/compactados/tenis.webp" alt="quadra de tenis" className={Styles.image}/>
                         <div className={Styles.overlay}>
                             <div className={Styles.text3}>Tenis</div>
                         </div>
