@@ -30,6 +30,7 @@ export default function AddPhoto(props) {
 
     if (props.action == "foto"){
         return (
+            //<input type='file' name='file' className={styles.button} />
             <button className={styles.delete} onClick={handleClik}>{props.children}</button>
         )
     } 

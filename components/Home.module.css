@@ -348,7 +348,7 @@
     }
     .club h2 {
         color: #ff6002;
-        margin: 20px 0 0 50px;
+        margin: 20px 0 0 9px;
         /* align-items: center; */
         text-align: center;
         font-family: 'Open Sans';
@@ -390,7 +390,7 @@
     }
     .btn {
         margin: 20px auto;
-        width: 40%;
+        width: 23%;
     }
     .btn button a {
         color: white;

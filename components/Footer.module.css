@@ -166,3 +166,34 @@
         margin: auto;
     }
 }
+@media(min-width: 1440px){
+    .Footer-logo {
+        margin: 40px 70px 0;
+    }
+    .Endereco{
+        margin: 0 175px;
+    }
+}
+@media(min-width: 1680px){
+    .Footer-logo {
+        margin: 40px 83px 0;
+    }
+    .Endereco{
+        margin: 0px 220px;
+    }
+
+}
+
+@media(min-width: 1920px){
+
+    .Footer-logo {
+        margin: 40px 100px 0;
+    }
+    .Endereco{
+        margin: 0 278px;
+    }
+
+    .rodape p{
+        font-size: 25px;
+    }
+}

@@ -7,8 +7,7 @@ import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
 import {useState} from 'react'
-import Update from "../../../components/upload"
-import Foto from "../../../components/admin/addPhoto"
+
 
 const cookies = new Cookies()
 const token = cookies.get('token')
@@ -22,20 +21,10 @@ const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 export default function Users(props) {
 
 
-
-
-
-    
-
-
-
-
-
-
-    let date_at = new Date(props.user.data).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
+   let date_at = new Date(props.user.data).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
 
     const [values, setValues] = useState({name: props.user.name, email: props.user.email, password: props.user.password, 
-                                          data: props.user.data, level: props.user.level, photo: props.user.photo
+                                          data: date_at, level: props.user.level, photo: props.user.photo
                                         })
     
     let [nameInput, setNameInput] = useState('')                                        
@@ -92,6 +81,19 @@ export default function Users(props) {
         console.log("ConfirmPassword", setConfirmPassword)
     }
 
+    const foto = e=>{
+        setPhoto(e.target.value)
+        return photo
+    }
+/*
+    for(let campo in user){
+        let value = user[campo]
+        if(campo != 'id' && campo != 'created_at' && campo != 'updated_at'){
+    
+            setValues({...values, [campo]:value})
+            console.log(campo, user[campo])
+        }
+    }*/
     return (
         <Layout>
                 
@@ -149,8 +151,7 @@ export default function Users(props) {
 
                 </Card>
 
-                <Card actions={<Button action="changePhoto"> </Button>}>
-
+             {/*   <Card actions={<Foto id={props.id} action="foto" file={foto}>Escolher Foto</Foto>}>
                     <div className={styles.header}>
 
                         <h2>Avatar</h2>
@@ -160,7 +161,7 @@ export default function Users(props) {
                     
                     <img src={`${serverURL}/admin/usuario/${props.id}/photo`} className={styles['user-photo']} />
                 </Card>
-
+*/}
             </section>
 
         </Layout>
@@ -170,7 +171,7 @@ export default function Users(props) {
         return (
           <div>
               <div className={styles.fundo}>
-              <img style={{  width: "100px",
+              <img style={{  width: "100px",p
                       height:"100px"}} id={styles.fotos} src={this.state.file} />
                 </div>
             <input type="file" onChange={this.ren} />

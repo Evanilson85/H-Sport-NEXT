@@ -38,6 +38,10 @@
 .form-user-data input:last-child {
     width: 70%;
 }
+.user-photo{
+    
+    width: 20%;
+}
 
 .avatar {
     height: 200px;

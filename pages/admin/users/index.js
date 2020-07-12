@@ -39,9 +39,9 @@ export default function Index(props) {
                                 <hr/>
                                 <p>Email: <b>{user.email}</b></p>
                                 <hr/>
-                              <p>Foto: <br/>
+                            {/* <p>Foto: <br/>
                               <img src={`${serverURL}/admin/usuario/${user.id}/photo`} className={styles['user-photo']} /> </p>
-                                <hr/> 
+                                <hr/>*/}  
                                 <p>Nascimento: <b>{user.data}</b></p>
 
                             </div>
