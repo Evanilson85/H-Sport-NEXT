@@ -1,0 +1,29 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .mw400 {
+    max-width: 400px;
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #fotos{
+  
+    border-radius: 50px;
+    
+    border: none;
+  }
+  .fundo img{
+    background-image: url(../public/usuario.png);
+   
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  
+}
+  /*<input type="file" name="photo" class="btn btn-success" multiple/>*/  

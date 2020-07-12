@@ -22,14 +22,19 @@ export default function Button(props) {
                 break;
             case "savePass":
 
-            await axios.put(`${serverURL}/admin/users/${props.id}`, props.values)                
-                
-                console.log('Salvando a senha')
+            await axios.put(`${serverURL}/admin/usuario/${props.id}`, props.values)                
+                 window.location.href=("/admin/users")
+                alert('Salvando a senha')
                 break;
             case "changePhoto":
-                console.log('alterando a foto')
+             //  await axios.post(`${serverURL}/admin/usuario/${props.id}/photo`, props.values) 
+               await axios.post(`${serverURL}/admin/usuario/${props.id}/photo`, props.values)
+               window.location.href=("/admin/users")
+                alert('alterando a foto')
                 break;
+                    
         }
+
 
     }
 
@@ -38,8 +43,10 @@ export default function Button(props) {
             <button className={styles.button} onClick={ handleClick }>{props.children}</button>
         )
     }else{
+        
         return (
             <input type='file' name='file' className={styles.button} />
-        )
+        
+            )
     }
 }

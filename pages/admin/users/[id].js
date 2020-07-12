@@ -7,6 +7,8 @@ import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
 import {useState} from 'react'
+import Update from "../../../components/upload"
+import Foto from "../../../components/admin/addPhoto"
 
 const cookies = new Cookies()
 const token = cookies.get('token')
@@ -18,6 +20,17 @@ const config = {
 const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Users(props) {
+
+
+
+
+
+    
+
+
+
+
+
 
     let date_at = new Date(props.user.data).toISOString().split('T')[0]  //Converte data para YYYY-mm-dd
 
@@ -55,12 +68,12 @@ export default function Users(props) {
             }
         )
 
-        if (!passValid) {
+/*        if (!passValid) {
             console.log("Senhas atual incorreta!")
             console.log(error)
             nameInput.focus()
             return
-        }
+        }*/
     }
 
     const newPass = e => {
@@ -113,7 +126,7 @@ export default function Users(props) {
                         <input type="date" placeholder="Data de Nascimento" defaultValue={values.data} name="data" onBlur={handleInputBlur}/>
 
                     </form>
-
+                   
                 </Card>
 
                 <Card actions={<Button id={props.id} action="savePass" values={values}>Alterar</Button>}>
@@ -136,7 +149,7 @@ export default function Users(props) {
 
                 </Card>
 
-                <Card actions={<Button>Escolher Foto</Button>}>
+                <Card actions={<Button action="changePhoto"> </Button>}>
 
                     <div className={styles.header}>
 
@@ -144,8 +157,8 @@ export default function Users(props) {
 
                     </div>
 
-                    <img src="assets/images/user-photo.png" className={styles.avatar} />
-
+                    
+                    <img src={`${serverURL}/admin/usuario/${props.id}/photo`} className={styles['user-photo']} />
                 </Card>
 
             </section>
@@ -153,6 +166,23 @@ export default function Users(props) {
         </Layout>
     )
 
+ /*  function render() {
+        return (
+          <div>
+              <div className={styles.fundo}>
+              <img style={{  width: "100px",
+                      height:"100px"}} id={styles.fotos} src={this.state.file} />
+                </div>
+            <input type="file" onChange={this.ren} />
+            {this.state.file && (
+              <div style={{ }}>
+                <button onClick={this.resetFile}>Remove File</button>
+              </div>
+            )}
+            
+          </div>
+        );
+      }*/
 }
 
 //Carregando info sobre o usuário

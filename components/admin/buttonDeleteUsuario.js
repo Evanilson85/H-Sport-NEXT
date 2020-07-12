@@ -4,7 +4,7 @@ import axios from 'axios'
 
 const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
-export default function Button(props) {
+export default function ButtonUsuario(props) {
     
     const handleClik = async (e) => {
 
@@ -12,10 +12,10 @@ export default function Button(props) {
 
             case 'delete':
                 await 
-                 axios.delete(`${serverURL}/admin/contact/${props.id}`, props.values)
+                 axios.delete(`${serverURL}/admin/usuario/${props.id}`, props.values)
             
-                 window.location.href=("/admin/contact")
-                 alert("Mensagem Apagada com sucesso")
+                 window.location.href=("/admin/users")
+                 alert("Usuario Apagado com sucesso")
                 break;
                 /**
                  * 

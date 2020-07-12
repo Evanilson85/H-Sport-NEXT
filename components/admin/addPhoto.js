@@ -4,18 +4,18 @@ import axios from 'axios'
 
 const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
-export default function Button(props) {
+export default function AddPhoto(props) {
     
     const handleClik = async (e) => {
 
         switch (props.action) {
 
-            case 'delete':
-                await 
-                 axios.delete(`${serverURL}/admin/contact/${props.id}`, props.values)
-            
-                 window.location.href=("/admin/contact")
-                 alert("Mensagem Apagada com sucesso")
+            case 'foto':
+               
+                
+                 await axios.post(`${serverURL}/admin/usuario/${props.id}/photo`, props.values)
+                 window.location.href=("/admin/users")
+                 alert("Foto alterada com sucesso")
                 break;
                 /**
                  * 
@@ -28,7 +28,7 @@ export default function Button(props) {
         }
     }
 
-    if (props.action == "delete"){
+    if (props.action == "foto"){
         return (
             <button className={styles.delete} onClick={handleClik}>{props.children}</button>
         )

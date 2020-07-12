@@ -6,6 +6,9 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from "../components/Cadastro.module.css"
 import Head from "next/head"
+import Update from "../components/upload"
+
+
 export default function Cadastro(){
 
 
@@ -73,6 +76,14 @@ export default function Cadastro(){
 
                         <h2>Nascimento</h2>
                         <input type="date" name="data" id={styles.date} onFocus={focarlogin} onChange={focarlogin}/>
+                       {/**  <h2>Foto</h2>
+                        <input type="file" name="photo" class="btn btn-success" multiple onFocus={focarlogin} onChange={focarlogin}/>
+                       
+                       <input type="file" name="photo" class="btn btn-success" multiple onFocus={focarlogin} onChange={focarlogin}/>}
+                       {/**        <img src={`${serverURL}/admin/usuario/${user.id}/uploads`} className={styles['user-photo']} />
+                    https://hcode-lab-adonis-hsport.herokuapp.com/admin/usuario/111/uploads*/}
+
+                    <Update></Update>
 
                         <h2>Senha</h2>
                     <input type="password" name="password" id={styles.password} placeholder="Digite a sua senha" onFocus={focarlogin} onChange={focarlogin}/>

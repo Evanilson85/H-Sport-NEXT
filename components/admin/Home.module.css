@@ -36,6 +36,7 @@
 
 .user-photo {
     height: 120px;
+    border-radius: 60px;
 }
 
 @media (min-width: 576px) {
