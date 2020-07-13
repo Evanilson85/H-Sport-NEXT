@@ -71,7 +71,7 @@ export default function Index(){
                     <div className={Styles.Sport1}>
                     <div className={Styles.container}>
     
-                        <img src="imagens/compactados/tenis.webp" alt="quadra de tenis" className={Styles.image}/>
+                        <img src="imagens/compactados/quadraTenis.jpg" alt="quadra de tenis" className={Styles.image}/>
                         <div className={Styles.overlay}>
                             <div className={Styles.text3}>Tênis</div>
                         </div>
@@ -79,7 +79,7 @@ export default function Index(){
     
                     <div className={Styles.container1}>
     
-                        <img src="imagens/compactados/quadra-basquente.webp" alt="Quadra-basquente" className={Styles.image}/>
+                        <img src="imagens/compactados/quadra-basquente.jpg" alt="Quadra-basquente" className={Styles.image}/>
                         <div className={Styles.overlay}>
                             <div className={Styles.text3}>Basquete</div>
                         </div>
@@ -88,7 +88,7 @@ export default function Index(){
     
                     <div className={Styles.container2}>
     
-                        <img src="imagens/compactados/swimmers-79592_1920.webp" alt="Natação" className={Styles.image}/>
+                        <img src="imagens/compactados/nataçãomenu.jpg" alt="Natação" className={Styles.image}/>
                         <div className={Styles.overlay}>
                             <div className={Styles.text3}>Natação</div>
                         </div>

@@ -51,15 +51,15 @@ export default function About(){
                                 <div className={styles.Sport}>
                                 <div className={styles.container}>
 
-                                    <img src="imagens/compactados/Campo de Futebol .jpg" alt="Campo de Futebol" className={styles.image}/>
+                                    <img src="imagens/compactados/Sobre4.jpg" alt="ciclismo" className={styles.image}/>
                                     <div className={styles.overlay}>
-                                        <div className={styles.text}>Futebol</div>
+                                        <div className={styles.text}>Ciclismo</div>
                                     </div>
                                 </div>
 
                                 <div className={styles.container1}>
                                     
-                                        <img src="imagens/compactados/quadra-basquente.jpg" alt="Quadra-basquete" className={styles.image}/>
+                                        <img src="imagens/compactados/quadrabasquete.jpg" alt="Quadra-basquete" className={styles.image}/>
                                         <div className={styles.overlay}>
                                             <div className={styles.text}>Basquete</div>
                                         </div>
@@ -68,7 +68,7 @@ export default function About(){
 
                                 <div className={styles.container2}>
                                 
-                                        <img src="imagens/compactados/swimmers-79592_1920.jpg" alt="Natação" className={styles.image}/>
+                                        <img src="imagens/compactados/nataçao.jpg" alt="Natação" className={styles.image}/>
                                         <div className={styles.overlay}>
                                             <div className={styles.text}>Natação</div>
                                         </div>
@@ -76,7 +76,7 @@ export default function About(){
 
                                 <div className={styles.container3}>
                                 
-                                        <img src="imagens/compactados/tenis.jpg" alt="Tênis" className={styles.image}/>
+                                        <img src="imagens/compactados/quadraTenis.jpg" alt="Tênis" className={styles.image}/>
                                     
                                     <div className={styles.overlay}>
                                         <div className={styles.text}>Tênis</div>
@@ -96,7 +96,7 @@ export default function About(){
                                         <img src="imagens/compactados/Campo de Futebol .jpg" alt="Campo de Futebol" className={styles.image}/>
                                     
                                         <div className={styles.overlay}>
-                                            <div className={styles.text}>Hello World</div>
+                                        <div className={styles.text}>Futebol</div>
                                         </div>
                                 </div>
                                 </div>

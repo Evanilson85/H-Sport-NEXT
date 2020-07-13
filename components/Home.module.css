@@ -4,7 +4,7 @@
     height: 3009px;
 }
 .top{
-    background-image: url(../public/imagens/Compactado-mobile/header-home.webp);
+    background-image: url(../public/imagens/Compactado-mobile/header-home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -282,7 +282,7 @@
         font-size: 1.3em;
     }
     .new {
-        background-image: url(../public/imagens/Compactado-mobile/pasta/temas5.jpg);
+        background-image: url(../public/imagens/Compactado-mobile/temaHomepc.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 540px;
