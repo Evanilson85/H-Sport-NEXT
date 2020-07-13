@@ -112,16 +112,25 @@
 }
 @media(min-width:768px){
     .menu ul img{
-        height: 150px;
+        height: 117px;
         position: relative;
+        top: 0;
        
     }
+    button#fechar {
+        
+        font-size: 24px;
+        
+       }
     #fechar{
         position: fixed;
         padding: 5px 12px;
         margin: 15px;
         left: 45%;
         top: 0px;
+    }
+    .ul a{
+        font-size: 24px;
     }
 }
 

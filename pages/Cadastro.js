@@ -9,12 +9,40 @@ import Head from "next/head"
 import Update from "../components/upload"
 
 
+const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
+
 export default function Cadastro(){
 
 
 
+
+/*    const handleClick = async (props) => {
+
+        switch(props.action){
+
+          
+            
+            
+             // await axios.post(`${serverURL}/admin/usuario/${props.id}/uploads`, props.values)
+             
+                    
+        }
+
+
+    }
+*/
+
+
+
+
+
+
+
+
+
+
     
-    const[valor, setValor] = useState({name:"",email:'',photo:'',data:'',level:'',password:''})
+    const[valor, setValor] = useState({name:"",email:'',data:'',photo:'',password:''})
 
     const focarlogin = e => {
 
@@ -38,6 +66,7 @@ export default function Cadastro(){
 
     }
 
+    
     return(
         <>
 
@@ -76,14 +105,14 @@ export default function Cadastro(){
 
                         <h2>Nascimento</h2>
                         <input type="date" name="data" id={styles.date} onFocus={focarlogin} onChange={focarlogin}/>
-                       {/**  <h2>Foto</h2>
-                        <input type="file" name="photo" class="btn btn-success" multiple onFocus={focarlogin} onChange={focarlogin}/>
-                       
+                       {/**  
+                       <h2>Foto</h2>
+                        <input type="file" name="photo" class="btn btn-success" multiple action="photo" onFocus={focarlogin} onChange={focarlogin}/>
                        <input type="file" name="photo" class="btn btn-success" multiple onFocus={focarlogin} onChange={focarlogin}/>}
                        {/**        <img src={`${serverURL}/admin/usuario/${user.id}/uploads`} className={styles['user-photo']} />
+                    <Update></Update>
                     https://hcode-lab-adonis-hsport.herokuapp.com/admin/usuario/111/uploads*/}
 
-                    <Update></Update>
 
                         <h2>Senha</h2>
                     <input type="password" name="password" id={styles.password} placeholder="Digite a sua senha" onFocus={focarlogin} onChange={focarlogin}/>
@@ -105,6 +134,7 @@ export default function Cadastro(){
             <Footer/>
         </>
     )
+
 
 
 }

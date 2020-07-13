@@ -151,7 +151,7 @@ export default function Users(props) {
 
                 </Card>
 
-             {/*   <Card actions={<Foto id={props.id} action="foto" file={foto}>Escolher Foto</Foto>}>
+                {/*    <Card actions={<Button id={props.id} action="changePhoto" file={foto}>Escolher Button</Button>}>
                     <div className={styles.header}>
 
                         <h2>Avatar</h2>
@@ -160,8 +160,8 @@ export default function Users(props) {
 
                     
                     <img src={`${serverURL}/admin/usuario/${props.id}/photo`} className={styles['user-photo']} />
-                </Card>
-*/}
+                </Card>*/}  
+
             </section>
 
         </Layout>

@@ -1,18 +1,41 @@
-
-import React from "react";
+import React, {useState} from "react"
+//import React from "react";
 import axios from "axios"
 
 import styles from "./upload.module.css";
 
+
+
+
+
 const serverURL = "https://hcode-lab-adonis-hsport.herokuapp.com"
 //const user = users
 function  Upload() {
+
+  
+  const formLogin = e =>{
+
+    e.preventDefault() 
+
+    axios.post(`https://hcode-lab-adonis-hsport.herokuapp.com/usuario`, valor).then(res => {
+               
+        alert(`Olá ${res.data.name} seus dados foram cadastrados, acesse seu email de cadastro`)
+        window.location.href=("/Contato") ///admin/users vou deixar para ir para a pagina de contato
+    }).catch(err => alert("Infelizmente algo deu errado", err)
+    )
+
+  // https://hcode-lab-adonis-hsport.herokuapp.com/users  console.log("enviou")
+
+}
+
+  
+
   return (
     <div className={styles.App}>
        
-       <UploadPreview >
+    
+       <input onFocus={focarlogin} onChange={focarlogin}>< UploadPreview/></input>
        
-       </UploadPreview>
     </div>
   );
 }
@@ -35,6 +58,8 @@ class UploadPreview extends React.Component {
     event.preventDefault();
     this.setState({ file: null });
   }
+  
+  
   render() {
     return (
       <div>
@@ -42,7 +67,7 @@ class UploadPreview extends React.Component {
           <img style={{  width: "100px",
                   height:"100px"}} id={styles.fotos} src={this.state.file} />
             </div>
-        <input type="file" onChange={this.onChange} />
+        <input type="file" name="photo" onChange={this.onChange} />
         {this.state.file && (
           <div style={{ }}>
             <button onClick={this.resetFile}>Remove File</button>

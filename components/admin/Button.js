@@ -28,7 +28,7 @@ export default function Button(props) {
                 break;
             case "changePhoto":
              //  await axios.post(`${serverURL}/admin/usuario/${props.id}/photo`, props.values) 
-              // await axios.post(`${serverURL}/admin/usuario/${props.id}/photo`, props.values)
+              await axios.post(`${serverURL}/admin/usuario/${props.id}/uploads`, props.values)
                window.location.href=("/admin/users")
                 alert('alterando a foto')
                 break;

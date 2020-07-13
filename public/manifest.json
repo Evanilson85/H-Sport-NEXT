@@ -1,0 +1,17 @@
+{
+  
+        "name": "HSport-Club",
+        "short_name": "HSport",
+        "theme_color": "#f37321",
+        "background_color": "#f3b221",
+        "display": "fullscreen",
+        "start_url": ".",
+        "icons" : [
+            {
+            "src": "imagens/13034__2_-removebg-preview-_2_.ico",
+            "sizes": "72x72",
+            "type": "ico"
+            }
+
+
+}

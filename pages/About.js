@@ -28,8 +28,8 @@ export default function About(){
                                 <div className={styles.planos}>
                                 <p>
                                      
-                                    Para amantes de esportes, e também gosta de reunir com amigos para se divertir, em um ambiente agradável e familiar, está no lugar certo.<br/>
-                                    H-Sport é um dos principais clubes da região por ser conhecida por seus diversificados esportes. Aqui temos Futebol, Natação, Basquete, Vôlei e Tênis, com os melhores preços.
+                                    Se você é amante de esportes e também gosta de reunir para se divertir em um ambiente agradável e familiar,então você está no lugar certo.<br/>
+                                    H-Sport é um dos principais clubes da região por ser conhecido por seus diversificados esportes. Aqui temos Futebol, Natação, Basquete, Vôlei e Tênis com os melhores preços.
                                 </p>
 
                                     <div className={styles.plano1}>
@@ -76,10 +76,10 @@ export default function About(){
 
                                 <div className={styles.container3}>
                                 
-                                        <img src="imagens/compactados/tenis.jpg" alt="Tenis" className={styles.image}/>
+                                        <img src="imagens/compactados/tenis.jpg" alt="Tênis" className={styles.image}/>
                                     
                                     <div className={styles.overlay}>
-                                        <div className={styles.text}>Tenis</div>
+                                        <div className={styles.text}>Tênis</div>
                                     </div>
                                 </div>
 

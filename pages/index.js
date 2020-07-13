@@ -49,7 +49,7 @@ export default function Index(){
                    
                     <div className={Styles.sport}>
                         <div className={Styles.text}>
-                            <p>Já imaginou estar em um lugar onde você e a amigos possam divertir por tempo ilimitado ?
+                            <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado ?
                             </p>
                         </div>
                     </div>
@@ -57,8 +57,8 @@ export default function Index(){
                         
                         <div className={Styles["text-2"]}>
                             <p>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais
-                                qualificados.
-                                Temos os Melhores Campos para sua Diversão.</p>
+                                qualificados ? Então você está no lugar certo
+                                temos os Melhores Campos para sua Diversão.</p>
                             </div>
                         </div>
                         <div className={Styles.novidades}>
@@ -73,7 +73,7 @@ export default function Index(){
     
                         <img src="imagens/compactados/tenis.webp" alt="quadra de tenis" className={Styles.image}/>
                         <div className={Styles.overlay}>
-                            <div className={Styles.text3}>Tenis</div>
+                            <div className={Styles.text3}>Tênis</div>
                         </div>
                     </div>
     
