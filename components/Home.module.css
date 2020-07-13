@@ -48,8 +48,8 @@
     height: 470px;
 }
 .welcome{
-    background-color: #10101087;
-    height: 468px;
+   /* background-color: #10101087;
+    height: 468px;*/
     margin-top: -21px;
 }
 .welcome img{
@@ -57,7 +57,7 @@
 }
 .club h2{    
     color: #f15000;
-    margin: 20px 0 0 141px;
+    margin: 20px 0 0 66px;
     align-items: center;
     text-align: center;
     position: relative;
@@ -127,7 +127,7 @@
 .novidades{
     position: relative;
     top: -36px;
-    height: 570px;
+    height: auto;
 }
 .novidades h3{
     margin: 0px auto 18px;
@@ -168,7 +168,7 @@
 .container2 {
   position: relative;
   width: 60%;
-  margin: 10px auto; 
+  margin: 10px 2px; 
 }
 .image {
   display: block;
@@ -205,6 +205,9 @@
 }
 .flex{
     margin-top: 40px;
+}
+.Sport1 {
+    display: flex;
 }
 @media(min-width: 643px){    
     .body {

@@ -4,6 +4,7 @@ import Styles from "../components/Home.module.css"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Link from "next/link"
+//import Slide from "../components/slide"
 
 
 export default function Index(){
@@ -94,6 +95,7 @@ export default function Index(){
                         </div>
                     </div>                
                 </div>
+              
             </div>
                     <div className={Styles.btn}>
                         <button>
@@ -104,6 +106,9 @@ export default function Index(){
                     </div>
          </div>
      </div>
+
+
+    
              </main>
 
         <Footer/>
