@@ -4,11 +4,12 @@ import Styles from "../components/Home.module.css"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Link from "next/link"
-//import Slide from "../components/slide"
+import Slide from "../components/slide"
 
 
 export default function Index(){
 
+    
 
     return(
 
@@ -64,7 +65,7 @@ export default function Index(){
                         </div>
                         <div className={Styles.novidades}>
                             <h3>Novidades</h3>
-                    <div className={Styles.flex}>
+                    {/* <div className={Styles.flex}>
 
 
 
@@ -93,10 +94,21 @@ export default function Index(){
                         <div className={Styles.overlay}>
                             <div className={Styles.text3}>Natação</div>
                         </div>
-                    </div>                
-                </div>
+                    </div>      
+                     </div>
               
-            </div>
+            </div>           */}
+                     <Slide
+     interval={6000}
+                images={[
+                    
+                    './imagens/compactados/nataçãomenu.jpg',
+                    './imagens/compactados/quadra-basquente.jpg',
+                    './imagens/compactados/volei de praia.jpg',
+                    './imagens/compactados/quadraTenis.jpg'
+                ]}
+     />
+               
                     <div className={Styles.btn}>
                         <button>
                             <Link href="Cadastro">
@@ -107,6 +119,8 @@ export default function Index(){
          </div>
      </div>
 
+    
+ 
 
     
              </main>

@@ -1,54 +1,93 @@
-//import styles from './Slider.module.css'
+import styles from './Slider.module.css'
 //import ImgComp from '../components/ImgComp'
-import Link from 'next/link'
-import { useState } from 'react'
+import React, {useState, useEffect} from 'react';
+//import React from 'react';
 
-export default function Slider(){
 
-    let sliderArr = [
-        "frutes",
-        "ola",
-        "teste"
-            ]
+export default function Slideshow({images=[], interval=3000},){
+    const [thumbnails, setThumnails] = useState([]);
+    const [previousSlideStyle, setPreviousSlideStyle] = useState({});
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [nextSlideStyle, setNextSlideStyle] = useState({});
+    const [currentSlideStyle, setCurrentSlideStyle] = useState({});
 
-    const [x, setX] = useState(0)
-
-    const autoXIncremente = ()=>{
-        setInterval(()=>{
-            goRight()
-        },5000)
-    }
-    // autoXIncremente()
-    const goLeft = () => {
-        x === 0 ? setX(-100*(sliderArr.length - 1)): setX(x + 100)
-    }
     
-    const goRight = () => {
-       x === -100*( sliderArr.length -1)? setX(0): setX(x - 100)
-        
-    }
-    return(
-        <div className={styles.slider}>
-            {
-                sliderArr.map((item, index)=>{
-                    return(
-                        <div key={index} className={styles.slide}>
-                            {item}
-                            <h1>Produtos com <span>Qualidade</span> Absoluta!</h1>
-                               <Link href="/contact">
-                                    <a>Venha Conferir</a>
-                                </Link>
-                        </div>
-                        
-                    )
-                })
+    
+    useEffect(()=>{
+        setThumnails(images);
+        setCurrentSlideStyle({
+            backgroundImage: "url('"+images[currentSlide]+"')"
+        });
+
+        if(currentSlide>0){
+            setPreviousSlideStyle({
+                backgroundImage: "url('"+images[currentSlide-1]+"')"
+            });
+        }else{
+            setPreviousSlideStyle({
+                backgroundImage: "url('"+images[images.length-1]+"')"
+            });
+        }
+
+        if(currentSlide === images.length-1){
+            setNextSlideStyle({
+                backgroundImage: "url('"+images[0]+"')"
+            });
+        }else{
+            setNextSlideStyle({
+                backgroundImage: "url('"+images[currentSlide+1]+"')"
+            });
+        } 
+
+        const loop = setInterval(()=>{
+            if(currentSlide === images.length-1){
+                setCurrentSlide(0);
+            }else{
+                setCurrentSlide(currentSlide+1);
             }
-            <button onClick={goRight} className={styles.direita}>
-                <img srcSet="/assets/icons/seta.svg" alt="Para Direita" />
-            </button>
-            <button onClick={goLeft}  className={styles.esquerda}>
-                <img srcSet="/assets/icons/seta.svg" alt="Para Esquerda" />
-            </button>
-        </div>
+        }, interval);
+        return () => clearInterval(loop); 
+    }, [images, currentSlide, interval]);
+
+
+    function previous(){
+        if(currentSlide>0){
+            setCurrentSlide(currentSlide-1);
+        }else{
+            setCurrentSlide(thumbnails.length-1);
+        }
+    }
+
+    function next(){
+        if(currentSlide === thumbnails.length-1){
+            setCurrentSlide(0);
+        }else{
+            setCurrentSlide(currentSlide+1);
+        }
+    }
+
+    return (
+       
+
+
+<section className={styles.slideshow}>
+  <div className={styles["slide-holder"]}>
+    <section className={styles["previous-slide"]}>
+      <div  style={previousSlideStyle} className={styles["slide-thumbnail"]}></div>
+    </section>
+    <section className={styles["current-slide"]}>
+    <div style={currentSlideStyle} className={styles["slide-thumbnail"]}></div>
+    </section>
+    <section className={styles["next-slide"]}>
+      <div style={nextSlideStyle} className={styles["slide-thumbnail"]}></div>
+    </section>
+  </div>          
+
+  
+  <div className={styles["slideshow-controller"]}>
+    <span onClick={previous} >Previous</span>
+    <span onClick={next}>Next </span>
+   </div>
+</section>
     )
 }

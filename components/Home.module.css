@@ -310,7 +310,7 @@
         display: flex;
     }
     .novidades {
-        height: 355px;
+        height: auto;
     }
     .meio {
         position: relative;
