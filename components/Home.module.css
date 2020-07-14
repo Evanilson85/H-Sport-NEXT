@@ -71,7 +71,7 @@
     position: relative;
     top: -53px;
     height: auto;
-    margin-top: 135%;
+   
 }
 .sport {
     background-image: url(../public/imagens/Compactado-mobile/tema3.jpg);
@@ -316,7 +316,7 @@
         position: relative;
         top: -53px;
         height: auto;
-        margin-top: 61%;
+        
     }
     .btn {
         margin: 20px auto;
@@ -360,13 +360,13 @@
         font-size: 52pt;
         width: 55%;
         height: 215px;
-        top: 210px;
+        top: 247px;
     }
     .club {
         background-image: url(../public/imagens/wave\ .svg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 200px;
+        height: auto;
         background-position: center;
         position: relative;
         top: 40px;
@@ -388,7 +388,7 @@
         position: relative;
         /* top: 650px; */
         height: auto;
-        margin-top: 55%;
+        
         margin-bottom: 40px;
     }
     .btn {
@@ -419,12 +419,8 @@
     .novidades {
         height: 408px;
     }
-    .meio{
-        margin-top: 45%;
-    }
-    .club{
-        height: 240px;
-    }
+    
+    
     .title h1 {
         background-color: #242a31a6;
     }
@@ -440,7 +436,7 @@
         background-color: rgba(0, 0, 0, 0);
     }
     .new {
-        background-image: url(../public/imagens/compactados/menu.jpg);
+        
         background-repeat: no-repeat;
         background-size: contain;
         height: 550px;
@@ -481,7 +477,7 @@
         left: 10%;
         position: relative;
         top: 63px;
-        text-align: end;
+        text-align: inherit;
         color: #f15000;
     }
     .welcome img{
@@ -492,6 +488,7 @@
     .top{
         height: 915px;
     }
+    
     .title h1 {
         top: 500px;
     }
@@ -502,7 +499,8 @@
         margin: 139px 0 0 50px;
     }
     .club{
-        height: 288px;
+        height: auto;
+        top: -43px;
     }
     .novidades{
         height: 507px;

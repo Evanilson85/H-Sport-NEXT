@@ -36,7 +36,12 @@ export default function Index(){
                         </h1>
                     </div>
 
-                    <div className={Styles.club}>
+                  
+                    </section>
+                    <main>
+
+                <div className={Styles.meio}>
+                <div className={Styles.club}>
                         <div className={Styles.welcome}>
                             
                             <h2>Bem-Vindo <br/>ao  Club H-SPORT</h2>
@@ -44,11 +49,6 @@ export default function Index(){
                             <img src="imagens/chute.png" alt="imagens-menu"/>
                         </div>
                     </div>
-                    </section>
-                    <main>
-
-                <div className={Styles.meio}>
-                   
                     <div className={Styles.sport}>
                         <div className={Styles.text}>
                             <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado ?
