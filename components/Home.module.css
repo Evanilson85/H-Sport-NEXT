@@ -120,6 +120,7 @@
     position: relative;
     top: 300px;
     text-align: end;
+    
 }
 .new h2{
     text-align: center;
@@ -380,6 +381,36 @@
         background-color: rgba(0, 0, 0, 0.2);
         height: 569px;
     }
+    .text p {
+        color: hsl(0, 0%, 100%);
+        line-height: 1.5;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        background: #0000007a;
+        font-size: 1.3em;
+        width: 43%;
+        margin: 15px;
+        position: relative;
+        top: 350px;
+        text-align: end;
+    }
+
+
+    .new .text-2 p{
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    background: #0000007a;
+    font-size: 1.3em;
+    width: 43%;
+    margin: 15px;
+    position: relative;
+    top: 300px;
+    text-align: inherit;
+}
     .welcome img{
         max-width: 50%;
         display: block;
