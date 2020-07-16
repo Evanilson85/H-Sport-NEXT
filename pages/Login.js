@@ -41,24 +41,24 @@ export default function Login(){
 
     return(
         <>
-            <section className={styles.top}>
+            
+
+               
+                <main className={styles.meio}>
 
             <Header/>
 
-                </section>
-                <main className={styles.login}>
 
-
-                        <form onSubmit={enviar} action="" className={styles["login-form"]}>
+                        <form onSubmit={enviar} action="" className={styles.formulario}>
 
                             <h2>Email</h2>
-                            <input type="email" name="email" id={styles.email} placeholder="Email" onFocus={focarlogin} onChange={focarlogin}/>
+                            <input type="email" name="email" className={styles.email} placeholder="Email" onFocus={focarlogin} onChange={focarlogin}/>
 
                             <h2>Senha</h2>
-                            <input type="password" name="password" id={styles.password} placeholder="Senha"  onFocus={focarlogin} onChange={focarlogin} />
+                            <input type="password" name="password" className={styles.senha} placeholder="Senha"  onFocus={focarlogin} onChange={focarlogin} />
 
                             <div className={styles.btn1}>
-                                <input type="submit" value="Entrar" id={styles.btn} onFocus={focarlogin} onChange={focarlogin} />
+                                <input type="submit" value="Entrar" className={styles.btn} onFocus={focarlogin} onChange={focarlogin} />
                             </div>
                          </form>
 

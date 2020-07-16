@@ -164,6 +164,7 @@
         height: 49px;
         margin-top: 20px;
         z-index: 5;
+        margin-left: 5%;
     }
     .ul li a {
         text-decoration: none;
@@ -189,4 +190,11 @@
     
     }
     
+}
+@media(min-width: 1680px){
+
+
+    .ul li a{
+        font-size: 25px;
+    }
 }

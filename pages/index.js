@@ -59,8 +59,8 @@ export default function Index(){
                         
                         <div className={Styles["text-2"]}>
                             <p>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais
-                                qualificados ? Então você está no lugar certo
-                                temos os Melhores Campos para sua Diversão.</p>
+                                qualificados ? Então você está no lugar certo!
+                                Temos os Melhores Campos para sua Diversão.</p>
                             </div>
                         </div>
                         <div className={Styles.novidades}>
@@ -104,7 +104,7 @@ export default function Index(){
                     
                     './imagens/compactados/nataçãomenu.jpg',
                     './imagens/compactados/quadra-basquente.jpg',
-                    './imagens/compactados/volei de praia.jpg',
+                    './imagens/compactados/nataçao.jpg',
                     './imagens/compactados/quadraTenis.jpg'
                 ]}
      />

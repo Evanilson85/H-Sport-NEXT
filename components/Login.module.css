@@ -1,4 +1,4 @@
-.top {
+/* .top {
  background-image: url(/imagens/Compactado-mobile/pasta/tenis-login.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,4 +117,78 @@
     margin: 10px;
     height: 40px;
   }
+} */
+
+.meio{
+  background-image: url(..//public/loginmobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 656px;
 }
+.formulario{
+  background: rgba(0, 0, 0, 0.65);
+  height: 300px;
+  width: 80vw;
+  position: relative;
+  top: 200px;
+  margin-left: 10%;
+}
+.email,
+.senha,
+.btn
+{
+  border-radius: 6px;
+  border: none;
+  width: 90%;
+  height: 40px;
+  margin: 23px 10px;
+}
+.formulario h2{
+  color: #ff6002;
+  margin: 0px 10px;
+}
+.btn{
+  background-color: #ff6002;
+  color: white;
+}
+.btn:hover{
+  background: rgba(196, 188, 189, 0.801);
+  cursor: pointer;
+
+}
+
+@media(min-width:768px){
+  .meio{
+      background-image: url(../public/loginmobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 806px;
+  }
+  .formulario {
+      background: rgba(0, 0, 0, 0.65);
+      height: 300px;
+      width: 46vw;
+      position: relative;
+      top: 200px;
+      margin-left: 47%;
+  }
+}
+@media(min-width:1024px){
+  .meio{
+      background-image: url(../public/fundologin.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 900px;
+  }
+  .formulario {
+      background: rgba(0, 0, 0, 0.65);
+      height: 300px;
+      width: 46vw;
+      position: relative;
+      top: 200px;
+      margin-left: 10%;
+  }
+
+
+}
+

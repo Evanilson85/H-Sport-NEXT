@@ -156,7 +156,7 @@
     .Endereco {
         display: block;
         width: 30%;
-         margin: 0px 112px;;
+        
         position: relative;
         
         margin-right: 14%;
@@ -166,6 +166,16 @@
         margin: auto;
     }
 }
+@media(min-width: 1025px){
+
+    .Endereco {
+
+        margin: 0px 112px;
+
+    }
+
+}
+
 @media(min-width: 1440px){
     .Footer-logo {
         margin: 40px 70px 0;

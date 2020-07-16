@@ -460,9 +460,7 @@
     .top{
         height: 800px;
     }
-    .club{
-        top: 215px;
-    }
+   
     .title{
         background-color: rgba(0, 0, 0, 0);
     }
@@ -482,6 +480,7 @@
         font-weight: 400;
         font-size: 2.3em;
         width: 27%;
+        background: none;
         margin: 15px 0 15px 58%;
         position: relative;
         top: 63px;
@@ -502,6 +501,7 @@
         line-height: 1.5;
         font-family: 'Montserrat';
         font-style: normal;
+        background:none;
         font-weight: 400;
         font-size: 2.3em;
         width: 27%;
