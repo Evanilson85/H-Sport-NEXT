@@ -65,7 +65,7 @@ export default function Login(){
                 </main>
 
 
-            <Footer/>
+            {/* <Footer/> */}
 
         </>
     )

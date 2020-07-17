@@ -123,7 +123,7 @@
   background-image: url(..//public/loginmobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 656px;
+  height: 100vh;
 }
 .formulario{
   background: rgba(0, 0, 0, 0.65);
@@ -162,7 +162,7 @@
       background-image: url(../public/loginmobile.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      height: 806px;
+      height: 100vh;
   }
   .formulario {
       background: rgba(0, 0, 0, 0.65);
@@ -178,7 +178,8 @@
       background-image: url(../public/fundologin.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      height: 900px;
+      height: 100vh;
+      background-position: right;
   }
   .formulario {
       background: rgba(0, 0, 0, 0.65);
@@ -192,3 +193,20 @@
 
 }
 
+@media(min-width:1920px){
+
+  .formulario{
+    height: 470px;
+    width: 29%;
+  }
+  .email,
+.senha,
+.btn
+{
+  height: 60px;
+  width: 96%;
+  margin: 23px 10px 46px;
+}
+
+
+}
