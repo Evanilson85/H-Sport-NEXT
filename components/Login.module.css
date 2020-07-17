@@ -1,123 +1,4 @@
-/* .top {
- background-image: url(/imagens/Compactado-mobile/pasta/tenis-login.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-}
-.login {
-  width: 100%;
-  display: flex;
-}
-.login-form {
-  width: 100%;
-}
-.login-form h2 {
-  color: #f15000;
-  margin-left: 10px;
-}
-#email,
-#password {
-  width: 90%;
-  height: 40px;
-  margin: 10px;
-  border: 1px solid #f15000;
-}
 
-#btn {
-  width: 78%;
-  margin: 20px;
-  height: 40px;
-  background: #f15000;
-  border-radius: 5px;
-  border: none;
-  color: white;
-}
-.btn1{
-  width: 60%;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  .top {
-    background-image: url(/imagens/Compactado-mobile/pasta/Login.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-  }
-  .login {
-    width: 100%;
-    display: flex;
-  }
-  .login-form {
-    text-align: center;
-    width: 50%;
-  }
-  #email,
-  #password {
-    width: 50%;
-    height: 40px;
-    margin: 10px;
-    border: 1px solid #f15000;
-  }
-  #btn {
-    width: 50%;
-    margin: 10px;
-    height: 40px;
-  }
-  .btn1{
-    width: 30%;
-    margin: auto;
-  }
-}
-
-
-.login-form {
-  width: 100%;
-}
-.login-form h2 {
-  color: #f15000;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-#btn {
-  width: 100%;
-  margin: 20px auto;
-  height: 40px;
-  background: #f15000;
-  border-radius: 5px;
-  border: none;
-}
-
-@media (min-width: 1024px) {
-  .top {
-    background-image: url(/imagens/Compactado-mobile/pasta/Login.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 665px;
-  }
-  .login {
-    width: 100%;
-    display: flex;
-  }
-  .login-form {
-    text-align: center;
-    width: 50%;
-  }
-  #email,
-  #password {
-    width: 90%;
-    height: 40px;
-    margin: 10px;
-  }
-  #btn {
-    width: 50%;
-    margin: 10px;
-    height: 40px;
-  }
-} */
 
 .meio{
   background-image: url(..//public/loginmobile.jpg);
@@ -130,7 +11,7 @@
   height: 300px;
   width: 80vw;
   position: relative;
-  top: 200px;
+  top: 90px;
   margin-left: 10%;
 }
 .email,
@@ -139,7 +20,7 @@
 {
   border-radius: 6px;
   border: none;
-  width: 90%;
+  width: 93%;
   height: 40px;
   margin: 23px 10px;
 }

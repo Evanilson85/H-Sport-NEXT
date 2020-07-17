@@ -76,62 +76,41 @@ export default function Cadastro(){
             </Head>
 
 
-               <section className={styles.top}>
-
+                   
+            <main className={styles.meio}>
                 <Header/>
 
-              </section>
 
-                   
-            <main className={styles.main1}>
+            <section className={styles.flex}>
+            <div className={styles.azul}>
+            </div>
+            <div className={styles.vermelho}>
+            <form action="" onSubmit={formLogin} className={styles["for-cadastro"]} className={styles.formulario}>
 
-                    <div className={styles.cadastro}>
-                        <img src="imagens/compactados/Cadastro-desktop.jpg" alt=""/>
+                    <h2>Nome</h2>  
+                    <input type="text" name="name" className={styles.nome} placeholder="Nome" onFocus={focarlogin} onChange={focarlogin}/>
+
+                    <h2>Email</h2>
+                    <input type="email" name="email" className={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
+
+                    <h2>Nascimento</h2>
+                    <input type="date" name="data" className={styles.data} onFocus={focarlogin} onChange={focarlogin}/>
+                  
+                    <h2>Senha</h2>
+                    <input type="password" name="password" className={styles.senha} placeholder="Digite a sua senha" onFocus={focarlogin} onChange={focarlogin}/>
+                    <div id={styles.bt}>
+                    <input type="submit" value="Enviar" className={styles.btn}/>
                     </div>
-                    <div className={styles["cadastro-mobile"]}>
-                        <img src="imagens/Compactado-mobile/football-157930_1280.png" alt=""/>
-                    </div>
 
-                    <div className={styles["cadastro-desktop"]}>
-                        <img src="imagens/Compactado-mobile/pasta/temas5.jpg" alt=""/>
-                    </div>
-                    <form action="" onSubmit={formLogin} className={styles["for-cadastro"]}>
-
-                        <h2>Nome</h2>  
-                        <input type="text" name="name" id={styles.name} placeholder="Nome" onFocus={focarlogin} onChange={focarlogin}/>
-
-                        <h2>Email</h2>
-                        <input type="email" name="email" id={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
-
-                        <h2>Nascimento</h2>
-                        <input type="date" name="data" id={styles.date} onFocus={focarlogin} onChange={focarlogin}/>
-                       {/**  
-                       <h2>Foto</h2>
-                        <input type="file" name="photo" class="btn btn-success" multiple action="photo" onFocus={focarlogin} onChange={focarlogin}/>
-                       <input type="file" name="photo" class="btn btn-success" multiple onFocus={focarlogin} onChange={focarlogin}/>}
-                       {/**        <img src={`${serverURL}/admin/usuario/${user.id}/uploads`} className={styles['user-photo']} />
-                    <Update></Update>
-                    https://hcode-lab-adonis-hsport.herokuapp.com/admin/usuario/111/uploads*/}
-
-
-                        <h2>Senha</h2>
-                    <input type="password" name="password" id={styles.password} placeholder="Digite a sua senha" onFocus={focarlogin} onChange={focarlogin}/>
-                    <div>
-                        <input type="submit" value="Enviar" id={styles.btn}/>
-                    </div>
-                        
 
                     </form>
 
-
-                    <div className={styles["cadastro-basquete"]}>
-                        <img src="imagens/Compactado-mobile/basketball-155997_1280.png" alt=""/>
-                    </div>
-
+            </div>
+        </section>
+                   
 
             </main>
 
-            <Footer/>
         </>
     )
 
