@@ -40,33 +40,37 @@ export default function Contato(){
         </Head>
 
         <header className={styles.top}>
-        <Header/>
         </header>
-        <main className={styles.meio1}>
+        <main className={styles.middle}>
+        <Header/>
 
+            <div className={styles.h1}>
+                <h1>Deixe aqui a sua Opinião </h1>
+            </div> 
+            <section className={styles["display-Mobile"]}>
             <form action="" className={styles.formulario} onSubmit={msm}>
 
                 <h2>O seu nome</h2>  
-                <input type="text" name="name" id={styles.name} placeholder="Nome" onFocus={focarlogin} onChange={focarlogin}/>
+                <input type="text" name="name" className={styles.nome} placeholder="Nome" onFocus={focarlogin} onChange={focarlogin}/>
 
                 <h2>O seu email</h2>
-                <input type="email" name="email" id={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
+                <input type="email" name="email" className={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
 
                 <h2>Telefone</h2>
-                <input type="tel" name="fone" id={styles.Telefone} placeholder="Ligamos para qual Número ?" onFocus={focarlogin} onChange={focarlogin}/>
+                <input type="tel" name="fone" className={styles.fone} placeholder="Ligamos para qual Número ?" onFocus={focarlogin} onChange={focarlogin}/>
 
                 
                 <label for="Mensagem"><h2>Mensagem</h2></label>
 
-                <textarea name="message" id={styles.Mensagem} cols="10" rows="10" placeholder="Sua Mensagem" onFocus={focarlogin} onChange={focarlogin}></textarea>
-            <div>
-                <input type="submit" value="Enviar" id={styles.btn}/>
+                <textarea name="message" className={styles.msm} cols="10" rows="10" placeholder="Sua Mensagem ou sugestão " onFocus={focarlogin} onChange={focarlogin}></textarea>
+            <div id={styles.bt}>
+                <input type="submit" value="Enviar" className={styles.btn}/>
                 </div>
             </form>
-            <div className={styles.maps1}>
+            <div className={styles.maps}>
 
             <h2>Localização</h2>  
-            <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr"></iframe>
+            <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr"></iframe>
             </div>
             <style jsx>
             {`.maps{
@@ -77,6 +81,7 @@ export default function Contato(){
             
            `}
             </style>
+        </section>
         </main>
 
         <Footer/>
