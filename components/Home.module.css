@@ -120,7 +120,7 @@
   }
   .sport p {
     width: 70%;
-    margin: 112px auto 20px;
+    margin: 15px auto 20px;
     color: black;
     line-height: 2;
   }
@@ -277,7 +277,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: bottom;
-     
+     height: 80vh;
       background-attachment: fixed;
       width: 100%;
     }
