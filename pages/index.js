@@ -29,6 +29,7 @@ export default function Index(){
                         <div className={styles.info}>
                             <div className={styles.menu}>
                                 <h1>H-SPORT <br/>
+                                <hr/>
                                     <b> Você está a um Gol da </b> Diversão</h1>
 
 
@@ -63,24 +64,36 @@ export default function Index(){
 
                 <div className={styles.flex}>
 
-                    <div className={styles.container}>
-                        <img src="../pagina inicial/Sobre.jpg" alt="Avatar" className={styles.image}/>
-                        <div className={styles.overlay}>
-                        <div className={styles.text}>Hello World</div>
-                        </div>
-                    </div>
-                    <div className={styles.container}>
-                        <img src="../pagina inicial/Sobre.jpg" alt="Avatar" className={styles.image}/>
-                        <div className={styles.overlay}>
-                        <div className={styles.text}>Hello World</div>
-                        </div>
-                    </div>
-                    <div className={styles.container}>
-                        <img src="../pagina inicial/Sobre.jpg" alt="Avatar" className={styles.image}/>
-                        <div className={styles.overlay}>
-                        <div className={styles.text}>Hello World</div>
-                        </div>
-                    </div>
+                <div className={styles.Sport}>
+                                <div className={styles.container}>
+
+                                    <img src="imagens/compactados/Sobre4.jpg" alt="ciclismo" className={styles.image}/>
+                                    <div className={styles.overlay}>
+                                        <div className={styles.text}>Ciclismo</div>
+                                    </div>
+                                </div>
+
+                               
+
+                                <div className={styles.container2}>
+                                
+                                        <img src="imagens/compactados/nataçao.jpg" alt="Natação" className={styles.image}/>
+                                        <div className={styles.overlay}>
+                                            <div className={styles.text}>Natação</div>
+                                        </div>
+                                </div>
+
+                                <div className={styles.container3}>
+                                
+                                        <img src="imagens/compactados/quadraTenis.jpg" alt="Tênis" className={styles.image}/>
+                                    
+                                    <div className={styles.overlay}>
+                                        <div className={styles.text}>Tênis</div>
+                                    </div>
+                                </div>
+
+                               </div>
+                              
 
                 </div>
 
@@ -108,7 +121,7 @@ export default function Index(){
                             Então você está no lugar certo! Temos os Melhores Campos para sua Diversão.</p>
                         <div className={styles.bt1}>
                         <Link href="error">
-                            <input type="button" value="novidades" className={styles.btnsport}/>
+                            <input type="button" value="Novidades" className={styles.btnsport}/>
                                             </Link>
 
                         </div>
@@ -135,12 +148,12 @@ export default function Index(){
                     <p>Terça - Domingo 8:30 a 18:30</p>
                 </div>
 
-                <div className={styles.maps}>
+                 <div className={styles.maps}>
 
                     <h3>Nossa Localização</h3>  
-                    <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr"></iframe>
+                    <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr" title="Localização Hsport"></iframe>
                 
-                </div>
+                </div> 
 
                 </section>
         <Footer/>

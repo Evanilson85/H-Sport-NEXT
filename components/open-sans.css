@@ -34,3 +34,9 @@
     font-weight: 600;
     src: url('/fonts/Montserrat/Montserrat-Medium.ttf'), format('truetype');
 }
+@font-face {
+    font-family: 'Italica';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Montserrat/Montserrat-Italic.ttf'), format('truetype');
+}

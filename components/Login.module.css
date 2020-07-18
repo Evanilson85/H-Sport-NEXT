@@ -57,16 +57,16 @@
 }
 @media(min-width:1024px){
   .meio{
-      background-image: url(../public/fundologin.jpg);
+    background-image: url(../public/imagens/compactados/contact.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       height: 100vh;
-      background-position: right;
+    background-position: center;
   }
   .formulario {
       background: rgba(0, 0, 0, 0.65);
       height: 300px;
-      width: 46vw;
+      width: 33vw;
       position: relative;
       top: 200px;
       margin-left: 10%;
