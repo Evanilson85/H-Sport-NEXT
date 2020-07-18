@@ -141,7 +141,8 @@
     background-image: url(../public/pagina\ inicial/temas5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 500px;
+    /* height: 100vh; */
     background-attachment: fixed;
   }
   .blackend {
