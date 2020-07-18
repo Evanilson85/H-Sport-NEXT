@@ -8,7 +8,9 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 800px;
+    width: 100%;
+    background-position: center;
   }
   .menu p {
     display: none;
@@ -192,7 +194,7 @@
   @media (min-width: 768px) {
     .info {
       height: 27vh;
-      top: 472px;
+      top: 377px;
     }
   
     .menu h1 {
@@ -264,7 +266,7 @@
     }
   }
   
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     .top {
         background-image: url(../public/pagina\ inicial/header.jpg);
         background-size: cover;
@@ -277,8 +279,8 @@
 
 
 
-  }
-  @media (min-width: 1025px) {
+  } */
+  @media (min-width: 1024px) {
     .display {
       display: flex;
     }
