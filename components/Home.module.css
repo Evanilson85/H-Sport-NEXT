@@ -192,6 +192,16 @@
   }
   
   @media (min-width: 768px) {
+
+    .top {
+        background-image: url(../public/pagina\ inicial/header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+       height: 800px;
+        background-attachment: fixed;
+        width: 100%;
+      }
     .info {
       height: 27vh;
       top: 377px;
@@ -221,7 +231,13 @@
       display: flex;
       width: 38%;
       height: 50vh;
-    }
+    }.sport p {
+      
+        width: 70%;
+    margin: 148px auto 20px;
+    color: black;
+    line-height: 2;
+      }
     .end {
       height: 90vh;
     }
@@ -289,10 +305,13 @@
       background-image: url(../public/pagina\ inicial/header.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: bottom;
-     height: 100vh;
+     
       background-attachment: fixed;
       width: 100%;
+
+    height: 800px;
+    background-attachment: fixed;
+  
     }
     .menu p {
       display: block;
@@ -383,10 +402,10 @@
     }
     .sport {
       display: flex;
-      height: 80vh;
+      height: auto;
     }
     .sport img {
-      height: 85vh;
+      height: 600px
     }
     .sport p {
       color: black;
