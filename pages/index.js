@@ -1,6 +1,6 @@
 import Nav from "../components/Nav"
 import Head from "next/head"
-import Styles from "../components/Home.module.css"
+import styles from "../components/Home.module.css"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Link from "next/link"
@@ -19,112 +19,130 @@ export default function Index(){
                    <link rel="icon" href="/basketball.png" />
                    <meta name="description" content="Hsport é um club para a sua diversão"/>
             </Head>
-            <header className={Styles.top}>
+        
+                <header>
 
+                <section className={styles.display}>
+
+                    <div className={styles.top}>
             <Header/>
-                
-            </header>
+                        <div className={styles.info}>
+                            <div className={styles.menu}>
+                                <h1>H-SPORT <br/>
+                                    <b> Você está a um Gol da </b> Diversão</h1>
 
-                <section className={Styles.info} >
 
-                    <div className={Styles.title}>
-                        <h1>
-                            <b> H-SPORT </b>
-                            <br />
-                            <hr/>
-                            Você está a um Gol da <b> Diversão </b>
-                        </h1>
-                    </div>
+                                <p>Você está procurando Diversão para sua familía? Venha fazer parte do nosso Clube</p>
 
-                  
-                    </section>
-                    <main>
-
-                <div className={Styles.meio}>
-                <div className={Styles.club}>
-                        <div className={Styles.welcome}>
-                            
-                            <h2>Bem-Vindo <br/>ao  Club H-SPORT</h2>
-
-                            <img src="imagens/chute.png" alt="imagens-menu"/>
-                        </div>
-                    </div>
-                    <div className={Styles.sport}>
-                        <div className={Styles.text}>
-                            <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado ?
-                            </p>
-                        </div>
-                    </div>
-                    <div className={Styles.new}>
-                        
-                        <div className={Styles["text-2"]}>
-                            <p>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais
-                                qualificados ? Então você está no lugar certo!
-                                Temos os Melhores Campos para sua Diversão.</p>
                             </div>
-                        </div>
-                        <div className={Styles.novidades}>
-                            <h3>Novidades</h3>
-                    {/* <div className={Styles.flex}>
-
-
-
-
-                    <div className={Styles.Sport1}>
-                    <div className={Styles.container}>
-    
-                        <img src="imagens/compactados/quadraTenis.jpg" alt="quadra de tenis" className={Styles.image}/>
-                        <div className={Styles.overlay}>
-                            <div className={Styles.text3}>Tênis</div>
-                        </div>
-                    </div>
-    
-                    <div className={Styles.container1}>
-    
-                        <img src="imagens/compactados/quadra-basquente.jpg" alt="Quadra-basquente" className={Styles.image}/>
-                        <div className={Styles.overlay}>
-                            <div className={Styles.text3}>Basquete</div>
-                        </div>
-    
-                    </div>
-    
-                    <div className={Styles.container2}>
-    
-                        <img src="imagens/compactados/nataçãomenu.jpg" alt="Natação" className={Styles.image}/>
-                        <div className={Styles.overlay}>
-                            <div className={Styles.text3}>Natação</div>
-                        </div>
-                    </div>      
-                     </div>
-              
-            </div>           */}
-                     <Slide
-     interval={6000}
-                images={[
-                    
-                    './imagens/compactados/nataçãomenu.jpg',
-                    './imagens/compactados/quadra-basquente.jpg',
-                    './imagens/compactados/nataçao.jpg',
-                    './imagens/compactados/quadraTenis.jpg'
-                ]}
-     />
-               
-                    <div className={Styles.btn}>
-                        <button>
+                            <div id={styles.bt}>
                             <Link href="Cadastro">
-                            <a>Inscreva-se</a>
-                            </Link>
-                            </button>
+                                                   
+                                <input type="button" value="inscreva-se" className={styles.btn}/>
+                                            </Link>
+                            </div>
+
+                        </div>
                     </div>
-         </div>
-     </div>
 
-    
- 
 
-    
-             </main>
+                </section>
 
+
+
+                </header>
+
+                <section id={styles.hsport}>
+                <div className={styles.meio}>
+
+                    <h2>Seja Bem-Vindo ao <br/> Club H-Sport</h2>
+
+                    <p>Só aqui na H-Sport temos segurança, acompanhamento, profissionais e muito mais o tempo que desejar. E esse acompanhamento é para todos os membros da sua familía, desde as crianças até os idosos receberão assistência a todo tempo.  </p>
+
+                </div>
+
+                <div className={styles.flex}>
+
+                    <div className={styles.container}>
+                        <img src="../pagina inicial/Sobre.jpg" alt="Avatar" className={styles.image}/>
+                        <div className={styles.overlay}>
+                        <div className={styles.text}>Hello World</div>
+                        </div>
+                    </div>
+                    <div className={styles.container}>
+                        <img src="../pagina inicial/Sobre.jpg" alt="Avatar" className={styles.image}/>
+                        <div className={styles.overlay}>
+                        <div className={styles.text}>Hello World</div>
+                        </div>
+                    </div>
+                    <div className={styles.container}>
+                        <img src="../pagina inicial/Sobre.jpg" alt="Avatar" className={styles.image}/>
+                        <div className={styles.overlay}>
+                        <div className={styles.text}>Hello World</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                </section>
+
+                <main>
+
+                <div className={styles.meio2}>
+
+                    <div className={styles.black}>
+
+                        <p>Vôlei</p>
+
+                    </div>
+
+                </div>
+
+                <div className={styles.sport}>
+
+
+                    <img src="../pagina inicial/chute.png" alt="chute"/>
+
+                    <div>
+                        <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado ?<br/>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais qualificados ?
+                            Então você está no lugar certo! Temos os Melhores Campos para sua Diversão.</p>
+                        <div className={styles.bt1}>
+                        <Link href="error">
+                            <input type="button" value="novidades" className={styles.btnsport}/>
+                                            </Link>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className={styles.end}>
+
+                    <div className={styles.blackend}>
+                        <p>
+                            Basquete
+                        </p>
+
+                    </div>
+
+                </div>
+                </main>
+
+                <section className={styles.local}>
+
+                <div className={styles.hour}>
+                    <h3>Horarios</h3>
+                    <p>Terça - Domingo 8:30 a 18:30</p>
+                </div>
+
+                <div className={styles.maps}>
+
+                    <h3>Nossa Localização</h3>  
+                    <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr"></iframe>
+                
+                </div>
+
+                </section>
         <Footer/>
 
         </>

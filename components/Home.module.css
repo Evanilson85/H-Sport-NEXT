@@ -1,542 +1,446 @@
-.body{
-    padding: 0%;
-    margin: 0%;
-    height: 3009px;
-}
-.top{
-    background-image: url(../public/imagens/Compactado-mobile/header-home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-}
-.info{
-    position: relative;
-    top: -33px;
-    height: 190px;
-}
-.title{
-    height: 190px;
-    background-color: black;
-    margin-bottom: 0;
-}
-.title h1{
-    color: #fff;  
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30pt;
-    text-align: center;
-    position: relative;
-    top: -42px;  
-}
-.title hr{
-    height: 1px;
-    background-color: #f15000;
-    border: 1px;
-    margin: 0 auto;
-    border: 1px;
-    width: 90%;
-}
-.title b{
-    color: #f15000;
-    font-size: 50pt;
-}
-.club{
-    background-image: url(../public/imagens/Compactado-mobile/chute.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 470px;
-}
-.welcome{
-   /* background-color: #10101087;
-    height: 468px;*/
-    margin-top: -21px;
-}
-.welcome img{
-    display: none;
-}
-.club h2{    
-    color: #f15000;
-    margin: 20px 0 0 66px;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 322px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24pt;
-}
-.meio{
-    position: relative;
-    top: -53px;
-    height: auto;
-   
-}
-.sport {
-    background-image: url(../public/imagens/Compactado-mobile/tema3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 470px;
-    position: relative;
-    top: -21px;
-}
-.text{
-    
-    height: 470px;
-}
-.text p{
-    width: 50%;
-    position: relative;
-    top: 211px;
-    left: 25px;
-    color: rgba(255, 255, 255, 0.98);
-    line-height: 1.5;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3em;
-}
-.new {
-    background-image: url(../public/imagens/Compactado-mobile/pasta/temas5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 540px;
-    position: relative;
-    top: -36px;
-}
-.new .text-2{
-    height: 540px;
-}
-.new .text-2 p{
-    color: rgba(255, 255, 255, 0.98);
-    line-height: 1.5;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3em;
-    width: 90%;
-    margin: 15px auto;
-    position: relative;
-    top: 300px;
-    text-align: end;
-    
-}
-.new h2{
-    text-align: center;
-}
-.novidades{
-    position: relative;
-    top: -36px;
-    height: auto;
-}
-.novidades h3{
-    margin: 0px auto 18px;
-    color:  #f15000;
-    font-size: 35px;
-    position: relative;
-    top: 25px;
-    width: 90%;
-}
-.btn{
-    margin: auto;
-    width: 62%;
-}
-.btn button{
-    width: 100%;
-    margin: auto ;
-    height: 50px;
-    background: #f15000;
-    border-radius: 5px;
-    border: none;
-}
-.btn button a {
-    color: white;
-    text-decoration: none;
-    font-size: 19px;
-    padding: 5px 25%;
-}
-.btn button:hover{
-    background-color: rgba(0, 0, 0, 0.479);
-}
-.container img,
-.container1 img,
-.container2 img{
-    max-width: 100%;
-}
-.container,
-.container1,
-.container2 {
-  position: relative;
-  width: 60%;
-  margin: 10px 2px; 
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #ba44009d;
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-}
-.container:hover .overlay,
-.container1:hover .overlay,
-.container2:hover .overlay{
-  bottom: 0;
-  height: 100%;
-}
-.text3 {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.flex{
-    margin-top: 40px;
-}
-.Sport1 {
+
+  .display {
     display: flex;
-}
-@media(min-width: 643px){    
-    .body {
-        padding: 0%;
-        margin: 0%;
-        height: 2943px;
+  }
+  
+  .top {
+    background-image: url(../public/pagina\ inicial/header-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .menu p {
+    display: none;
+  }
+  .info {
+    background-color: rgb(0 0 0 / 78%);
+    width: 90%;
+    height: 35vh;
+    margin-left: auto;
+    border-radius: 350px 0 0 350px;
+    position: relative;
+    top: 220px;
+  }
+  .menu h1 {
+    height: auto;
+    color: #f15000;
+    text-align: center;
+    font-size: 2em;
+    /* justify-content: center; */
+    /* align-items: center; */
+  
+    position: relative;
+    top: 40px;
+  }
+  .menu b {
+    color: white;
+    font-size: 27px;
+  }
+  
+  .meio p {
+    width: 100%;
+    margin: 20px auto;
+    color: white;
+    line-height: 2;
+  }
+  #bt {
+    width: 50%;
+    margin: 50px auto 0;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 41px;
+    background-color: #f0f8ff12;
+    border: #f15000 2px solid;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+  
+    outline: none;
+  }
+  
+  .btn:hover,
+  .btnsport:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    cursor: pointer;
+  }
+  #hsport {
+    margin: 20px;
+  }
+  .meio {
+    height: auto;
+  }
+  .meio h2 {
+    text-align: center;
+    color: #f15000;
+    font-size: 3em;
+  }
+  
+  .meio p {
+    color: black;
+  }
+  .flex {
+    display: none;
+  }
+  
+  .meio2 {
+    background-image: url(../public/pagina\ inicial/tema3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .black {
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.658);
+    height: 7vh;
+    border-radius: 0 350px 350px 0;
+    position: relative;
+    top: 85px;
+  }
+  .black p {
+    line-height: 2.4;
+    font-size: 22px;
+    color: white;
+    /* margin: 22px; */
+    margin: 0 28px;
+  }
+  .sport {
+    display: flex;
+    height: 70vh;
+  }
+  .sport img {
+    display: none;
+  }
+  .sport p {
+    width: 70%;
+    margin: 112px auto 20px;
+    color: black;
+    line-height: 2;
+  }
+  .btnsport {
+    width: 100%;
+    height: 41px;
+    background-color: #f0f8ff12;
+    border: #f15000 2px solid;
+    color: rgba(0, 0, 0, 0.952);
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+  }
+  .bt1 {
+    width: 30%;
+    margin: auto;
+  }
+  .end {
+    background-image: url(../public/pagina\ inicial/temas5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  .blackend {
+    background-color: #000000bb;
+    height: 8vh;
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    border-radius: 350px 0 0 350px;
+    /* bottom: auto; */
+    top: 6%;
+  }
+  
+  .blackend p {
+    line-height: 3;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+  }
+  .local {
+    display: block;
+    height: 65vh;
+  }
+  .local p {
+    color: black;
+  }
+  .map {
+    width: 100%;
+    border: none;
+    height: 298px;
+  }
+  .hour {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .hour h3 {
+    font-size: 2em;
+    color: #f15000;
+  }
+  .hour p {
+    font-size: 20px;
+  }
+  .maps {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .info {
+      height: 27vh;
+      top: 472px;
     }
-    .top{
-        background-image: url(../public/imagens/compactados/header-home-desktop.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
+  
+    .menu h1 {
+      font-size: 3em;
     }
-    .info{
-       height: 231px;
+  
+    .flex {
+      display: flex;
+      width: 100%;
+      text-align: center;
     }
-    .title {
-        height: 210px;
-        background-color: black;
-        margin-bottom: 0;
+    .flex img {
+      width: 100%;
     }
-    .title h1 {
-        top: -4px;
-        width: 46%;
-        margin: 0 50%;
-    }
-    .title b {
-        color: #ff6002;
-    }
-    .title hr{
-        height: 1px;
-        background-color: #f15000;
-        border: 1px;
-        margin: 0 auto;
-        border: 1px;
-        width: 61%;
-    }
-    .club {
-        background-image: url(../public/imagens/Compactado-mobile/chute.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 470px;
-        background-position: center;
-    }
-    .club h2 {
-        color: #f15000;
-        position: relative;
-        top: 322px;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24pt;
-        width: 50%;
-        margin: 0 0;
+    .black p {
+      font-size: 26px;
+      width: 45%;
     }
     .sport {
-            background-image: url(../public/imagens/compactados/home.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 570px;
-            position: relative;
-            top: -21px;
-            background-position: center;
+      display: flex;
+      height: 50vh;
     }
-    .text p {
-        width: 50%;
-        position: relative;
-        top: 388px;
-        left: 47%;
-        color: rgba(255, 255, 255, 0.98);
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.3em;
+    .sport img {
+      display: flex;
+      width: 38%;
+      height: 50vh;
     }
-    .new {
-        background-image: url(../public/imagens/Compactado-mobile/temaHomepc.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 540px;
-        position: relative;
-        top: -36px;
-        background-position: center;
+    .end {
+      height: 90vh;
     }
-    .Sport1 {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 90%;
-        margin: 43px auto 0;
+    .container {
+      position: relative;
+      margin: 20px;
     }
-    .Sport1 > div{
-        flex: 200px;
-        margin: 10px;
+  
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
     }
-    .Sport1 img{
-        max-width: 100%;
+  
+    .overlay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #f15000b5;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+    }
+  
+    .container:hover .overlay {
+      bottom: 0;
+      height: 100%;
+    }
+  
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .display {
+      display: flex;
+    }
+  
+    .top {
+      background-image: url(../public/pagina\ inicial/header.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+     
+      background-attachment: fixed;
+      width: 100%;
+    }
+    .menu p {
+      display: block;
+    }
+    .menu {
+      position: relative;
+      top: 115px;
+    }
+    .info {
+      background-color: rgb(0 0 0 / 78%);
+      width: 50%;
+      top: 9%;
+    
+      height: 515px;
+      margin-left: auto;
+      border-radius: 350px 0 0 350px;
+    }
+    .menu h1 {
+      top: 0;
+    }
+  
+    .menu p {
+      width: 50%;
+      margin: 20px auto;
+      color: white;
+      line-height: 2;
+    }
+    #bt {
+      width: 50%;
+      margin: auto;
+    }
+  
+    .btn {
+      width: 100%;
+      height: 41px;
+      background-color: #f0f8ff12;
+      border: #f15000 2px solid;
+      color: white;
+      border-radius: 20px;
+      position: relative;
+      top: 150px;
+      outline: none;
+    }
+  
+    #hsport {
+      margin: 80px;
+    }
+    .meio {
+      height: auto;
+    }
+    .meio h2 {
+      text-align: center;
+      color: #f15000;
+      font-size: 3em;
+    }
+  
+    .meio p {
+      color: black;
     }
     .flex {
-        display: flex;
+      display: flex;
+      width: 100%;
+      text-align: center;
     }
-    .novidades {
-        height: auto;
+    .flex img {
+      width: 100%;
     }
-    .meio {
-        position: relative;
-        top: -53px;
-        height: auto;
-        
+  
+    .meio2 {
+      background-image: url(../public/pagina\ inicial/home.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80vh;
+      background-position: center;
+      background-attachment: scroll;
     }
-    .btn {
-        margin: 20px auto;
-        width: 40%;
-   }
-}
-@media(min-width: 1024px){
-    .body {
-        padding: 0%;
-        margin: 0%;
-        height: 3124px;
+    .black {
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.658);
+      height: 10vh;
+      border-radius: 0 350px 350px 0;
     }
-    .top{
-        height: 665px;
+    .black p {
+      position: relative;
+      line-height: 3;
+      font-size: 2em;
+      margin: 0 auto;
     }
-    .info{
-        position: absolute;
-        width: 100%;
-        bottom: -1px;
-        height: 459px;
-        margin-top: 73px;
+    .sport {
+      display: flex;
+      height: 80vh;
     }
-    .title{
-        background-color:rgba(0, 0, 0, 0.2);
-        position: relative;
-        bottom: -61px;
-        height: 565px;
+    .sport img {
+      height: 85vh;
     }
-    .title h1 {
-        top: 294px;
-        width: 46%;
+    .sport p {
+      color: black;
+      margin-top: 225px;
     }
-    .club h2 {
-        color: #ff6002;
-        margin: 20px 0 0 9px;
-        /* align-items: center; */
-        text-align: center;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 52pt;
-        width: 55%;
-        height: 215px;
-        top: 247px;
+  
+    .end {
+      background-image: url(../public/pagina\ inicial/temaHomepc.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80vh;
+      background-attachment: scroll;
+      background-position: center;
     }
-    .club {
-        background-image: url(../public/imagens/wave\ .svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: auto;
-        background-position: center;
-        position: relative;
-        top: 40px;
+    .blackend {
+      background-color: #000000bb;
+      height: 8vh;
+      width: 30%;
+      margin-left: auto;
+      border-radius: 350px 0 0 350px;
     }
-    .welcome {
-        background-color: #10101000;
-        height: 694px;
-        display: flex;
+  
+    .blackend p {
+      line-height: 3;
+      font-size: 1.5em;
     }
-    .text{
-        background-color: rgba(0, 0, 0, 0.2);
-        height: 569px;
+    .local {
+      display: flex;
+      height: 65vh;
     }
-    .text p {
-        color: hsl(0, 0%, 100%);
-        line-height: 1.5;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        background: #0000007a;
-        font-size: 1.3em;
-        width: 43%;
-        margin: 15px;
-        position: relative;
-        top: 350px;
-        text-align: end;
+    .local p {
+      color: black;
     }
-
-
-    .new .text-2 p{
-    color: hsl(0, 0%, 100%);
-    line-height: 1.5;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    background: #0000007a;
-    font-size: 1.3em;
-    width: 43%;
-    margin: 15px;
-    position: relative;
-    top: 300px;
-    text-align: inherit;
-}
-    .welcome img{
-        max-width: 50%;
-        display: block;
+    .map {
+      width: 100%;
+      border: none;
+      height: 298px;
     }
-    .meio {
-        position: relative;
-        /* top: 650px; */
-        height: auto;
-        
-        margin-bottom: 40px;
+    .hour {
+      width: 50%;
+      text-align: center;
+      margin: auto;
     }
-    .btn {
-        margin: 20px auto;
-        width: 23%;
+    .maps {
+      width: 50%;
+      height: auto;
+      margin: auto;
     }
-    .btn button a {
-        color: white;
-        text-decoration: none;
-        font-size: 19px;
-        padding: 10px 20%;
+  }
+  @media (min-width:1680px){
+  
+    .info {
+      top: 87px;
+      height: 55vh;
     }
-    .Sport1 {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 90%;
-        margin: 40px auto 0;
+    .meio p{
+      font-size: 2em;
     }
-    .Sport1 > div{
-        flex: 300px;
-        margin: 3px;
+    .menu p{
+      font-size: 1.6em;
     }
-    .Sport1 img{
-        max-width: 100%;
+    .sport p {
+      font-size: 2em;
     }
-}
-@media(min-width:1440px){
-    .novidades {
-        height: 408px;
-    }
-    
-    
-    .title h1 {
-        background-color: #242a31a6;
-    }
-}
-@media(min-width:1680px){
-    .top{
-        height: 800px;
-    }
-   
-    .title{
-        background-color: rgba(0, 0, 0, 0);
-    }
-    .new {
-        
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 550px;
-        position: relative;
-        top: -36px;
-        background-position: inherit;
-    }
-    .new .text-2 p{
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.3em;
-        width: 27%;
-        background: none;
-        margin: 15px 0 15px 58%;
-        position: relative;
-        top: 63px;
-        text-align: end;
-        color: #f15000;
-    }
-    .sport{
-        background-size: contain;
-        height: 570px;
-        position: relative;
-        top: -21px;
-        background-position: right;
-    }
-    .text{
-        background-color:rgba(0, 0, 0, 0) ;
-    }
-    .text p{
-        line-height: 1.5;
-        font-family: 'Montserrat';
-        font-style: normal;
-        background:none;
-        font-weight: 400;
-        font-size: 2.3em;
-        width: 27%;
-        left: 10%;
-        position: relative;
-        top: 63px;
-        text-align: inherit;
-        color: #f15000;
-    }
-    .welcome img{
-        max-width: 36%;
-    }
-}
-@media(min-width:1920px){
-    .top{
-        height: 915px;
-    }
-    
-    .title h1 {
-        top: 500px;
-    }
-    .welcome{
-        margin-top: 94px;
-    }
-    .welcome h2{
-        margin: 139px 0 0 50px;
-    }
-    .club{
-        height: auto;
-        top: -43px;
-    }
-    .novidades{
-        height: 507px;
-    }
-    .novidades h3{
-        font-size: 4em;
-    }
-}
+    .btnsport{
+      height: 60px;
+      font-size: 26px;
+    }  
+  }
+  
