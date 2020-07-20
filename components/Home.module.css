@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Italica';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/Montserrat/Montserrat-Italic.ttf');
-}
+
   .display {
     display: flex;
   }
@@ -69,7 +64,7 @@
   }
   .btn:hover,
   .btnsport:hover {
-    background-color: rgb(233 2 2 / 98%);
+    background-color: rgb(241 80 1);
     color: white;
     cursor: pointer;
     outline: none;
@@ -96,6 +91,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+    background-position: center;
   }
   .black {
     width: 55%;

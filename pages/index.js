@@ -1,10 +1,8 @@
-import Nav from "../components/Nav"
 import Head from "next/head"
 import styles from "../components/Home.module.css"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Link from "next/link"
-import Slide from "../components/slide"
 
 
 export default function Index(){
@@ -15,18 +13,15 @@ export default function Index(){
 
         <>
             <Head>
-                    <title>H-Sport</title>
-                   <link rel="icon" href="/basketball.png" />
-                   <meta name="description" content="Hsport é um club para a sua diversão"/>
+                <title>H-Sport</title>
+                <link rel="icon" href="/basketball.png" />
+                <meta name="description" content="Hsport é um club para a sua diversão"/>
             </Head>
-        
                 <header>
-
                 <section className={styles.display}>
-
-                    <div className={styles.top}>
+                <div className={styles.top}>
             <Header/>
-                        <div className={styles.info}>
+                    <div className={styles.info}>
                             <div className={styles.menu}>
                                 <h1>H-SPORT <br/>
                                 <hr/>
@@ -37,20 +32,13 @@ export default function Index(){
 
                             </div>
                             <div id={styles.bt}>
-                            <Link href="Cadastro">
-                                                   
+                            <Link href="Cadastro">         
                                 <input type="button" value="inscreva-se" className={styles.btn}/>
-                                            </Link>
+                            </Link>
                             </div>
-
                         </div>
                     </div>
-
-
                 </section>
-
-
-
                 </header>
 
                 <section id={styles.hsport}>
@@ -59,7 +47,6 @@ export default function Index(){
                     <h2>Seja Bem-Vindo ao <br/> Club H-Sport</h2>
 
                     <p>Só aqui na H-Sport temos segurança, acompanhamento, profissionais e muito mais o tempo que desejar. E esse acompanhamento é para todos os membros da sua familía, desde as crianças até os idosos receberão assistência a todo tempo.  </p>
-
                 </div>
 
                 <div className={styles.flex}>
@@ -93,12 +80,9 @@ export default function Index(){
                                 </div>
 
                                </div>
-                              
-
-                </div>
+                        </div>
 
                 </section>
-
                 <main>
 
                 <div className={styles.meio2}>
@@ -122,8 +106,7 @@ export default function Index(){
                         <div className={styles.bt1}>
                         <Link href="error">
                             <input type="button" value="Novidades" className={styles.btnsport}/>
-                                            </Link>
-
+                        </Link>
                         </div>
 
                     </div>
@@ -152,9 +135,7 @@ export default function Index(){
 
                     <h3>Nossa Localização</h3>  
                     <iframe className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0486605524!2d-46.87548323122013!3d-23.681531507302186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1594140585979!5m2!1spt-BR!2sbr" title="Localização Hsport"></iframe>
-                
                 </div> 
-
                 </section>
         <Footer/>
 
