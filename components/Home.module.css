@@ -100,7 +100,6 @@
   .black {
     width: 55%;
     background-color: rgba(0, 0, 0, 0.658);
-    height: 7vh;
     border-radius: 0 350px 350px 0;
     position: relative;
     top: 85px;
@@ -146,7 +145,6 @@
   }
   .blackend {
     background-color: #000000bb;
-    height: 8vh;
     width: 60%;
     position: relative;
     margin-left: auto;
@@ -208,7 +206,7 @@
     .info {
 
       height: 256px;
-      top: 379px;
+      top: 90px;
       width: 67%;
     }
     .meio p {
@@ -235,7 +233,7 @@
     }
     .sport {
       display: flex;
-      height: 50vh;
+      height: auto;
     }
     .sport img {
       display: flex;
@@ -243,7 +241,7 @@
       height: 50vh;
     }.sport p {
       width: 70%;
-      margin: 70px auto 20px;
+      margin: 130px auto 20px;
       color: black;
       line-height: 2;
     }
@@ -538,5 +536,10 @@
   @media (min-width:1920px){
     .sport img {
       width: 28%;
+    }
+    
+    .info {
+      top: 47px;
+     
     }
   }
