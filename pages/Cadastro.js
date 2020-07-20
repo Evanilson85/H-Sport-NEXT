@@ -49,7 +49,7 @@ export default function Cadastro(){
         const {name, value} = e.target
 
         setValor({...valor,[name]:value})
-        console.log(name,value)
+        // console.log(name,value)
     }
     const formLogin = e =>{
 
