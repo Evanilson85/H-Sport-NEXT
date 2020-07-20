@@ -17,11 +17,11 @@ export default function Footer(){
                     <div className={styles.contato}>
                         <h2>Fale Conosco:</h2>
                         <p>(055) 9985-6325</p>
-                        <p>Hsport@Gmail.com</p>
+                        <p>sporth823@gmail.com</p>
                     </div>
                     <div className={styles.email}>
                         <h2>Email</h2>
-                        <p>Hsport@Gmail.com</p>
+                        <p>sporth823@gmail.com</p>
                     </div>
                 </div>
            
