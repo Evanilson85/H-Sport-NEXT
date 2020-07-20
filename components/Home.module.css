@@ -7,7 +7,6 @@
   .display {
     display: flex;
   }
-  
   .top {
     background-image: url(../public/pagina\ inicial/header-home.jpg);
     background-attachment: fixed;
@@ -34,9 +33,6 @@
     color: #f15001;
     text-align: center;
     font-size: 2em;
-    /* justify-content: center; */
-    /* align-items: center; */
-  
     position: relative;
     top: 40px;
   }
@@ -51,7 +47,6 @@
       width: 50%;
       margin: auto;
   }
-  
   .meio p {
     width: 100%;
     margin: 20px auto;
@@ -62,7 +57,6 @@
     width: 50%;
     margin: 50px auto 0;
   }
-  
   .btn {
     width: 100%;
     height: 41px;
@@ -71,10 +65,8 @@
     color: white;
     border-radius: 10px;
     position: relative;
-  
     outline: none;
   }
-  
   .btn:hover,
   .btnsport:hover {
     background-color: rgb(233 2 2 / 98%);
@@ -93,20 +85,17 @@
     color: #f15000;
     font-size: 3em;
   }
-  
   .meio p {
     color: black;
   }
   .flex {
     display: none;
   }
-  
   .meio2 {
     background-image: url(../public/pagina\ inicial/tema3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
-  
   }
   .black {
     width: 55%;
@@ -120,10 +109,7 @@
     line-height: 2.4;
     font-size: 22px;
     color: white;
-    /* margin: 22px; */
-    margin: 0 28px;
-
-    
+    margin: 0 28px;  
   }
   .sport {
     display: flex;
@@ -157,7 +143,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
-   
   }
   .blackend {
     background-color: #000000bb;
@@ -166,10 +151,8 @@
     position: relative;
     margin-left: auto;
     border-radius: 350px 0 0 350px;
-    /* bottom: auto; */
     top: 6%;
   }
-  
   .blackend p {
     line-height: 3;
     font-size: 21px;
@@ -218,30 +201,26 @@
         background-image: url(../public/pagina\ inicial/header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        
-       height: 100vh;
+        height: 100vh;
         background-attachment: scroll;
         width: 100%;
-      }
+    }
     .info {
-      height: 27vh;
-      top: 377px;
+
+      height: 256px;
+      top: 379px;
       width: 67%;
     }
-    
     .meio p {
       color: #020202;
-     
       font-style: normal;
       font-weight: 400;
       line-height: 1.5;
       font-size: 1.5em;
-  }
-  
+    }
     .menu h1 {
       font-size: 3em;
     }
-  
     .flex {
       display: flex;
       width: 100%;
@@ -263,88 +242,78 @@
       width: 38%;
       height: 50vh;
     }.sport p {
-      
-        width: 70%;
-    margin: 148px auto 20px;
-    color: black;
-    line-height: 2;
-      }
+      width: 70%;
+      margin: 70px auto 20px;
+      color: black;
+      line-height: 2;
+    }
     .end {
       height: 90vh;
     }
-   
-.Sport {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 90%;
-  margin: 35px auto 0;
-}
-.Sport > div{
-  flex: 100px;
-  margin: 7px;
-}
-
-.container img,
-.container1 img,
-.container2 img,
-.container3 img,
-.container4 img,
-.container5 img {
-  max-width: 100%;
-}
-
-.container,
-.container1,
-.container2,
-.container3,
-.container4,
-.container5 {
-  position: relative;
-  width: 90%;
-  margin: 10px auto;
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #ba44009d;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.5s ease;
-}
-
-.container:hover .overlay,
-.container1:hover .overlay,
-.container2:hover .overlay,
-.container3:hover .overlay,
-.container4:hover .overlay,
-.container5:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-  
+    .Sport {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 90%;
+      margin: 35px auto 0;
+    }
+    .Sport > div{
+      flex: 100px;
+      margin: 7px;
+    }
+    .container img,
+    .container1 img,
+    .container2 img,
+    .container3 img,
+    .container4 img,
+    .container5 img {
+      max-width: 100%;
+    }
+    .container,
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5 {
+      position: relative;
+      width: 90%;
+      margin: 10px auto;
+    }
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #ba44009d;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+    }
+    .container:hover .overlay,
+    .container1:hover .overlay,
+    .container2:hover .overlay,
+    .container3:hover .overlay,
+    .container4:hover .overlay,
+    .container5:hover .overlay {
+      bottom: 0;
+      height: 100%;
+    }
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
     .text {
       color: white;
       font-size: 25px;
@@ -368,12 +337,10 @@
       height: auto;
       margin: 11px 36px;
     }
-   
     .maps h3{
       text-align: left;
-    
     }
-  }
+}
 
   @media (min-width: 1024px) {
     .display {
@@ -385,9 +352,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-  
+      height: 100vh;
+      background-attachment: fixed;
     }
     .menu p {
       display: block;
@@ -399,7 +365,7 @@
     .info {
       background-color: rgb(0 0 0 / 78%);
       width: 50%;
-      top: 9%;
+      top: 6%;
     
       height: 515px;
       margin-left: auto;
@@ -412,9 +378,9 @@
     .menu p {
       width: 62%;
       margin: 20px auto 0;
-    color: white;
-    line-height: 2;
-    font-size: 1.3em;
+      color: white;
+      line-height: 2;
+      font-size: 1.3em;
     }
     #bt {
       width: 35%;
@@ -447,12 +413,11 @@
     }
   
     .meio p {
-        color: #020202;
-        font-family: 'Italica';
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        font-size: 1.5em;
+      color: black;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
     }
     .flex {
       display: flex;
@@ -467,14 +432,14 @@
       background-image: url(../public/pagina\ inicial/home.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      height: 80vh;
+      height: 90vh;
       background-position: center;
       background-attachment: scroll;
     }
     .black {
       width: 20%;
       background-color: rgba(0, 0, 0, 0.658);
-      height: 6vh;
+      height: 80px;
       border-radius: 0 350px 350px 0;
     }
     .black p {
@@ -503,13 +468,13 @@
       background-image: url(../public/pagina\ inicial/temaHomepc.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      height: 80vh;
+      height: 100vh;
       background-attachment: scroll;
       background-position: center;
     }
     .blackend {
       background-color: #000000bb;
-      height: 6vh;
+      height: 80px;
       width: 30%;
       margin-left: auto;
       border-radius: 350px 0 0 350px;
@@ -551,7 +516,7 @@
   
     .info {
       top: 87px;
-      height: 55vh;
+     
     }
     .meio p{
       font-size: 2em;
@@ -559,6 +524,7 @@
     .menu p{
       font-size: 1.6em;
     }
+
     .sport p {
       font-size: 2em;
     }
@@ -568,3 +534,9 @@
     }  
   }
   
+
+  @media (min-width:1920px){
+    .sport img {
+      width: 28%;
+    }
+  }

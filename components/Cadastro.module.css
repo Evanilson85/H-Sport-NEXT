@@ -1,211 +1,46 @@
-/* .top {
-    background-image: url(/imagens/Compactado-mobile/pasta/Login-mobile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-  }
-.formulario{
-    text-align: center;
-}
-.formulario h2{
-    color: #f15000;
-}
-#name,
-#email{
-    width: 90%;
-    height: 40px;
-    border: 1px solid #f15000;
-}
-#date{
-    width: 50%;
-    height: 40px;
-    border: 1px solid #f15000;
-}
-#password{
-    height: 40px;
-    width: 90%;
-    border: 1px solid #f15000;
-}
-#btn{
-    color: white;
-}
-#btn{
-    width: 78%;
-    margin: 20px;
-    height: 40px;
-    background: #f15000;
-    border-radius: 5px;
-    border: none;
-}
-.cadastro{
-    display: none;
-}
-.main1{
-  display: flex;
-}
-.main1 h2{
-    color:#f15000;
-    margin: 10px 0;
-}
-.cadastro-mobile{
-position: relative;
-width:20% ;
-}
-.cadastro-mobile img{
-    max-width: 283%;
-    position: relative;
-    left: -198%;
-}
-.cadastro-basquete {
-    width: 20%;
-}
-.cadastro-basquete img{
-    max-width: 20%;
-    position: absolute;
-    top: 75%;
-    right: 6%;
-}
-.for-cadastro{
-    position: relative;
-    width: 95%;
-    margin: auto;
-}
-.cadastro-desktop img{
-    display: none;
-}
-@media(min-width: 768px){
-
-    .top {
-        background-image: url(/imagens/Compactado-mobile/pasta/Login.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 600px;
-      }
-    .for-cadastro{
-        position: relative;
-        width: 70%;
-        margin: auto;
-        
+    .meio{
+        background-color: black;
     }
-    .for-cadastro h2{
-        width: 50%;
-        margin-left: 10px;
-    }
-    .cadastro-mobile,
-    .cadastro-basquete {
-        display: none;
-    }
-    #name,
-    #email,
-    #password,
-    #date{
-        width: 90%;
-        height: 40px;
-     
-        margin: auto 10px;
-    }
-    #btn{
-        width: 45%;
-    }
-    .contato img{
-        max-width: 50%;
-    }
-    .cadastro-desktop{
-        width: 50%;
-    }
-    .cadastro-desktop img{
-        max-width: 100%;
-        display: block;
-    }
-}
-@media(min-width: 1024px){
-  
-    #name,
-    #email,
-    #date,
-    #password{
-        width: 90%;
-    }
-    .main1{
+    .flex{
         display: flex;
-        margin: 0px auto 35px;
+        height: 100vh;
     }
-
-    .for-cadastro{
-        width: 50%;
-        margin: 115px auto 0 0;
-    }
-    .cadastro-desktop {
-        width: 33%;
-    }
-    .cadastro{
-        width: 50%;
-    }
-    .cadastro img{
-        max-width: 100%;
-    }
-
-} */
-
-
-
-.meio{
-    background-color: black;
-}
-
-.flex{
-    display: flex;
-height: 100vh;
-}
     .vermelho{
-     
         width: 100vw;
         background-image: url(../public/home.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
-        
+        background-repeat: no-repeat;  
     }
     .azul{
         display: none;
     }
-
-
     .formulario{
-    
-        background-color: #000000ad;
+        background-color: #ad4000;
         height: auto;
         width: 90vw;
         position: relative;
         top: 5vh;
         margin: auto;
         border-radius: 5px;
-     
-    
     }
     .nome,
     .email,
     .data,
-    .senha
-    {
-      
-      border-bottom: 2px solid  #ff6002;
-     border-top: none;
-     border-left: none;
-     border-right: none;
-      width: 93%;
-      height: 40px;
-      margin: 23px 10px;
-      outline: none;
-    
+    .senha{  
+        border-bottom: 2px solid  #ff6002;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 93%;
+        height: 40px;
+        margin: 23px 10px;
+        outline: none;
     }
     #bt{
         width: 50%;
         margin: auto;
-        
     }
-    .btn
-    {
+    .btn{
       border-radius: 6px;
       border:  #ff6002 1px solid;
       width: 100%;
@@ -218,23 +53,20 @@ height: 100vh;
       margin: 0px 10px;
     }
     .btn{
-        background-color: #ff6002;
+        background-color: #ad4000;
         color: white;
-      }
-      .btn:hover{
+        border: white 1px solid;
+    }
+    .btn:hover{
         background: rgba(196, 188, 189, 0.801);
         cursor: pointer;
         color: black;
-      
-      }
+    }
 @media (min-width:768px){
-
-   
     .flex{
         display: flex;
-    height: 100vh;
+        height: 100vh;
     }
-    
     .azul{
         display: block;
         width: 70%;
@@ -249,7 +81,6 @@ height: 100vh;
         width: 30%;
     }
     .formulario{
-    
         background-color: white;
         height: auto;
         width: 35vw;
@@ -260,18 +91,15 @@ height: 100vh;
     .nome,
     .email,
     .data,
-    .senha
-    {
-      
+    .senha{  
       border-bottom: 1px solid  #ff6002;
-     border-top: none;
-     border-left: none;
-     border-right: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
       width: 93%;
       height: 40px;
       margin: 23px 10px;
       outline: none;
-    
     }
     .nome:focus,
     .email:focus,
@@ -280,12 +108,10 @@ height: 100vh;
         transition: 0.5s;
         border-radius: 6px;
         border:  #ff6002 1px solid;
-    
     }
     #bt{
         width: 50%;
         margin: auto;
-        
     }
     .btn
     {
@@ -303,13 +129,12 @@ height: 100vh;
     .btn{
         background-color: #ff6002;
         color: white;
-      }
-      .btn:hover{
+    }
+    .btn:hover{
         background: rgba(196, 188, 189, 0.801);
         cursor: pointer;
         color: black;
-      
-      }
+    }
 }
 @media(min-width:1024px){
     .meio{

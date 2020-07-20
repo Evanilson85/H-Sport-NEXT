@@ -145,5 +145,16 @@
     }
   }
 
+  @media (min-width:1366px){
+   
+    .display-Mobile{
+      height: auto;
+      margin: 125px auto 0px;
+    }
+    .middle{
+     
+      height: auto;
+  }
+  }
 
 
