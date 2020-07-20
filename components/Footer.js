@@ -10,17 +10,17 @@ export default function Footer(){
                     <img src="imagens/Logo/13034__2_-removebg-preview-_2_.ico" alt="Logo"/>
     
                     <div className={styles.Endereco}>
-                        <h6>Endereço</h6>
+                        <h2>Endereço</h2>
                         <p>Rua Hcodelab n5, <br/>Bairro Javascript CCS HTML5</p>
                     </div>
     
                     <div className={styles.contato}>
-                        <h6>Fale Conosco:</h6>
+                        <h2>Fale Conosco:</h2>
                         <p>(055) 9985-6325</p>
                         <p>Hsport@Gmail.com</p>
                     </div>
                     <div className={styles.email}>
-                        <h6>Email</h6>
+                        <h2>Email</h2>
                         <p>Hsport@Gmail.com</p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default function Footer(){
         <hr className={styles.row2} />
        
         <div className={styles.banner}>
-            <h5>Todos os Direitos reservados 2020 / <a href="/Direitos">POLITICA DE PRIVANCIDADE </a></h5>
+            <h3>Todos os Direitos reservados 2020 / <a href="/Direitos">POLITICA DE PRIVANCIDADE </a></h3>
         </div>
     </footer>
     

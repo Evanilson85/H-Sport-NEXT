@@ -198,3 +198,10 @@
         font-size: 25px;
     }
 }
+@media(min-width: 1920px){
+
+
+    .menu li{
+        margin-left: 87px;
+    }
+}

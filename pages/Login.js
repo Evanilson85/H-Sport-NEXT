@@ -33,8 +33,8 @@ export default function Login(){
                 cookies.set('token', tokenData) // onde vou gravar o cookies  get eu pego o cookie set eu gravo o token que vem do banco de dados
                 alert('usuario autorizado')
                 window.location.href=("/admin")
-            }
-        )
+            }).catch(err => alert("Infelizmente você não tem autorização", err)
+            )
 
     }
     

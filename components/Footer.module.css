@@ -34,7 +34,7 @@
     margin: 0 10px;
     border-radius: 6px;
 }
-.rodape h6{
+.rodape h2{
     font-size: 2em;
     margin: 0px 0 30px;
     color:  #fa3a00;
@@ -49,10 +49,10 @@
     background-color: rgb(255, 255, 255) ;
     margin: 53px 0 0;
 }
-.banner h5 {
+.banner h3 {
     margin: 0;
 }
-.banner h5,
+.banner h3,
 .banner a{
     color: #000000ea;
 }
@@ -63,7 +63,7 @@
     text-align: center;
     margin-top: 17px;
 }
-.contato h6{
+.contato h2{
     font-size: 1.6em;
     margin: 0 0 10px;
     color: #fa3a00;
@@ -71,13 +71,13 @@
 .contato p {
     font-size: 22px;
     margin: 10px 0;
-    color: black;
+    color: #f15000;
 }
 .email{
     display: none;
 }
 .redes{
-    margin: 10px auto;
+    margin: 10px 80px;
     width: 60%;
 
 }
@@ -126,7 +126,7 @@
         position: relative;
         left: 30px;
     }
-    .contato h6{
+    .contato h2{
         font-size: 2em;
     margin: 0px 0 30px;
     }

@@ -117,7 +117,7 @@ export default function Index(){
                     <img src="../pagina inicial/chute.png" alt="chute"/>
 
                     <div>
-                        <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado ?<br/>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais qualificados ?
+                        <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado?<br/>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais qualificados?
                             Então você está no lugar certo! Temos os Melhores Campos para sua Diversão.</p>
                         <div className={styles.bt1}>
                         <Link href="error">

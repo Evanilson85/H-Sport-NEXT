@@ -96,12 +96,12 @@
       background-image: url(../public/thomas.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      height: 100vh;
+      
   }
   .display-Mobile{
       display: flex;
       height: auto;
-      margin: 125px auto;
+      margin: 125px auto 0;
   }
   .formulario{
       width: 40%;
