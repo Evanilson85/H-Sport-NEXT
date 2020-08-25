@@ -1,7 +1,7 @@
 import Head from "next/head"
 import styles from "../components/Home.module.css"
 import Footer from "../components/Footer"
-import Header from "../components/Header"
+import Header from "../components/NovoHeader"
 import Link from "next/link"
 
 
@@ -41,7 +41,8 @@ export default function Index(){
                 </section>
                 </header>
 
-                <section id={styles.hsport}>
+            <div id={styles["page-home"]}>
+            <section id={styles.hsport}>
                 <div className={styles.meio}>
 
                     <h2>Seja Bem-Vindo ao <br/> Club H-Sport</h2>
@@ -83,46 +84,67 @@ export default function Index(){
                         </div>
 
                 </section>
+              
+
                 <main>
+            <div className={styles.welcome}>
 
-                <div className={styles.meio2}>
+        
 
-                    <div className={styles.black}>
 
-                        <p>Vôlei</p>
+                <div className={styles.volei}>
+                    <h3><a href="">Vôlei</a> </h3>
+                    <div id="componete">
+                         <style jsx>{  `
+                         #componete
+                          {
+                            display:flex;
+                           align-items: center;
+                           }`}
+                          </style>
+                        <img src="img/page-home/pngocean.com (6).png" alt=""/>
 
+                        <p>O objeto usado para a prática de vôlei é uma bola e o objetivo principal do jogo consiste na
+                            marcação de pontos ao mandar a bola para o campo adversário e fazer com que ela toque o
+                            chão.</p>
                     </div>
+                </div>
+            </div>
+
+            <div className={styles.new}>
+                <div className={styles["new-p"]}>
+                    <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado?
+                        Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais qualificados?
+                        Então
+                        você está no lugar certo! Temos os Melhores Campos para sua Diversão.</p>
+
+                    <div id={styles.btn}>
+                        <button><a href="404.html">Novidades</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/page-home/desktop/pngocean.com (7).png" alt=""/>
+                </div>
+            </div>
+
+            <div className={styles.basquete}>
+                <h3><a href="">Basquete</a></h3>
+                <div className={styles["basquete-p"]}>
+                    <img src="img/page-home/basquete.png" alt=""/>
+
+                    <p>Quais são as principais características do basquete?
+                        Características:Cesta é o nome comum que se dá ao encestar (fazer a bola passar por esse aro) e
+                        então marcam-se pontos, dependendo do local e das circunstâncias da cesta: se for cesta dentro
+                        do garrafão (nome comum dado à Área Restritiva) obtém-se dois pontos, se for fora da linha dos
+                        6,25 metros obtém-se 3 pontos.</p>
+                </div>
+            </div>
+        </main>
+
 
                 </div>
 
-                <div className={styles.sport}>
 
-
-                    <img src="../pagina inicial/chute.png" alt="chute"/>
-
-                    <div>
-                        <p>Já imaginou estar em um lugar onde você e os amigos possam se divertir por tempo ilimitado?<br/>Melhor ainda, treinar o seu Esporte favorito com a nossa equipe de profissionais qualificados?
-                            Então você está no lugar certo! Temos os Melhores Campos para sua Diversão.</p>
-                        <div className={styles.bt1}>
-                        <Link href="error">
-                            <input type="button" value="Novidades" className={styles.btnsport}/>
-                        </Link>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className={styles.end}>
-
-                    <div className={styles.blackend}>
-                        <p>
-                            Basquete
-                        </p>
-
-                    </div>
-
-                </div>
-                </main>
 
                 <section className={styles.local}>
 

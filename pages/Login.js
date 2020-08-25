@@ -3,7 +3,6 @@ import link from "next/link"
 import axios from "axios"
 import {Cookies} from "react-cookie"
 import Header from "../components/Header"
-import Footer from '../components/Footer'
 import styles from "../components/Login.module.css"
 
 export default function Login(){

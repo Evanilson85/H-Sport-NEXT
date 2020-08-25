@@ -1,210 +1,77 @@
-.rodape{
-    background-color: rgb(255, 255, 255);
+#footer {
     height: auto;
-    text-align: center;
-    position: relative;
-
-}
-.row{
+    background-color: #4a4a4a;
+  }
+  #footer hr {
     height: 2px;
-    border: none;
-    width: 90%;
-    margin: auto;
-    background-color: #fa3a00;
-}
-.row2{
-    height: 2px;
-    border: none;
-    width: 90%;
-    margin: auto;
-    background-color: #fa3a00;
-    position: relative;
-    top: 27px;
-}
-.net {
-    display: flex;
-    text-align: center;
-}
-
-.net img {
-    width: 50%;
-    background-color: rgb(255, 254, 254);
-    height: 35px;
-    width: 35px;
-    margin: 0 10px;
-    border-radius: 6px;
-}
-.rodape h2{
-    font-size: 2em;
-    margin: 0px 0 30px;
-    color:  #fa3a00;
-}
-.rodape p {
-    margin: 30px 0;
-    color: #fa3a00;
-}
-
-.rodape .banner {
-    height: 45px;
-    background-color: rgb(255, 255, 255) ;
-    margin: 53px 0 0;
-}
-.banner h3 {
-    margin: 0;
-}
-.banner h3,
-.banner a{
-    color: #000000ea;
-    font-size: 15px;
-}
-.Endereco{
-    display: none;
-}
-.contato{
-    text-align: center;
-    margin-top: 17px;
-}
-.contato h2{
-    font-size: 1.6em;
-    margin: 0 0 10px;
-    color: #fa3a00;
-}
-.contato p {
-    font-size: 22px;
-    margin: 10px 0;
-    color: #f15000;
-}
-.email{
-    display: none;
-}
-.redes{
-    margin: 10px 80px;
-    width: 60%;
-
-}
-.direitos{
-    position: relative;
-    top: 40px;
-}
-.Footer-logo img{
-    max-width: 37%;
-    position: relative;
-    
-}
-.Footer-logo {
+    border: 2px solid var(--color-h1);
+  }
+  #footer .local {
+    margin-top: 45px;
     display: block;
-}
-@media(min-width: 643px){
-
-    .rodape {
-        background-color: rgb(255, 255, 255);
-        height: auto;
-        text-align: center;
-        position: relative;
-       
+  }
+  #footer .local h4 {
+    color: blanchedalmond;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #footer .local p {
+    width: 90%;
+    font-size: 1em;
+    margin: 10px auto 0;
+    color: var(--color-fundo);
+    text-align: center;
+    line-height: 1.5;
+  }
+  #footer .local .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .local button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: #4a4a4a;
+  }
+  #footer .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .logo-footer img {
+    width: 30%;
+  }
+  
+  #footer .politica {
+    height: 50px;
+    background-color: #343333;
+    position: relative;
+  }
+  #footer .politica p {
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: var(--color-fundo);
+    font: 400;
+  }
+  #footer .redes img{
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    #footer .local {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
-    .Footer-logo img {
-        max-width: 29%;
-        position: relative;
-        top: 0px;
-        
-    }
-    .Footer-logo {
-        display: flex;
-        margin: 40px 40px 0;
-        width: 90%;
-    }
-    .Endereco{
-        display: block;
-        width: 30%;
-        margin-right: 58px;
-        position: relative;
-        left: 40px;
-    }
-    .contato{
-        text-align: left;
-        margin: 0;
-        position: relative;
-        left: 30px;
-    }
-    .contato h2{
-        font-size: 2em;
-    margin: 0px 0 30px;
-    }
-    .redes {
-        margin-left: 0%;
-        width: 100%;
-        text-align: center;
-    }
-    .net{
-        display: block;
-    }
-}
-@media(min-width: 1024px){
-
-
-    .rodape{
-      
-        height: 342px;
-    }
-    .Footer-logo {
-        width: 90%;
-        margin: 40px 70px 0;
-    }
-    .Footer-logo img{
-        margin-right: 1%;
-    }
-    .Endereco {
-        display: block;
-        width: 30%;
-        
-        position: relative;
-        
-        margin-right: 14%;
-    }
-    .redes{
-        width: 35%;
-        margin: auto;
-    }
-}
-@media(min-width: 1025px){
-
-    .Endereco {
-
-        margin: 0px 112px;
-
-    }
-
-}
-
-@media(min-width: 1440px){
-    .Footer-logo {
-        margin: 40px 70px 0;
-    }
-    .Endereco{
-        margin: 0 175px;
-    }
-}
-@media(min-width: 1680px){
-    .Footer-logo {
-        margin: 40px 83px 0;
-    }
-    .Endereco{
-        margin: 0px 220px;
-    }
-
-}
-
-@media(min-width: 1920px){
-
-    .Footer-logo {
-        margin: 40px 100px 0;
-    }
-    .Endereco{
-        margin: 0 278px;
-    }
-
-    .rodape p{
-        font-size: 25px;
-    }
-}
+    #footer .logo-footer img {
+      width: 10%;
+  }
+  }
+  

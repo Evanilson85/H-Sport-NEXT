@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+import Header from "../components/NovoHeader"
 import Footer from "../components/Footer"
 import styles from '../components/Contato.module.css'
 import Head from "next/head"

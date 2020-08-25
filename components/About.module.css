@@ -1,72 +1,70 @@
-.headertop {
-  background-image: url(../public/imagens/Compactado-mobile/sobre.jpg);
-  background-repeat: no-repeat;
+.section {
+  background-image: url(../public/img/about/homeabout.jpg);
   background-size: cover;
-  height: 500px;
+  height: 450px;
 }
-.info h1 {
-  color: #ff6002;
-  width: 90%;
-  margin: 10px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
+#main .about h2 {
+  color: #f17234;
+  text-align: center;
+  font-size: 2rem;
+  width: 50%;
+  margin: 20px 0;
+  background: #02114ef0;
+  border-radius: 3px 18px 18px 0;
 }
-.row{
-  height: 4px;
-    background-color: #ff6002;
-    border: none;
-    width: 96%;
-    margin: auto;
-    border-radius: 5px;
+#main .about hr {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f17234;
+  height: 5px;
+  border: none;
 }
-.info p {
-  width: 95%;
+#main .about p {
+  width: 80%;
   margin: 10px auto;
-  font-size: 1em;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  line-break: strict;
-/*
-  color: var(--black);
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--dark);
-  padding: 3%;*/
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  text-align: inherit;
+  color: #607d8b;
 }
-.Sport {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 90%;
-  margin: 35px auto 0;
+#main .about h3 {
+  text-align: center;
+  color: #f17234;
+  margin: 20px auto;
 }
-.Sport > div{
-  flex: 100px;
-  margin: 7px;
+.about button {
+  background-color: #f17234;
+  height: 45px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  margin: 0 0 10px 0;
+}
+.about button:hover {
+  background: rgba(0, 0, 0, 0.274);
+}
+.about button a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: rgb(0, 0, 0);
+  font: 600;
+}
+.about .btn {
+  width: 50%;
+  margin: 18px 33px 0 auto;
+}
+.menu img {
+  padding: 0px;
 }
 
-.container img,
-.container1 img,
-.container2 img,
-.container3 img,
-.container4 img,
-.container5 img {
-  max-width: 100%;
-}
-
-.container,
-.container1,
-.container2,
-.container3,
-.container4,
-.container5 {
+.container {
   position: relative;
-  width: 90%;
-  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container img{
+  width:100%;
 }
 .image {
   display: block;
@@ -79,26 +77,22 @@
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #ba44009d;
+  background-color: #e7591269;
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: 0.5s ease;
 }
 
-.container:hover .overlay,
-.container1:hover .overlay,
-.container2:hover .overlay,
-.container3:hover .overlay,
-.container4:hover .overlay,
-.container5:hover .overlay {
+.container:hover .overlay {
   bottom: 0;
   height: 100%;
 }
 
 .text {
-  color: white;
-  font-size: 20px;
+  color: rgb(241, 241, 241);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -108,170 +102,180 @@
   text-align: center;
 }
 
+.owl-nav {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
 
-
-.planos{
-  display: block;
-  height: auto;
+.owl-carousel .owl-nav button span {
+  font-size: 35px;
+  margin: 0 30px;
 }
-.plano1,
-.plano2{
-  width: 300px;
-  height: auto;
-  background-color: rgb(255, 255, 255);
-  margin: 20px auto;
-  border: solid 2px #ff6002;
-  border-radius: 10px;
-  
-}
-.plano1 h2,
-.plano2 h2{
-  color: #ff6002;
-  position: relative;
-  left: 8px;
-  margin-top: 15px;
-}
-.plano1 p,
-.plano2 p{
-  font-size: 1em;
-  font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-}
-.plano1 b,
-.plano2 b {
-  color: #ff6002;
-  font-size: 21px;
-
-}
-.btn-aluguel a,
-.btn-compra a {
-  color: white;
-  text-decoration: none;
-}
-.btn-aluguel,
-.btn-compra{
-
+.map iframe {
   width: 100%;
-  height: 30px;
-  margin: auto;
-  width: 100%;
-  height: 50px;
-  background: #f15000;
-  border-radius: 5px;
+  height: 450px;
   border: none;
-
+ 
 }
-.btn-aluguel:hover,
-.btn-compra:hover{
-
-  background-color: #883005;
-
+.map h3 {
+  color: #f17234;
+  text-align: center;
+  font-size: 2rem;
+  background: #02114ef0;
+  width: 70%;
+  margin: 20px 0;
+  border-radius: 3px 18px 18px 0;
 }
-.b,.c{
-  width: 90%; margin: 25px auto ;
+#form-contacts {
+  width: 70%;
+  margin: 3% auto;
+  position: relative;
+}
+#form-contacts label {
+  display: block;
+  font: 600;
+  font-size: 1.4rem;
+  color: #f17234;
+}
+
+#form-contacts input {
+  height: 45px;
+  width: 100%;
+}
+#form-contacts textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+  outline: none;
+  border: 2px solid lightgrey;
+}
+#form-contacts textarea:hover {
+  border: 2px solid #02114ef0;
+}
+#form-contacts .btn {
+  background: #f17234;
+  color: white;
+  font: 600;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+#form-contacts .btn:hover {
+  background: #02114ef0;
+}
+/* parte do input */
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input {
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #02114ef0;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #02114ef0;
+}
+
+#main .about .planos img {
+  display: none;
 }
 @media (min-width: 768px) {
-  .headertop {
-    background-image: url(/imagens/compactados/Sobre.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
+  .section {
+    background-image: url(../public/img/about/home.jpg);
+    height: 600px;
   }
-
-  .info h1 {
-    
-    font-size: 4em;
-    margin: 30px auto;
+  #main .about h2 {
+    font-size: 3rem;
+    width: 25%;
   }
-
-  .Sport {
+  #main .about p {
+    font-size: 1.3rem;
+    margin: 40px auto;
+  }
+  #main .about .planos {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin: 90px auto 0;
+    justify-content: center;
+    align-items: center;
   }
-  .Sport > div {
-    flex: 200px;
-    margin: 10px;
+  #main .about .planos img {
+    display: block;
   }
-  .Sport img {
-    max-width: 100%;
-  }
-  .planos{
-    display: flex;
-    height: auto;
+  .menus {
     width: 95%;
-    margin: auto;
-  }
-  .plano1,
-.plano2{
-  width: 310px;
-  height: auto;
-}
-}
-@media (min-width: 1024px) {
-  .headertop {
-    background-image: url(/imagens/compactados/Sobre.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 665px;
-    background-position: center;
-  }
-
-  .info p {
-    width: 53%;
-    font-size: 1em;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.5;
-    color: #222;
-    line-break: strict;
-  }
-  .plano1 p{
-    width: 80%;
-  font-size: 1em;
-  font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-}
-  .Sport {
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin: 90px auto 0;
+   
   }
-  .Sport > div {
-    flex: 300px;
-    margin: 3px;
+  .menus .container {
+    width: 40%;
+    margin: 5px;
   }
-  .Sport img {
-    max-width: 100%;
+ 
+  .about .btn {
+    width: 29%;
+    margin: 18px 131px 0 auto;
   }
-  .plano1,
-  .plano2{
-    width: 450px;
-    height: auto;
+  .about h3 {
+    font-size: 37px;
   }
-}
-@media (min-width: 1440px) {
-  .Sport > div {
-    margin: 20px;
+  .about button a {
+    font-size: 1.7em;
+    color: rgb(255 255 255);
+    font-family: monospace;
   }
-
-}
-@media (min-width: 1680px) {
-
-  .info p {
-    font-size:1.5em ;
+  .map{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
   }
-  .Sport > div {
-    margin: 50px;
+  .map h3{
+    width: 45%; 
   }
-}
-@media (min-width: 1920px){
-  .Sport > div {
-    margin: 67px;
+  .map .contactos {
+    margin: 18px 0px 0 auto;
+    width: 45%;
+    border-radius: 18px 0px 0px 18px;
+  }
+  #form-contacts {
+    margin: 11% auto;
   }
 }

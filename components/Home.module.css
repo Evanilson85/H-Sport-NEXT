@@ -58,7 +58,7 @@
     background-color: #f0f8ff12;
     border: #f15000 2px solid;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     position: relative;
     outline: none;
   }
@@ -69,6 +69,9 @@
     cursor: pointer;
     outline: none;
   }
+
+/* Meu header acima */
+
   #hsport {
     margin: 20px;
   }
@@ -78,7 +81,7 @@
   .meio h2 {
     text-align: center;
     color: #f15000;
-    font-size: 3em;
+    font-size: 2.2em;
   }
   .meio p {
     color: black;
@@ -86,73 +89,8 @@
   .flex {
     display: none;
   }
-  .meio2 {
-    background-image: url(../public/pagina\ inicial/tema3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    background-position: center;
-  }
-  .black {
-    width: 55%;
-    background-color: rgba(0, 0, 0, 0.658);
-    border-radius: 0 350px 350px 0;
-    position: relative;
-    top: 85px;
-  }
-  .black p {
-    line-height: 2.4;
-    font-size: 22px;
-    color: white;
-    margin: 0 28px;  
-  }
-  .sport {
-    display: flex;
-    height: auto;
-  }
-  .sport img {
-    display: none;
-  }
-  .sport p {
-    width: 70%;
-    margin: 15px auto 20px;
-    color: black;
-    line-height: 2;
-  }
-  .btnsport {
-    width: 100%;
-    height: 41px;
-    background-color: #f0f8ff12;
-    border: #f15000 2px solid;
-    color: rgba(0, 0, 0, 0.952);
-    border-radius: 10px;
-    position: relative;
-    outline: none;
-  }
-  .bt1 {
-    width: 30%;
-    margin: 10px auto;
-  }
-  .end {
-    background-image: url(../public/pagina\ inicial/temas5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-  }
-  .blackend {
-    background-color: #000000bb;
-    width: 60%;
-    position: relative;
-    margin-left: auto;
-    border-radius: 350px 0 0 350px;
-    top: 6%;
-  }
-  .blackend p {
-    line-height: 3;
-    font-size: 21px;
-    color: white;
-    text-align: center;
-  }
+ 
+
   .local {
     display: block;
     height: auto;
@@ -189,6 +127,96 @@
   color: #f15000;
   }
   
+
+
+
+  #page-home main {
+    height: auto;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  #page-home main .welcome h2 {
+    color: var(--color-h1);
+    font-size: 2.8em;
+    text-align: center;
+  }
+  #page-home main .welcome p,
+  #page-home main .new p {
+    line-height: 2;
+    font-family: 'Crete Round', serif;
+    width: 80%;
+    margin: 20px auto ;
+  }
+  #page-home main .welcome .volei {
+    margin-top: 20px;
+  }
+  #page-home main .welcome .volei h3 {
+    background-color: var(--color-h1);
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+  }
+  #page-home main .welcome .volei a,
+  #page-home main .basquete a {
+    color: white;
+    font: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  #page-home main .welcome .volei img,
+  #page-home main .basquete img {
+    width: 100%;
+  }
+  #page-home main .new #btn {
+    width: 50%;
+    margin: 10px auto 0;
+  }
+  #page-home main .new button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: var(--color-h1);
+    border-radius: 2px;
+    margin: auto;
+  }
+  #page-home main .new button a {
+    color: white;
+    text-decoration: none;
+    font: 400;
+  }
+  #page-home main .basquete h3 {
+    background-color: var(--color-h1);
+    width: 70%;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+  }
+  #page-home .desk {
+    display: none;
+  }
+  #page-home .img-baner {
+    display: none;
+  }
+  #page-home main .welcome .volei p {
+    display: none;
+  }
+  #page-home .new img {
+    display: none;
+  }
+  #page-home main .basquete .basquete-p p {
+    display: none;
+  }
   @media (min-width: 768px) {
 
     .top {
@@ -205,7 +233,7 @@
       width: 67%;
     }
     .meio p {
-      color: #020202;
+     
       font-style: normal;
       font-weight: 400;
       line-height: 1.5;
@@ -222,10 +250,7 @@
     .flex img {
       width: 100%;
     }
-    .black p {
-      font-size: 26px;
-      width: 45%;
-    }
+    
     .sport {
       display: flex;
       height: auto;
@@ -240,9 +265,7 @@
       color: black;
       line-height: 2;
     }
-    .end {
-      height: 90vh;
-    }
+   
     .Sport {
       display: flex;
       flex-wrap: wrap;
@@ -333,7 +356,72 @@
     .maps h3{
       text-align: left;
     }
+
+    #page-home .desk {
+      display: block;
+    }
+    #page-home .img-baner {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+    }
+    #page-home .img-baner img {
+      width: 30%;
+      margin: 10px;
+    }
+    #page-home .welcome p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+  
+    #page-home main .welcome .volei h3 {
+      width: 20%;
+    }
+  
+    #page-home main .welcome .volei img {
+      width: 50%;
+    }
+    #page-home main .basquete h3 {
+      width: 20%;
+      margin-left: 80%;
+    }
+    #page-home main .welcome .volei p {
+      display: block;
+      width: 45%;
+      font-size: 18px;
+    }
+    #page-home .new {
+      height: auto;
+      display: flex;
+      align-items: center;
+      margin: 75px 0;
+    }
+    #page-home .new .new-p {
+      width: 50%;
+    }
+    #page-home .new img {
+      display: block;
+      margin: 0 auto;
+      width: 55%;
+    }
+    #page-home main .basquete img {
+      width: 40%;
+    }
+    #page-home main .basquete .basquete-p {
+      display: flex;
+      align-items: center;
+    }
+    #page-home main .basquete .basquete-p p {
+      display: block;
+      width: 40%;
+      line-height: 2;
+      font-family: 'Crete Round', serif;
+      margin: 0 auto;
+      font-size: 18px;
+    }
 }
+
+
 
   @media (min-width: 1024px) {
     .display {
@@ -387,7 +475,7 @@
       background-color: #f0f8ff12;
       border: #f15000 2px solid;
       color: white;
-      border-radius: 20px;
+      border-radius: 5px;
       
       outline: none;
     }
@@ -420,26 +508,7 @@
       width: 100%;
     }
   
-    .meio2 {
-      background-image: url(../public/pagina\ inicial/home.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 90vh;
-      background-position: center;
-      background-attachment: scroll;
-    }
-    .black {
-      width: 20%;
-      background-color: rgba(0, 0, 0, 0.658);
-      height: 80px;
-      border-radius: 0 350px 350px 0;
-    }
-    .black p {
-      position: relative;
-      line-height: 3;
-      font-size: 20pt;
-      margin: 0 auto;
-    }
+
     .sport {
       display: flex;
       height: auto;
@@ -456,26 +525,6 @@
       font-size: 19px;
     }
   
-    .end {
-      background-image: url(../public/pagina\ inicial/temaHomepc.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-      background-attachment: scroll;
-      background-position: center;
-    }
-    .blackend {
-      background-color: #000000bb;
-      height: 80px;
-      width: 30%;
-      margin-left: auto;
-      border-radius: 350px 0 0 350px;
-    }
-  
-    .blackend p {
-      line-height: 3;
-      font-size: 1.5em;
-    }
     .local {
       display: flex;
       height: auto;
@@ -540,3 +589,16 @@
       height: 800px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -35,6 +35,10 @@
     border-radius: 20px;
     border: 1px solid black;
 }
+.open-menu .fechar{
+    display: block;
+    z-index: 5;
+}
 
 .ul{
     background-color:rgba(255, 255, 255, 0.96) ;
@@ -61,16 +65,6 @@
     list-style: none;
     text-align: center;
 }*/
- button#fechar {
-     display:block;
-     z-index: 5;
-     font-size: 30px;
-     color: #f15000;
-    }
-    
-    button#fechar.open-menu {
-        display:none;
-}
 
 
 .open-menu ul {

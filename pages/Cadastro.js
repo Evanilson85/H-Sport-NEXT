@@ -6,31 +6,13 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from "../components/Cadastro.module.css"
 import Head from "next/head"
-import Update from "../components/upload"
+
 
 
 const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Cadastro(){
 
-
-
-
-/*    const handleClick = async (props) => {
-
-        switch(props.action){
-
-          
-            
-            
-             // await axios.post(`${serverURL}/admin/usuario/${props.id}/uploads`, props.values)
-             
-                    
-        }
-
-
-    }
-*/
 
 
 
