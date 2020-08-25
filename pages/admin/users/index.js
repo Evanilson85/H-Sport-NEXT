@@ -7,7 +7,6 @@ import Layout from '../../../components/admin/Layout'
 import axios from 'axios'
 import { Cookies } from 'react-cookie'
 import { useState } from 'react'
-import Update from "../../../components/upload"
 
 const cookies = new Cookies()
 const token = cookies.get('token')
