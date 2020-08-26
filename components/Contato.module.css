@@ -1,160 +1,306 @@
+.middle {
+  /* background-image: url(../public/Contato.jpg); */
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
-  .middle {
-    background-image: url(../public/Contato.jpg);
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+.formulario {
+  background-color: rgb(8 2 2 / 88%);
+  width: 80vw;
+  margin: auto;
+  border-radius: 5px;
+}
+.nome,
+.email,
+.fone {
+  border-bottom: 2px solid #ff6002;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 93%;
+  height: 40px;
+  margin: 23px 10px;
+  outline: none;
+  border-radius: 2px;
+}
+.msm {
+  border-bottom: 2px solid #ff6002;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 93%;
+  height: 70px;
+  margin: 23px 10px;
+  outline: none;
+  border-radius: 2px;
+}
+
+#bt {
+  width: 50%;
+  margin: auto;
+}
+.btn {
+  border-radius: 6px;
+  border: #ff6002 1px solid;
+  width: 100%;
+  height: 40px;
+  margin: 23px auto;
+  outline: none;
+}
+.formulario h2 {
+  color: white;
+  margin: 0px 10px;
+}
+.btn {
+  background-color: #ff6002;
+  color: white;
+}
+.btn:hover {
+  background: rgba(196, 188, 189, 0.801);
+  cursor: pointer;
+  color: black;
+}
+.row {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #ff6002;
+  height: 2px;
+  border: none;
+  border-radius: 49px;
+}
+.maps {
+  width: 80vw;
+  margin: 0 auto;
+}
+.maps h2 {
+  color: #ff6002;
+}
+.map {
+  width: 100%;
+  border: none;
+}
+.h1 {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto 30px;
+  font-size: 1em;
+  color: var(--color-h1);
+}
+
+#form-contacts {
+  width: 70%;
+  margin: 3% auto;
+  position: relative;
+}
+#form-contacts label {
+  display: block;
+  font: 600;
+  font-size: 1.4rem;
+  color: #f17234;
+}
+
+#form-contacts input {
+  height: 45px;
+  width: 100%;
+  margin: 6px 0 0;
+}
+#form-contacts .btn {
+  height: 45px;
+  width: 40%;
+  margin: 6px 0 0;
+}
+#form-contacts textarea {
+  width: 100%;
+  resize: vertical;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid lightgrey;
+}
+#form-contacts textarea:hover {
+  border: 2px solid #02114ef0;
+}
+#form-contacts .btn {
+  background: #f17234;
+  color: white;
+  font: 600;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+#form-contacts .btn:hover {
+  background: #02114ef0;
+}
+/* parte do input */
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input {
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #02114ef0;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #02114ef0;
+}
+.newContatos img {
+  width: 100%;
+}
+.newMaps {
+  display: none;
+}
+
+.local {
+  display: block;
+  height: auto;
+}
+.local p {
+  color: black;
+}
+.map {
+  width: 100%;
+  border: none;
+  height: 298px;
+}
+.hour {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+}
+.hour h3 {
+  font-size: 2em;
+  color: #f15000;
+}
+.hour p {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+
+  .h1{
+    font-size: 4em;
+    
   }
-  
-  .formulario {
-    background-color: rgb(8 2 2 / 88%);
-    width: 80vw;
-    margin: auto;
-    border-radius: 5px;
-  }
-  .nome,
-  .email,
-  .fone {
-    border-bottom: 2px solid #ff6002;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 93%;
-    height: 40px;
-    margin: 23px 10px;
-    outline: none;
-    border-radius: 2px;
-  }
-  .msm {
-    border-bottom: 2px solid #ff6002;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 93%;
-    height: 70px;
-    margin: 23px 10px;
-    outline: none;
-    border-radius: 2px;
-  }
-  
-  #bt {
-    width: 50%;
-    margin: auto;
-  }
-  .btn {
-    border-radius: 6px;
-    border: #ff6002 1px solid;
-    width: 100%;
-    height: 40px;
-    margin: 23px auto;
-    outline: none;
-  }
-  .formulario h2 {
-    color: white;
-    margin: 0px 10px;
-  }
-  .btn {
-    background-color: #ff6002;
-    color: white;
-  }
-  .btn:hover {
-    background: rgba(196, 188, 189, 0.801);
-    cursor: pointer;
+  .h1 p{
+    font-size: 35px;
     color: black;
   }
-  .row {
-    width: 80%;
-    margin: 10px auto;
-    background-color: #ff6002;
-    height: 2px;
-    border: none;
-    border-radius: 49px;
+  .newMaps {
+    display: block;
   }
-  .maps {
-    width: 80vw;
-    margin: 0 auto;
+  .newContatos {
+    width: 50%;
+    display: flex;
+    align-items: center;
   }
-  .maps h2 {
+  .middle {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .display-Mobile {
+    display: flex;
+    height: auto;
+    margin: 5px auto 0;
+  }
+  #form-contacts {
+    width: 35%;
+  }
+  .h1 {
+    width: 85%;
+    margin: 0 auto 30px;
+    font-size: 1em;
     color: #ff6002;
   }
-  .map {
-    width: 100%;
-    border: none;
+  .row {
+    display: none;
   }
-  .h1{
-      background-color: rgb(0 0 0 / 56%);
-      text-align: center;
-      width: 95%;
-      margin: 0 auto 30px;
-      font-size: 1em;
-      color: white;    
+  .maps {
+    height: 400px;
+    width: 40%;
+    margin: 0;
   }
-  @media (min-width:768px){
-  
-  .middle{
-      background-image: url(../public/thomas.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      
+  .maps h2 {
+    margin: 10px auto;
+    font-size: 44px;
   }
-  .display-Mobile{
-      display: flex;
-      height: auto;
-      margin: 125px auto 0;
-  }
-  .formulario{
-      width: 40%;
-  }
-  .h1{
-      width: 85%;
-      margin: 0 auto 30px;
-      font-size: 1em;
-      color: #ff6002 ;
-  }
-  .row{
-      display: none;
-  }
-  .maps{
+  /* .map{
       height: 400px;
-      width: 40%;
-  }
-  .maps h2{
-      margin: 10px auto;
-      font-size: 44px;
-  }
-  .map{
-      height: 400px;
-  }
-  
+  } */
+
   .nome:focus,
-      .email:focus,
-      .fone:focus,
-      .msm:focus{
-          transition: 0.5s;
-          border-radius: 6px;
-          border:  #ff6002 1px solid;
-      
-      }
+  .email:focus,
+  .fone:focus,
+  .msm:focus {
+    transition: 0.5s;
+    border-radius: 6px;
+    border: #ff6002 1px solid;
   }
 
-  @media (min-width:1024px){
-   
-    .formulario{
-        width: 30%;
-    }
+  .local {
+    display: flex;
+    margin: 10px 0 0;
   }
-
-  @media (min-width:1366px){
-   
-    .display-Mobile{
-      height: auto;
-      margin: 125px auto 0px;
-    }
-    .middle{
-     
-      height: auto;
+  .hour {
+    width: 50%;
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+}
+
+@media (min-width: 1024px) {
+  .formulario {
+    width: 30%;
   }
+}
 
-
+@media (min-width: 1366px) {
+  .display-Mobile {
+    height: auto;
+  
+  }
+  .middle {
+    height: auto;
+  }
+}

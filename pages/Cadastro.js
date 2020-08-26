@@ -1,8 +1,8 @@
 import React, {useState} from "react"
-import link from "next/link"
+import Link from "next/link"
 import axios from "axios"
 import {Cookies} from "react-cookie"
-import Header from "../components/Header"
+import Header from "../components/NovoHeader"
 import Footer from "../components/Footer"
 import styles from "../components/Cadastro.module.css"
 import Head from "next/head"
@@ -12,15 +12,6 @@ import Head from "next/head"
 const serverURL = 'https://hcode-lab-adonis-hsport.herokuapp.com'
 
 export default function Cadastro(){
-
-
-
-
-
-
-
-
-
 
 
     
@@ -82,7 +73,10 @@ export default function Cadastro(){
                     <input type="password" name="password" className={styles.senha} placeholder="Digite a sua senha" onFocus={focarlogin} onChange={focarlogin}/>
                     <div id={styles.bt}>
                     <input type="submit" value="Enviar" className={styles.btn}/>
-                    </div>
+                    <Link href="Login">
+                          <button className={styles.btnLogin}><a >Login</a></button>
+                    </Link>
+                                        </div>
 
 
                     </form>
@@ -92,6 +86,8 @@ export default function Cadastro(){
                    
 
             </main>
+        <Footer>
+        </Footer>
 
         </>
     )

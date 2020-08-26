@@ -1,9 +1,10 @@
 import React, {useState} from "react"
-import link from "next/link"
+import Link from "next/link"
 import axios from "axios"
 import {Cookies} from "react-cookie"
-import Header from "../components/Header"
+import Header from "../components/NovoHeader"
 import styles from "../components/Login.module.css"
+import Footer from "../components/Footer"
 
 export default function Login(){
 
@@ -48,7 +49,7 @@ export default function Login(){
             <Header/>
 
 
-                        <form onSubmit={enviar} action="" className={styles.formulario}>
+                        {/* <form onSubmit={enviar} action="" className={styles.formulario}>
 
                             <h2>Email</h2>
                             <input type="email" name="email" className={styles.email} placeholder="Email" onFocus={focarlogin} onChange={focarlogin}/>
@@ -59,12 +60,31 @@ export default function Login(){
                             <div className={styles.btn1}>
                                 <input type="submit" value="Entrar" className={styles.btn} onFocus={focarlogin} onChange={focarlogin} />
                             </div>
-                         </form>
+                         </form> */}
+                         <form action="" onSubmit={enviar} className={styles["for-cadastro"]} className={styles.formulario}>
+
+                                 
+                                    <h2>Email</h2>
+                                    <input type="email" name="email" className={styles.email} placeholder="Email"onFocus={focarlogin} onChange={focarlogin}/>
+
+                                   
+                                    <h2>Senha</h2>
+                                    <input type="password" name="password" className={styles.senha} placeholder="Digite a sua senha" onFocus={focarlogin} onChange={focarlogin}/>
+                                    <div id={styles.bt}>
+                                    <input type="submit" value="Entrar" className={styles.btn}/>
+                                    <Link href="Cadastro">
+                                        <button className={styles.btnLogin}><a> Voltar</a></button>
+                                    </Link>
+                                                        </div>
+
+
+                                    </form>
+
 
                 </main>
 
 
-            {/* <Footer/> */}
+            <Footer/>
 
         </>
     )

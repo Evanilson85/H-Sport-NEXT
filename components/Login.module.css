@@ -1,94 +1,114 @@
-
-
 .meio{
-  background-image: url(..//public/loginmobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
+  display: contents;
 }
-.formulario{
-  background: rgba(0, 0, 0, 0.65);
-  height: 300px;
-  width: 80vw;
+.formulario {
+  background-color: white;
+  height: auto;
+  width: 100%;
   position: relative;
-  top: 90px;
-  margin-left: 10%;
-  border-radius: 5px;
+  left: 0;
+  padding: 20px;
+  top: 5vh;
 }
+.nome,
 .email,
-.senha,
-.btn
-{
-  border-radius: 6px;
-  border: none;
+.data,
+.senha {
+  border-bottom: 1px solid #ff6002;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   width: 93%;
   height: 40px;
   margin: 23px 10px;
+  outline: none;
 }
-.formulario h2{
-  color: #ff6002;
+.nome:focus,
+.email:focus,
+.data:focus,
+.senha:focus {
+  transition: 0.5s;
+  border-radius: 6px;
+  border: #ff6002 1px solid;
+}
+#bt {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  /* border-radius: 6px;
+  border: #ff6002 1px solid;
+  width: 100%;
+  height: 40px;
+  margin: 23px auto;
+  width: 50%;
+  outline: none; */
+
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 13px;
+  width: 43%;
+  outline: none;
+  font-size: 20px;
+}
+.btnLogin{
+    border-radius: 6px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 13px;
+  width: 43%;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+.btnLogin:hover{
+  background: #ff6002;
+}
+.formulario h2 {
+  color: #000000;
   margin: 0px 10px;
 }
-.btn{
+.btn {
   background-color: #ff6002;
   color: white;
 }
-.btn:hover{
+.btn:hover {
   background: rgba(196, 188, 189, 0.801);
   cursor: pointer;
-
+  color: black;
 }
-
-@media(min-width:768px){
+@media (min-width: 700px) {
   .meio{
-      background-image: url(../public/loginmobile.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
+    display: block;
+    height: 80vh;
   }
   .formulario {
-      background: rgba(0, 0, 0, 0.65);
-      height: 300px;
-      width: 46vw;
-      position: relative;
-      top: 200px;
-      margin-left: 47%;
+    background-color: white;
+    height: auto;
+    width: 35vw;
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
+    border: 1px solid #00000038;
+    border-radius: 5px;
+    padding: 30px;
   }
 }
-@media(min-width:1024px){
-  .meio{
-    background-image: url(../public/imagens/compactados/contact.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
-    background-position: center;
-  }
+@media (min-width: 1024px) {
   .formulario {
-      background: rgba(0, 0, 0, 0.65);
-      height: 300px;
-      width: 33vw;
-      position: relative;
-      top: 200px;
-      margin-left: 10%;
+    background-color: white;
+    height: auto;
+    width: 35vw;
+    position: relative;
+    top: 15%;
   }
-
-
-}
-
-@media(min-width:1920px){
-
-  .formulario{
-    height: 470px;
-    width: 29%;
+  .meio {
+    background-color: rgb(0, 0, 0);
   }
-  .email,
-.senha,
-.btn
-{
-  height: 60px;
-  width: 96%;
-  margin: 23px 10px 46px;
-}
-
-
 }
